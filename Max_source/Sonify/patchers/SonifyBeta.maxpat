@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 113.0, 1215.0, 718.0 ],
+		"rect" : [ 76.0, 95.0, 1219.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -29,8 +29,8 @@
 		"toolbars_unpinned_last_save" : 4,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
+		"enablehscroll" : 0,
+		"enablevscroll" : 0,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
@@ -39,6 +39,391 @@
 		"subpatcher_template" : "",
 		"title" : "Sonify",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-679",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 564.0, 89.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-677",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 564.0, 123.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-671",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 668.0, 169.0, 96.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "enablehscroll $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-670",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 564.0, 169.0, 95.0, 22.0 ],
+					"text" : "enablevscroll $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-199",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 564.0, 205.0, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 16.0,
+					"hidden" : 1,
+					"id" : "obj-652",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 350.0, 89.0, 135.0, 42.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 236.0, -1.452890515327454, 370.0, 24.0 ],
+					"text" : "Select File>Max Menus to unlock",
+					"textcolor" : [ 0.984313725490196, 0.988235294117647, 0.035294117647059, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2427.0, 1086.0, 33.0, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-123",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2371.0, 1087.0, 33.0, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-596",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2371.0, 1153.0, 34.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-618",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2371.0, 1199.0, 56.0, 35.0 ],
+					"text" : ";\rmax quit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-625",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 2386.0, 1123.0, 65.0, 22.0 ],
+					"text" : "closebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-627",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2371.0, 1032.0, 106.0, 22.0 ],
+					"text" : "r sonify.sys_check"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-629",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 2177.0, 1027.0, 60.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-633",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 2371.0, 1059.0, 131.0, 22.0 ],
+					"text" : "sel macintosh windows"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.595186999999999,
+					"id" : "obj-640",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2177.0, 1057.0, 176.0, 34.0 ],
+					"text" : ";\rmax getsystem sonify.sys_check"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-638",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 285.0, 393.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-636",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 285.0, 359.9031982421875, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-158",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 285.0, 429.303192138671875, 103.0, 22.0 ],
+					"text" : "vj.appmenuabout"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-205",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 285.0, 89.0, 60.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-299",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 374.0, 267.333373999999992, 86.0, 31.0 ],
+					"text" : ";\rmax maxwindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-308",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 448.0, 311.033386000000007, 36.0, 20.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-449",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.0, 337.533386000000007, 35.0, 20.0 ],
+					"text" : "dac~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-497",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 285.0, 117.0, 19.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-546",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "int", "int", "int", "int", "int" ],
+					"patching_rect" : [ 285.0, 171.0, 59.0, 20.0 ],
+					"save" : [ "#N", "menubar", 5, 0, ";", "#X", "about", "About", "Sonify...", ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "Sonify", ";", "#X", "item", 5, 1, "Audio", "Settings", ";", "#X", "item", 5, 2, "Check", "for", "updates...", ";", "#X", "item", 5, 3, "Status", "window", ";", "#X", "item", 5, 4, "Tutorial", ";", "#X", "item", 5, 5, "More", "from", "Clear", "Blue", "Media..", ";", "#X", "end", ";" ],
+					"text" : "menubar 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-571",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 350.0, 205.0, 48.0, 20.0 ],
+					"triangle" : 0,
+					"triscale" : 0.9
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-576",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 285.0, 205.0, 49.0, 20.0 ],
+					"triscale" : 0.9
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-581",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 6,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 350.0, 232.0, 79.0, 20.0 ],
+					"text" : "select 1 2 3 4 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-589",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 285.0, 232.0, 47.0, 20.0 ],
+					"text" : "select 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-127",
 					"maxclass" : "newobj",
@@ -107,7 +492,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 116.39141845703125, 3.264581203460693, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 115.591407775878906, 2.464580774307251, 70.0, 19.0 ]
+					"presentation_rect" : [ 115.591407775878906, 0.464580774307251, 70.0, 19.0 ]
 				}
 
 			}
@@ -125,7 +510,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 799.0, 4089.0, 52.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 115.991409301757812, 2.464581251144409, 68.800003051757812, 18.600000381469727 ],
+					"presentation_rect" : [ 115.991409301757812, 0.464581251144409, 68.800003051757812, 18.600000381469727 ],
 					"text" : "Record",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Record",
@@ -694,13 +1079,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 880.78448486328125, 435.9031982421875, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 928.76507568359375, 432.19989013671875, 79.3331298828125, 42.158134460449219 ]
+					"presentation_rect" : [ 928.76507568359375, 430.19989013671875, 79.3331298828125, 42.158134460449219 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"hidden" : 1,
 					"id" : "obj-622",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -709,7 +1095,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1483.0, 173.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 928.76507568359375, 454.69989013671875, 76.698699951171875, 20.0 ],
+					"presentation_rect" : [ 928.76507568359375, 452.69989013671875, 76.698699951171875, 20.0 ],
 					"text" : "Preset Mode",
 					"textoncolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ]
 				}
@@ -718,6 +1104,7 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"hidden" : 1,
 					"id" : "obj-621",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -726,7 +1113,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1620.0, 173.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 928.76507568359375, 432.19989013671875, 76.698699951171875, 20.0 ],
+					"presentation_rect" : [ 928.76507568359375, 430.19989013671875, 76.698699951171875, 20.0 ],
 					"text" : "Data Mode",
 					"textoncolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ]
 				}
@@ -1247,8 +1634,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3762,7 +4149,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.78448486328125, 567.9031982421875, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 594.43328857421875, 366.0, 44.579093933105469 ]
+					"presentation_rect" : [ 8.09141731262207, 592.43328857421875, 366.0, 44.579093933105469 ]
 				}
 
 			}
@@ -3843,6 +4230,7 @@
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-319",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -3851,7 +4239,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1551.0, 1497.06640625, 97.5, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 107.133293151855469, 704.76666259765625, 62.8935546875, 20.0 ],
+					"presentation_rect" : [ 107.133293151855469, 702.76666259765625, 62.8935546875, 20.0 ],
 					"rounded" : 9.0,
 					"text" : "Load Presets",
 					"texton" : "Import",
@@ -3867,6 +4255,7 @@
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-324",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -3875,7 +4264,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1447.5, 1497.06640625, 96.5, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.133295059204102, 704.76666259765625, 68.8935546875, 20.0 ],
+					"presentation_rect" : [ 15.133295059204102, 702.76666259765625, 68.8935546875, 20.0 ],
 					"rounded" : 9.0,
 					"text" : "Export Presets",
 					"texton" : "Import",
@@ -3894,7 +4283,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.31732177734375, 359.9031982421875, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 682.1173095703125, 354.551544189453125, 191.0, 207.708160400390625 ]
+					"presentation_rect" : [ 682.1173095703125, 352.551544189453125, 191.0, 207.708160400390625 ]
 				}
 
 			}
@@ -3903,13 +4292,14 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-579",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 780.94012451171875, 519.5999755859375, 91.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 873.34014892578125, 497.503631591796875, 37.0, 18.0 ],
+					"presentation_rect" : [ 873.34014892578125, 495.503631591796875, 37.0, 18.0 ],
 					"text" : "Preset",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -3920,13 +4310,14 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-558",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 789.91729736328125, 430.303192138671875, 91.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 873.34014892578125, 424.648345947265625, 37.0, 18.0 ],
+					"presentation_rect" : [ 873.34014892578125, 422.648345947265625, 37.0, 18.0 ],
 					"text" : "Preset",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -3937,13 +4328,14 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-526",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 782.21728515625, 375.10321044921875, 91.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 873.34014892578125, 354.551544189453125, 37.0, 18.0 ],
+					"presentation_rect" : [ 873.34014892578125, 352.551544189453125, 37.0, 18.0 ],
 					"text" : "Preset",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -3954,13 +4346,14 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-318",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1020.437744140625, 2813.08203125, 91.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 754.6173095703125, 354.551544189453125, 41.0, 18.0 ],
+					"presentation_rect" : [ 754.6173095703125, 352.551544189453125, 41.0, 18.0 ],
 					"text" : "Melody",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -3975,7 +4368,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 616.72442626953125, 454.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.1173095703125, 615.42352294921875, 47.22198486328125, 38.158134460449219 ]
+					"presentation_rect" : [ 677.1173095703125, 613.42352294921875, 47.22198486328125, 38.158134460449219 ]
 				}
 
 			}
@@ -3988,7 +4381,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 616.72442626953125, 482.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 818.1173095703125, 569.0816650390625, 55.0, 70.0 ]
+					"presentation_rect" : [ 818.1173095703125, 567.0816650390625, 55.0, 70.0 ]
 				}
 
 			}
@@ -4001,7 +4394,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.31732177734375, 430.303192138671875, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.1173095703125, 566.0816650390625, 131.0, 21.0 ]
+					"presentation_rect" : [ 677.1173095703125, 564.0816650390625, 131.0, 21.0 ]
 				}
 
 			}
@@ -4014,7 +4407,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 613.671630859375, 575.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 926.78448486328125, 354.551544189453125, 83.0, 69.158134460449219 ]
+					"presentation_rect" : [ 926.78448486328125, 352.551544189453125, 83.0, 69.158134460449219 ]
 				}
 
 			}
@@ -4022,6 +4415,7 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-69",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -4029,7 +4423,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 829.7608642578125, 388.463623046875, 54.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 925.09820556640625, 354.015167236328125, 85.0, 17.0 ],
+					"presentation_rect" : [ 925.09820556640625, 352.015167236328125, 85.0, 17.0 ],
 					"text" : "Data Specialization",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -4044,7 +4438,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 621.31732177734375, 409.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.1173095703125, 591.0816650390625, 113.0, 18.158132553100586 ]
+					"presentation_rect" : [ 677.1173095703125, 589.0816650390625, 113.0, 18.158132553100586 ]
 				}
 
 			}
@@ -4057,7 +4451,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 613.671630859375, 531.83331298828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 873.34014892578125, 517.503662109375, 33.4456787109375, 19.0 ]
+					"presentation_rect" : [ 873.34014892578125, 515.503662109375, 33.4456787109375, 19.0 ]
 				}
 
 			}
@@ -4070,7 +4464,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 613.671630859375, 553.6666259765625, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 873.34014892578125, 444.648345947265625, 33.4456787109375, 19.0 ]
+					"presentation_rect" : [ 873.34014892578125, 442.648345947265625, 33.4456787109375, 19.0 ]
 				}
 
 			}
@@ -4083,7 +4477,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 109.738792419433594, 3.664581298828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 873.34014892578125, 374.551544189453125, 33.4456787109375, 19.0 ]
+					"presentation_rect" : [ 873.34014892578125, 372.551544189453125, 33.4456787109375, 19.0 ]
 				}
 
 			}
@@ -4096,7 +4490,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 109.738792419433594, 3.664581298828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.991416931152344, 45.83123779296875, 1031.4166259765625, 288.0 ]
+					"presentation_rect" : [ 4.991416931152344, 43.83123779296875, 1031.4166259765625, 288.0 ]
 				}
 
 			}
@@ -4109,7 +4503,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 109.738792419433594, 3.664581298828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1157.0579833984375, 1.88044285774231, 44.0, 17.0 ]
+					"presentation_rect" : [ 1157.0579833984375, -0.11955714225769, 44.0, 17.0 ]
 				}
 
 			}
@@ -4122,7 +4516,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 109.738792419433594, 3.664581298828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.991416931152344, 1.664581298828125, 70.0, 19.0 ]
+					"presentation_rect" : [ 5.991416931152344, -0.335418701171875, 70.0, 19.0 ]
 				}
 
 			}
@@ -4135,7 +4529,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 109.738792419433594, 3.664581298828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 24.83123779296875, 85.0, 19.0 ]
+					"presentation_rect" : [ 3.991416931152344, 22.83123779296875, 85.0, 19.0 ]
 				}
 
 			}
@@ -4148,7 +4542,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 725.6666259765625, 1664.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.40802001953125, -0.452890515327454, 95.0, 19.0 ]
+					"presentation_rect" : [ 941.40802001953125, -2.452890515327454, 95.0, 19.0 ]
 				}
 
 			}
@@ -4161,7 +4555,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 725.6666259765625, 1664.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.280075073242188, 2.464581251144409, 36.25262451171875, 19.0 ]
+					"presentation_rect" : [ 77.280075073242188, 0.464581251144409, 36.25262451171875, 19.0 ]
 				}
 
 			}
@@ -4201,7 +4595,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1514.0, -23.5, 100.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.40802001953125, -0.452890515327454, 95.0, 21.0 ],
+					"presentation_rect" : [ 941.40802001953125, -2.452890515327454, 95.0, 21.0 ],
 					"text" : "Advanced Mode",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"texton" : "Advanced Mode",
@@ -4220,7 +4614,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 920.0, 222.83331298828125, 54.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 575.43328857421875, 29.0, 18.0 ],
+					"presentation_rect" : [ 8.09141731262207, 573.43328857421875, 29.0, 18.0 ],
 					"text" : "Tags",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -4240,42 +4634,12 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 182.833419799804688, 1732.6666259765625, 61.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.991416931152344, 1.664581298828125, 70.0, 19.0 ],
+					"presentation_rect" : [ 5.991416931152344, -0.335418701171875, 70.0, 19.0 ],
 					"text" : "Pause",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"texton" : "Play",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"usebgoncolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 244.0, 227.999969482421875, 67.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"allwindowsactive" : 0,
-						"audiosupport" : 1,
-						"bundleidentifier" : "com.mycompany.myprogram",
-						"cantclosetoplevelpatchers" : 1,
-						"cefsupport" : 1,
-						"copysupport" : 1,
-						"database" : 0,
-						"extensions" : 1,
-						"gensupport" : 1,
-						"midisupport" : 1,
-						"noloadbangdefeating" : 0,
-						"overdrive" : 1,
-						"preffilename" : "Max 8 Preferences",
-						"searchformissingfiles" : 1,
-						"statusvisible" : 0,
-						"usesearchpath" : 1
-					}
-,
-					"text" : "standalone"
 				}
 
 			}
@@ -4294,13 +4658,14 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-466",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 853.0, 222.66650390625, 50.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 311.16558837890625, 642.93328857421875, 27.0, 17.0 ],
+					"presentation_rect" : [ 311.16558837890625, 640.93328857421875, 27.0, 17.0 ],
 					"text" : "Save",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -4365,7 +4730,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 231.416702270507812, 677.0, 71.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 430.699737548828125, 30.164566040039062, 181.0, 23.0 ],
+					"presentation_rect" : [ 430.699737548828125, 28.164566040039062, 181.0, 23.0 ],
 					"textjustification" : 1
 				}
 
@@ -4600,6 +4965,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-553",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -4697,6 +5063,7 @@
 				"box" : 				{
 					"activebgoncolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ],
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-523",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -4705,14 +5072,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 394.4166259765625, 1540.525146484375, 86.666778564453125, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 928.76507568359375, 396.262481689453125, 78.666778564453125, 27.0 ],
+					"presentation_rect" : [ 928.76507568359375, 394.262481689453125, 78.666778564453125, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text[7]",
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[8]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text[7]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -4786,6 +5153,7 @@
 				"box" : 				{
 					"activebgoncolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ],
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-493",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -4794,14 +5162,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 290.083404541015625, 1540.525146484375, 64.666778564453125, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 938.09820556640625, 370.262481689453125, 56.666778564453125, 27.0 ],
+					"presentation_rect" : [ 938.09820556640625, 368.262481689453125, 56.666778564453125, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text[7]",
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[7]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text[7]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -5378,7 +5746,7 @@
 					"patching_rect" : [ 19.541656494140625, 531.83331298828125, 115.916702270507812, 63.666656494140625 ],
 					"pic" : "Loading.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 450.24139404296875, 172.140228271484375, 141.916702270507812, 30.666656494140625 ]
+					"presentation_rect" : [ 450.24139404296875, 170.140228271484375, 141.916702270507812, 30.666656494140625 ]
 				}
 
 			}
@@ -5393,7 +5761,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 596.8653564453125, 745.9532470703125, 55.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 639.93328857421875, 83.0, 18.0 ],
+					"presentation_rect" : [ 8.09141731262207, 637.93328857421875, 83.0, 18.0 ],
 					"text" : "Custom Presets",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -5441,6 +5809,7 @@
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-40",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -5449,7 +5818,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1426.0, 1539.6517333984375, 68.5, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 291.16558837890625, 699.26666259765625, 68.8935546875, 20.0 ],
+					"presentation_rect" : [ 291.16558837890625, 697.26666259765625, 68.8935546875, 20.0 ],
 					"rounded" : 9.0,
 					"text" : "User #3",
 					"texton" : "Import",
@@ -5465,6 +5834,7 @@
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-25",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -5473,7 +5843,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1355.5, 1539.6517333984375, 68.5, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 291.16558837890625, 680.93328857421875, 68.8935546875, 20.0 ],
+					"presentation_rect" : [ 291.16558837890625, 678.93328857421875, 68.8935546875, 20.0 ],
 					"rounded" : 9.0,
 					"text" : "User #2",
 					"texton" : "Import",
@@ -5489,6 +5859,7 @@
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-23",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -5497,7 +5868,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1285.0, 1539.6517333984375, 68.5, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 291.16558837890625, 658.93328857421875, 68.8935546875, 20.0 ],
+					"presentation_rect" : [ 291.16558837890625, 656.93328857421875, 68.8935546875, 20.0 ],
 					"rounded" : 9.0,
 					"text" : "User #1",
 					"texton" : "Import",
@@ -5512,6 +5883,7 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-22",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -5519,7 +5891,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 807.7501220703125, 222.66650390625, 42.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1111.224365234375, 542.85528564453125, 71.0, 18.0 ],
+					"presentation_rect" : [ 1111.224365234375, 540.85528564453125, 71.0, 18.0 ],
 					"text" : "Reverb Preset",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -5529,6 +5901,7 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-13",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -5537,7 +5910,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1011.39996337890625, 3866.666748046875, 47.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1131.224365234375, 559.73333740234375, 31.0, 19.0 ]
+					"presentation_rect" : [ 1131.224365234375, 557.73333740234375, 31.0, 19.0 ]
 				}
 
 			}
@@ -5554,7 +5927,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2347.0, 426.666656494140625, 63.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0914306640625, 658.93328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 190.0914306640625, 656.93328857421875, 89.0, 20.0 ],
 					"text" : "User #3",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "User #3",
@@ -5577,7 +5950,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2279.5, 430.0, 61.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.091415405273438, 658.93328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 99.091415405273438, 656.93328857421875, 89.0, 20.0 ],
 					"text" : "User #2",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "User #2",
@@ -5600,7 +5973,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2209.0, 430.0, 59.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 658.93328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 8.09141731262207, 656.93328857421875, 89.0, 20.0 ],
 					"text" : "User #1",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "User #1",
@@ -5717,7 +6090,6 @@
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Reverb Signal",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
@@ -5725,7 +6097,8 @@
 							"parameter_longname" : "live.dial[16]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 0.0,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Reverb Signal"
 						}
 
 					}
@@ -5739,6 +6112,7 @@
 					"activedialcolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ],
 					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"focusbordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-102",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
@@ -5747,11 +6121,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 615.20001220703125, 3816.333251953125, 76.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1029.3262939453125, 545.23333740234375, 76.0, 48.0 ],
+					"presentation_rect" : [ 1029.3262939453125, 543.23333740234375, 76.0, 48.0 ],
 					"prototypename" : "gain",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Reverb Wet/Dry",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_linknames" : 1,
@@ -5759,7 +6132,8 @@
 							"parameter_longname" : "Reverb Wet/Dry",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 70.0,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "Reverb Wet/Dry"
 						}
 
 					}
@@ -5830,13 +6204,14 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-195",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1073.90966796875, 3043.76513671875, 29.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 759.5244140625, 497.503631591796875, 29.0, 18.0 ],
+					"presentation_rect" : [ 759.5244140625, 495.503631591796875, 29.0, 18.0 ],
 					"text" : "Bass",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -5853,16 +6228,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 689.5999755859375, 4069.8662109375, 48.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1172.86083984375, 354.551544189453125, 33.0, 186.0 ],
+					"presentation_rect" : [ 1172.86083984375, 352.551544189453125, 33.0, 186.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Master",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[5]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Master"
 						}
 
 					}
@@ -5903,11 +6278,11 @@
 					"patching_rect" : [ 1098.5, 3816.333251953125, 67.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[6]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -5933,13 +6308,13 @@
 					"patching_rect" : [ 680.5, 3742.2998046875, 89.0, 135.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Premaster",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Premaster"
 						}
 
 					}
@@ -5977,25 +6352,26 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
+								"absolutepath" : "606cymbal.wav",
 								"filename" : "606cymbal.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
 									"originallengthms" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ]
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -6035,16 +6411,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 947.6666259765625, 3685.999755859375, 59.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1102.86083984375, 354.551544189453125, 33.0, 186.0 ],
+					"presentation_rect" : [ 1102.86083984375, 352.551544189453125, 33.0, 186.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Chords",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[4]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Chords"
 						}
 
 					}
@@ -6066,16 +6442,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1011.39996337890625, 3685.999755859375, 40.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1141.86083984375, 354.551544189453125, 26.0, 186.0 ],
+					"presentation_rect" : [ 1141.86083984375, 352.551544189453125, 26.0, 186.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Bass",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[3]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Bass"
 						}
 
 					}
@@ -6097,16 +6473,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 902.0, 3685.999755859375, 59.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1067.86083984375, 354.551544189453125, 33.0, 186.0 ],
+					"presentation_rect" : [ 1067.86083984375, 352.551544189453125, 33.0, 186.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Melody",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Melody"
 						}
 
 					}
@@ -6128,16 +6504,16 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 854.0, 3685.999755859375, 46.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1029.3262939453125, 354.551544189453125, 31.0, 186.0 ],
+					"presentation_rect" : [ 1029.3262939453125, 352.551544189453125, 31.0, 186.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Drums",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "Drums"
 						}
 
 					}
@@ -6212,25 +6588,26 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
+								"absolutepath" : "606hat.wav",
 								"filename" : "606hat.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
 									"originallengthms" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ]
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -6263,25 +6640,26 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
+								"absolutepath" : "606snare.wav",
 								"filename" : "606snare.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
 									"originallengthms" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ]
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -6350,25 +6728,26 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
+								"absolutepath" : "606kick.wav",
 								"filename" : "606kick.wav",
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
 									"originallengthms" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ]
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -6400,6 +6779,7 @@
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-50",
 					"maxclass" : "number",
 					"maximum" : 37,
@@ -6410,14 +6790,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 893.0, 3038.600341796875, 48.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 875.78582763671875, 374.551544189453125, 31.0, 19.0 ],
+					"presentation_rect" : [ 875.78582763671875, 372.551544189453125, 31.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[6]",
 							"parameter_type" : 1,
 							"parameter_longname" : "number[6]",
 							"parameter_invisible" : 1,
-							"parameter_mmax" : 37.0
+							"parameter_mmax" : 37.0,
+							"parameter_shortname" : "number[6]"
 						}
 
 					}
@@ -6431,6 +6811,7 @@
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-49",
 					"maxclass" : "number",
 					"maximum" : 37,
@@ -6441,14 +6822,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1967.0, 3314.3330078125, 48.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 875.78582763671875, 444.648345947265625, 31.0, 19.0 ],
+					"presentation_rect" : [ 875.78582763671875, 442.648345947265625, 31.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[3]",
 							"parameter_type" : 1,
 							"parameter_longname" : "number[3]",
 							"parameter_invisible" : 1,
-							"parameter_mmax" : 37.0
+							"parameter_mmax" : 37.0,
+							"parameter_shortname" : "number[3]"
 						}
 
 					}
@@ -6462,6 +6843,7 @@
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-33",
 					"maxclass" : "number",
 					"maximum" : 127,
@@ -6472,13 +6854,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1552.0, 3315.3330078125, 48.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 875.78582763671875, 517.503662109375, 31.0, 19.0 ],
+					"presentation_rect" : [ 875.78582763671875, 515.503662109375, 31.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[4]",
 							"parameter_type" : 1,
 							"parameter_longname" : "number[4]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "number[4]"
 						}
 
 					}
@@ -6499,7 +6881,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 117.833488464355469, 1195.6417236328125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 897.72442626953125, 24.83123779296875, 78.0, 20.0 ],
+					"presentation_rect" : [ 897.72442626953125, 22.83123779296875, 78.0, 20.0 ],
 					"text" : "Load Regions",
 					"texton" : "Load Regions",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -6520,7 +6902,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 117.833488464355469, 1172.800048828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 818.72442626953125, 24.83123779296875, 77.0, 20.0 ],
+					"presentation_rect" : [ 818.72442626953125, 22.83123779296875, 77.0, 20.0 ],
 					"text" : "Save Regions",
 					"texton" : "Save Regions",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -6567,6 +6949,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-196",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -6575,7 +6958,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1110.90966796875, 3013.08203125, 433.05633544921875, 81.366195678710938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 682.1173095703125, 497.503631591796875, 196.0, 64.756072998046875 ],
+					"presentation_rect" : [ 682.1173095703125, 495.503631591796875, 196.0, 64.756072998046875 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"settype" : 0,
@@ -6756,7 +7139,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1943.10009765625, 513.800048828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0914306640625, 684.5999755859375, 89.0, 20.0 ],
+					"presentation_rect" : [ 190.0914306640625, 682.5999755859375, 89.0, 20.0 ],
 					"text" : "Clear All",
 					"texton" : "Clear All",
 					"textoncolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ],
@@ -6812,7 +7195,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 603.83331298828125, 852.1895751953125, 60.68359375, 21.40625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 975.72442626953125, 24.83123779296875, 60.68359375, 21.40625 ],
+					"presentation_rect" : [ 975.72442626953125, 22.83123779296875, 60.68359375, 21.40625 ],
 					"style" : "foamy",
 					"text" : "Clear All",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -6847,7 +7230,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2167.5, 513.800048828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.091415405273438, 684.5999755859375, 89.0, 20.0 ],
+					"presentation_rect" : [ 99.091415405273438, 682.5999755859375, 89.0, 20.0 ],
 					"text" : "Import",
 					"texton" : "Import",
 					"textoncolor" : [ 0.988903880119324, 0.400471746921539, 0.399960249662399, 1.0 ],
@@ -6880,7 +7263,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2054.5, 513.800048828125, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 684.5999755859375, 89.0, 20.0 ],
+					"presentation_rect" : [ 8.09141731262207, 682.5999755859375, 89.0, 20.0 ],
 					"rounded" : 1.0,
 					"text" : "Export",
 					"texton" : "Export",
@@ -7030,8 +7413,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7913,7 +8296,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 114.583419799804688, 752.64996337890625, 100.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.991416931152344, 24.83123779296875, 76.0, 23.0 ],
+					"presentation_rect" : [ 4.991416931152344, 22.83123779296875, 76.0, 23.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"underline" : 1
 				}
@@ -7934,7 +8317,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 24.83123779296875, 1034.4166259765625, 323.284637451171875 ],
+					"presentation_rect" : [ 3.991416931152344, 22.83123779296875, 1034.4166259765625, 323.284637451171875 ],
 					"size" : 1011.0
 				}
 
@@ -7954,7 +8337,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 23.121849060058594, 1034.4166259765625, 326.833343505859375 ],
+					"presentation_rect" : [ 3.991416931152344, 21.121849060058594, 1034.4166259765625, 326.833343505859375 ],
 					"size" : 1011.0
 				}
 
@@ -7974,7 +8357,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 23.121849060058594, 1034.4166259765625, 326.833343505859375 ],
+					"presentation_rect" : [ 3.991416931152344, 21.121849060058594, 1034.4166259765625, 326.833343505859375 ],
 					"size" : 1011.0
 				}
 
@@ -7994,7 +8377,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 23.121849060058594, 1034.4166259765625, 326.833343505859375 ],
+					"presentation_rect" : [ 3.991416931152344, 21.121849060058594, 1034.4166259765625, 326.833343505859375 ],
 					"size" : 1011.0
 				}
 
@@ -8014,7 +8397,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 23.121849060058594, 1034.4166259765625, 326.833343505859375 ],
+					"presentation_rect" : [ 3.991416931152344, 21.121849060058594, 1034.4166259765625, 326.833343505859375 ],
 					"size" : 1011.0
 				}
 
@@ -8033,7 +8416,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 23.121849060058594, 1034.4166259765625, 326.833343505859375 ],
+					"presentation_rect" : [ 3.991416931152344, 21.121849060058594, 1034.4166259765625, 326.833343505859375 ],
 					"size" : 1011.0
 				}
 
@@ -8175,17 +8558,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-182",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2382.0, 914.300048828125, 113.0, 20.0 ],
-					"text" : "Standalone Objects"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -8246,8 +8618,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10261,8 +10633,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -12348,8 +12720,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14480,7 +14852,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1894.833251953125, 432.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.091415405273438, 594.43328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 99.091415405273438, 592.43328857421875, 89.0, 20.0 ],
 					"text" : "Stable",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Stable",
@@ -14503,7 +14875,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1600.0, 430.0, 72.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 594.43328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 8.09141731262207, 592.43328857421875, 89.0, 20.0 ],
 					"text" : "Good Trend",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Good",
@@ -14526,7 +14898,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1960.333251953125, 432.0, 59.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.09141731262207, 616.43328857421875, 89.0418701171875, 20.0 ],
+					"presentation_rect" : [ 8.09141731262207, 614.43328857421875, 89.0418701171875, 20.0 ],
 					"text" : "Complex",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Complex",
@@ -14549,7 +14921,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2100.0, 432.0, 107.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0914306640625, 616.43328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 190.0914306640625, 614.43328857421875, 89.0, 20.0 ],
 					"text" : "Unexpected Trend",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Unexpected Trend",
@@ -14572,7 +14944,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1758.0, 432.0, 59.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.0914306640625, 594.43328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 190.0914306640625, 592.43328857421875, 89.0, 20.0 ],
 					"text" : "Expected",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Expected",
@@ -14595,7 +14967,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2023.35009765625, 432.0, 70.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 281.0914306640625, 594.43328857421875, 89.0418701171875, 20.0 ],
+					"presentation_rect" : [ 281.0914306640625, 592.43328857421875, 89.0418701171875, 20.0 ],
 					"text" : "Developing",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Developing",
@@ -14618,7 +14990,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1825.25, 432.0, 61.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 281.0914306640625, 616.43328857421875, 89.0418701171875, 20.0 ],
+					"presentation_rect" : [ 281.0914306640625, 614.43328857421875, 89.0418701171875, 20.0 ],
 					"text" : "Unstable",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Unstable",
@@ -14641,7 +15013,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1684.7916259765625, 432.0, 70.683349609375, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.091415405273438, 616.43328857421875, 89.0, 20.0 ],
+					"presentation_rect" : [ 99.091415405273438, 614.43328857421875, 89.0, 20.0 ],
 					"text" : "Bad Trend",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "Bad Trend",
@@ -14661,8 +15033,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14962,7 +15334,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2496.333251953125, 1750.56640625, 53.6666259765625, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 198.680068969726562, 545.23333740234375, 41.200000762939453, 20.0 ],
+					"presentation_rect" : [ 198.680068969726562, 543.23333740234375, 41.200000762939453, 20.0 ],
 					"style" : "foamy",
 					"text" : "Import",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -14983,7 +15355,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2434.333251953125, 1750.56640625, 53.6666259765625, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.480072021484375, 545.23333740234375, 44.200000762939453, 20.0 ],
+					"presentation_rect" : [ 150.480072021484375, 543.23333740234375, 44.200000762939453, 20.0 ],
 					"style" : "foamy",
 					"text" : "Export",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -15040,7 +15412,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2601.333251953125, 1663.2666015625, 46.0, 18.6417236328125 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 103.091415405273438, 545.23333740234375, 37.400001525878906, 20.0 ],
+					"presentation_rect" : [ 103.091415405273438, 543.23333740234375, 37.400001525878906, 20.0 ],
 					"style" : "foamy",
 					"text" : "Clear",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -15323,7 +15695,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2182.33349609375, 1516.56640625, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 545.23333740234375, 93.0, 20.0 ],
+					"presentation_rect" : [ 3.991416931152344, 543.23333740234375, 93.0, 20.0 ],
 					"style" : "foamy",
 					"text" : "Save Comment",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -15452,7 +15824,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2182.33349609375, 1567.666748046875, 234.0, 117.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 359.9031982421875, 370.5418701171875, 188.44744873046875 ],
+					"presentation_rect" : [ 3.991416931152344, 357.9031982421875, 370.5418701171875, 188.44744873046875 ],
 					"style" : "foamy",
 					"tabmode" : 0,
 					"text" : "This is a structural bond.",
@@ -15500,13 +15872,14 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 8.0,
+					"hidden" : 1,
 					"id" : "obj-529",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 619.98980712890625, 1590.474853515625, 108.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 818.7608642578125, 568.1514892578125, 53.0, 16.0 ],
+					"presentation_rect" : [ 818.7608642578125, 566.1514892578125, 53.0, 16.0 ],
 					"text" : "Pitch Range",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -15516,13 +15889,14 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-525",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 631.17535400390625, 1642.9283447265625, 54.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 743.82733154296875, 615.42352294921875, 54.0, 17.0 ],
+					"presentation_rect" : [ 743.82733154296875, 613.42352294921875, 54.0, 17.0 ],
 					"text" : "Subdivision",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -15531,6 +15905,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 11.0,
+					"hidden" : 1,
 					"id" : "obj-504",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -15540,11 +15915,11 @@
 					"patching_rect" : [ 16.872077941894531, 2657.750244140625, 91.422676086425781, 13.798828125 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text[4]",
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[4]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text[4]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -15559,6 +15934,7 @@
 				"box" : 				{
 					"automation" : "7th",
 					"automationon" : "7th",
+					"hidden" : 1,
 					"id" : "obj-503",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -15567,14 +15943,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1128.3333740234375, 1480.6517333984375, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 760.33380126953125, 592.33258056640625, 30.597938537597656, 16.907217025756836 ],
+					"presentation_rect" : [ 760.33380126953125, 590.33258056640625, 30.597938537597656, 16.907217025756836 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "7th", "7th" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[3]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "7th", "7th" ]
 						}
 
 					}
@@ -15589,6 +15965,7 @@
 				"box" : 				{
 					"automation" : "7th",
 					"automationon" : "7th",
+					"hidden" : 1,
 					"id" : "obj-502",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -15597,14 +15974,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1049.3333740234375, 1480.6517333984375, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 733.11724853515625, 592.33258056640625, 30.597938537597656, 16.907217025756836 ],
+					"presentation_rect" : [ 733.11724853515625, 590.33258056640625, 30.597938537597656, 16.907217025756836 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "7th", "7th" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[2]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "7th", "7th" ]
 						}
 
 					}
@@ -15619,6 +15996,7 @@
 				"box" : 				{
 					"automation" : "7th",
 					"automationon" : "7th",
+					"hidden" : 1,
 					"id" : "obj-498",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -15627,14 +16005,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 981.8333740234375, 1480.6517333984375, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 704.7152099609375, 592.33258056640625, 30.597938537597656, 16.907217025756836 ],
+					"presentation_rect" : [ 704.7152099609375, 590.33258056640625, 30.597938537597656, 16.907217025756836 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "7th", "7th" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[1]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "7th", "7th" ]
 						}
 
 					}
@@ -15649,6 +16027,7 @@
 				"box" : 				{
 					"automation" : "7th",
 					"automationon" : "7th",
+					"hidden" : 1,
 					"id" : "obj-492",
 					"maxclass" : "live.text",
 					"numinlets" : 1,
@@ -15657,14 +16036,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 919.6666259765625, 1480.6517333984375, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.1173095703125, 592.33258056640625, 30.597938537597656, 16.907224655151367 ],
+					"presentation_rect" : [ 677.1173095703125, 590.33258056640625, 30.597938537597656, 16.907224655151367 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "7th", "7th" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "7th", "7th" ]
 						}
 
 					}
@@ -15679,6 +16058,7 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-71",
 					"items" : [ "Whole", "Note", ",", "Half", "Note", ",", "Quarter", "Note", ",", "Eigth", "Note", ",", "Sixteenth", "Note", ",", "32nd", "Note" ],
 					"maxclass" : "umenu",
@@ -15688,7 +16068,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 827.6666259765625, 1786.974853515625, 100.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 734.35675048828125, 631.67083740234375, 72.941162109375, 19.0 ]
+					"presentation_rect" : [ 734.35675048828125, 629.67083740234375, 72.941162109375, 19.0 ]
 				}
 
 			}
@@ -15697,6 +16077,7 @@
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-415",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -15705,13 +16086,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 604.69708251953125, 2782.70703125, 47.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 846.00848388671875, 619.43048095703125, 32.28179931640625, 19.0 ],
+					"presentation_rect" : [ 846.00848388671875, 617.43048095703125, 32.28179931640625, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[8]",
 							"parameter_type" : 3,
 							"parameter_longname" : "number[8]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "number[8]"
 						}
 
 					}
@@ -15724,6 +16105,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"elementcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-416",
 					"increment" : 12.0,
 					"maxclass" : "incdec",
@@ -15733,13 +16115,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 604.69708251953125, 2718.1435546875, 46.478897094726562, 52.169013977050781 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 848.7857666015625, 582.81817626953125, 25.557949066162109, 34.612312316894531 ],
+					"presentation_rect" : [ 848.7857666015625, 580.81817626953125, 25.557949066162109, 34.612312316894531 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "incdec[3]",
 							"parameter_type" : 3,
 							"parameter_longname" : "incdec[3]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "incdec[3]"
 						}
 
 					}
@@ -15753,6 +16135,7 @@
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-414",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -15761,13 +16144,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 547.77935791015625, 2782.70703125, 47.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.98785400390625, 619.43048095703125, 29.200000762939453, 19.0 ],
+					"presentation_rect" : [ 812.98785400390625, 617.43048095703125, 29.200000762939453, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[7]",
 							"parameter_type" : 3,
 							"parameter_longname" : "number[7]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "number[7]"
 						}
 
 					}
@@ -15779,6 +16162,7 @@
 , 			{
 				"box" : 				{
 					"allowdrag" : 0,
+					"hidden" : 1,
 					"id" : "obj-76",
 					"items" : [ "ionian", ",", "dorian", ",", "phrygian", ",", "lydian", ",", "mixolydian", ",", "aeolian", ",", "locrian", ",", "harmonic_major", ",", "dorian_b5", ",", "phrygian_b4", ",", "lydian_b3", ",", "mixolydian_b2", ",", "aeolian_b1", ",", "locrian_b7", ",", "harmonic_minor", ",", "locrian_#6", ",", "ionian_#5", ",", "dorian_#4", ",", "phrygian_#3", ",", "lydian_#2", ",", "mixolydian_#1", ",", "melodic_minor", ",", "dorian_b2", ",", "lydian_#5", ",", "lydian_b7", ",", "mixolydian_b6", ",", "locrian_#2", ",", "locrian_b4" ],
 					"labelclick" : 1,
@@ -15789,14 +16173,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1025.5, 1739.30810546875, 132.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 734.93023681640625, 565.9114990234375, 71.794189453125, 22.0 ],
+					"presentation_rect" : [ 734.93023681640625, 563.9114990234375, 71.794189453125, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "eamir_filtering[3]",
-							"parameter_enum" : [ "ionian", "dorian", "phrygian", "lydian", "mixolydian", "aeolian", "locrian", "harmonic_major", "dorian_b5", "phrygian_b4", "lydian_b3", "mixolydian_b2", "aeolian_b1", "locrian_b7", "harmonic_minor", "locrian_#6", "ionian_#5", "dorian_#4", "phrygian_#3", "lydian_#2", "mixolydian_#1", "melodic_minor", "dorian_b2", "lydian_#5", "lydian_b7", "mixolydian_b6", "locrian_#2", "locrian_b4" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "eamir_filtering[3]",
-							"parameter_mmax" : 27.0
+							"parameter_mmax" : 27,
+							"parameter_shortname" : "eamir_filtering[3]",
+							"parameter_enum" : [ "ionian", "dorian", "phrygian", "lydian", "mixolydian", "aeolian", "locrian", "harmonic_major", "dorian_b5", "phrygian_b4", "lydian_b3", "mixolydian_b2", "aeolian_b1", "locrian_b7", "harmonic_minor", "locrian_#6", "ionian_#5", "dorian_#4", "phrygian_#3", "lydian_#2", "mixolydian_#1", "melodic_minor", "dorian_b2", "lydian_#5", "lydian_b7", "mixolydian_b6", "locrian_#2", "locrian_b4" ]
 						}
 
 					}
@@ -15809,6 +16193,7 @@
 , 			{
 				"box" : 				{
 					"allowdrag" : 0,
+					"hidden" : 1,
 					"id" : "obj-80",
 					"items" : [ "C", ",", "C#/Db", ",", "D", ",", "D#/Eb", ",", "E", ",", "F", ",", "F#/Gb", ",", "G", ",", "G#/Ab", ",", "A", ",", "A#/Bb", ",", "B" ],
 					"labelclick" : 1,
@@ -15819,14 +16204,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 943.33331298828125, 1739.30810546875, 74.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.72442626953125, 565.9114990234375, 54.167762756347656, 22.0 ],
+					"presentation_rect" : [ 677.72442626953125, 563.9114990234375, 54.167762756347656, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "eamir_filtering[2]",
-							"parameter_enum" : [ "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "eamir_filtering[2]",
-							"parameter_mmax" : 11.0
+							"parameter_mmax" : 11,
+							"parameter_shortname" : "eamir_filtering[2]",
+							"parameter_enum" : [ "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B" ]
 						}
 
 					}
@@ -15851,7 +16236,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 827.6666259765625, 1728.6666259765625, 58.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.991416931152344, 0.864581286907196, 35.0, 23.0 ],
+					"presentation_rect" : [ 77.991416931152344, -1.135418713092804, 35.0, 23.0 ],
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"triangle" : 0,
 					"varname" : "attri[6]"
@@ -15863,13 +16248,14 @@
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 8.0,
+					"hidden" : 1,
 					"id" : "obj-47",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.5, 1534.8082275390625, 74.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 679.00628662109375, 615.42352294921875, 47.0, 16.0 ],
+					"presentation_rect" : [ 679.00628662109375, 613.42352294921875, 47.0, 16.0 ],
 					"text" : "Lookahead",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -15879,6 +16265,7 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 9.0,
+					"hidden" : 1,
 					"id" : "obj-44",
 					"maxclass" : "number",
 					"maximum" : 16,
@@ -15889,7 +16276,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 795.5, 1556.8082275390625, 48.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 685.228271484375, 632.92352294921875, 31.0, 19.0 ],
+					"presentation_rect" : [ 685.228271484375, 630.92352294921875, 31.0, 19.0 ],
 					"varname" : "attri[7]"
 				}
 
@@ -15898,6 +16285,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.0 ],
 					"elementcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-412",
 					"increment" : 12.0,
 					"maxclass" : "incdec",
@@ -15907,13 +16295,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 547.77935791015625, 2718.1435546875, 46.478897094726562, 52.169013977050781 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 816.1878662109375, 582.81817626953125, 25.99609375, 34.612312316894531 ],
+					"presentation_rect" : [ 816.1878662109375, 580.81817626953125, 25.99609375, 34.612312316894531 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "incdec[2]",
 							"parameter_type" : 3,
 							"parameter_longname" : "incdec[2]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "incdec[2]"
 						}
 
 					}
@@ -15980,9 +16368,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 96.250007629394531, 162.166656494140625, 52.0, 21.0 ],
+					"patching_rect" : [ 177.25, 160.166656494140625, 52.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 889.407958984375, -0.452890515327454, 52.0, 21.0 ],
+					"presentation_rect" : [ 889.407958984375, -2.452890515327454, 52.0, 21.0 ],
 					"text" : "Tutorial",
 					"texton" : "Tutorial",
 					"textoncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
@@ -16002,7 +16390,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 18.333305358886719, 210.333343505859375, 52.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 835.407958984375, -0.452890515327454, 52.0, 21.0 ],
+					"presentation_rect" : [ 835.407958984375, -2.452890515327454, 52.0, 21.0 ],
 					"text" : "About",
 					"texton" : "About",
 					"textoncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
@@ -16031,7 +16419,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.250007629394531, 187.999969482421875, 79.0, 23.0 ],
+					"patching_rect" : [ 177.25, 185.999969482421875, 79.0, 23.0 ],
 					"text" : "load Tutorial"
 				}
 
@@ -16087,8 +16475,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -16760,7 +17148,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1627.45703125, 1153.056640625, 159.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1069.39111328125, 2.88044285774231, 88.0, 17.0 ],
+					"presentation_rect" : [ 1069.39111328125, 0.88044285774231, 88.0, 17.0 ],
 					"text" : "Single Array Output",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -16776,14 +17164,14 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1634.45703125, 1175.556640625, 44.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1157.0579833984375, 2.88044285774231, 44.0, 15.0 ],
+					"presentation_rect" : [ 1157.0579833984375, 0.88044285774231, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text[5]",
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[5]",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text[5]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -17023,8 +17411,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17351,13 +17739,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1337.916748046875, 936.6031494140625, 260.333343505859375, 326.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1037.8565673828125, 25.164573669433594, 168.0042724609375, 323.1427001953125 ],
+					"presentation_rect" : [ 1037.8565673828125, 23.164573669433594, 168.0042724609375, 323.1427001953125 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "datascroll",
 							"parameter_type" : 3,
 							"parameter_longname" : "datascroll",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "datascroll"
 						}
 
 					}
@@ -17560,11 +17948,11 @@
 					"patching_rect" : [ 9.333413124084473, 2029.3333740234375, 100.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "umenu[1]",
-							"parameter_enum" : [ "Whole Note", "Half Note", "Quarter Note", "Eigth Note", "Sixteenth Note", "32nd Note" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "umenu[1]",
-							"parameter_mmax" : 5.0
+							"parameter_mmax" : 5,
+							"parameter_shortname" : "umenu[1]",
+							"parameter_enum" : [ "Whole Note", "Half Note", "Quarter Note", "Eigth Note", "Sixteenth Note", "32nd Note" ]
 						}
 
 					}
@@ -17620,8 +18008,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -18495,11 +18883,11 @@
 					"patching_rect" : [ 398.33355712890625, 852.1895751953125, 100.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "umenu[3]",
-							"parameter_enum" : [ "none", "above", "below", "center" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "umenu[3]",
-							"parameter_mmax" : 3.0
+							"parameter_mmax" : 3,
+							"parameter_shortname" : "umenu[3]",
+							"parameter_enum" : [ "none", "above", "below", "center" ]
 						}
 
 					}
@@ -18521,11 +18909,11 @@
 					"patching_rect" : [ 500.33367919921875, 852.1895751953125, 100.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "umenu[4]",
-							"parameter_enum" : [ "none", "origin", "lines", "linear", "curve" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "umenu[4]",
-							"parameter_mmax" : 4.0
+							"parameter_mmax" : 4,
+							"parameter_shortname" : "umenu[4]",
+							"parameter_enum" : [ "none", "origin", "lines", "linear", "curve" ]
 						}
 
 					}
@@ -18547,11 +18935,11 @@
 					"patching_rect" : [ 299.83343505859375, 852.1895751953125, 100.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "umenu[2]",
-							"parameter_enum" : [ "none", "dot", "circle", "square" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "umenu[2]",
-							"parameter_mmax" : 3.0
+							"parameter_mmax" : 3,
+							"parameter_shortname" : "umenu[2]",
+							"parameter_enum" : [ "none", "dot", "circle", "square" ]
 						}
 
 					}
@@ -18583,8 +18971,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -20991,8 +21379,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -23000,6 +23388,7 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-448",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -23026,6 +23415,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-453",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -23048,6 +23438,7 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-442",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -23074,6 +23465,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-447",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -23096,6 +23488,7 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-441",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -23122,6 +23515,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-436",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -23235,8 +23629,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -23717,6 +24111,7 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-185",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -23743,6 +24138,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-171",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -23795,10 +24191,10 @@
 					"patching_rect" : [ 1672.16650390625, 2501.333251953125, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number",
 							"parameter_type" : 3,
 							"parameter_longname" : "number",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "number"
 						}
 
 					}
@@ -23818,10 +24214,10 @@
 					"patching_rect" : [ 1609.6666259765625, 2501.333251953125, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[2]",
 							"parameter_type" : 3,
 							"parameter_longname" : "number[2]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "number[2]"
 						}
 
 					}
@@ -23842,10 +24238,10 @@
 					"patching_rect" : [ 1675.66650390625, 2441.666748046875, 43.0, 49.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "incdec",
 							"parameter_type" : 3,
 							"parameter_longname" : "incdec",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "incdec"
 						}
 
 					}
@@ -23866,10 +24262,10 @@
 					"patching_rect" : [ 1609.6666259765625, 2441.666748046875, 43.0, 49.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "incdec[1]",
 							"parameter_type" : 3,
 							"parameter_longname" : "incdec[1]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "incdec[1]"
 						}
 
 					}
@@ -23937,10 +24333,10 @@
 					"patching_rect" : [ 1411.6666259765625, 2583.866455078125, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "attri[17]",
 							"parameter_type" : 3,
 							"parameter_longname" : "attri[17]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "attri[17]"
 						}
 
 					}
@@ -23960,8 +24356,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -24016,8 +24412,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -24515,8 +24911,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -24922,8 +25318,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -25693,26 +26089,6 @@
  ],
 						"styles" : [ 							{
 								"name" : "EAMIR",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -25728,11 +26104,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -25740,24 +26136,6 @@
 							}
 , 							{
 								"name" : "EAMIR-1",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -25773,11 +26151,29 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -25785,26 +26181,6 @@
 							}
 , 							{
 								"name" : "EAMIR-1-1",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -25820,11 +26196,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -25832,26 +26228,6 @@
 							}
 , 							{
 								"name" : "EAMIR-1-2",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -25867,11 +26243,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -25879,26 +26275,6 @@
 							}
 , 							{
 								"name" : "EAMIR-2",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -25914,11 +26290,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -25926,24 +26322,6 @@
 							}
 , 							{
 								"name" : "EAMIR-3",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -25959,11 +26337,29 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -25972,9 +26368,9 @@
 , 							{
 								"name" : "foamy",
 								"default" : 								{
+									"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.501961, 1.0 ],
 									"elementcolor" : [ 0.298039, 0.298039, 0.298039, 1.0 ],
-									"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
 									"clearcolor" : [ 0.4, 1.0, 0.8, 1.0 ]
 								}
 ,
@@ -26020,8 +26416,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -26053,8 +26449,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -27333,6 +27729,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-295",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -27341,7 +27738,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 868.90960693359375, 2837.08203125, 433.05633544921875, 81.366195678710938 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 682.1173095703125, 354.551544189453125, 191.0, 64.756072998046875 ],
+					"presentation_rect" : [ 682.1173095703125, 352.551544189453125, 191.0, 64.756072998046875 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"settype" : 0,
@@ -27407,13 +27804,14 @@
 					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium Regular",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-191",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 308.08343505859375, 2459.166259765625, 109.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 757.1173095703125, 424.648345947265625, 36.0, 18.0 ],
+					"presentation_rect" : [ 757.1173095703125, 422.648345947265625, 36.0, 18.0 ],
 					"text" : "Chord",
 					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
@@ -27459,6 +27857,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-274",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -27467,7 +27866,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 168.083419799804688, 2485.166259765625, 461.0, 121.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 682.1173095703125, 424.648345947265625, 191.0, 65.0 ],
+					"presentation_rect" : [ 682.1173095703125, 422.648345947265625, 191.0, 65.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"settype" : 0,
@@ -27863,10 +28262,10 @@
 					"patching_rect" : [ 80.083412170410156, 1860.633056640625, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "number[5]",
 							"parameter_type" : 3,
 							"parameter_longname" : "number[5]",
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "number[5]"
 						}
 
 					}
@@ -28049,31 +28448,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-199",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2382.0, 959.0, 53.0, 35.0 ],
-					"text" : ";\rmaxquit"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-197",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 2382.0, 933.26806640625, 65.0, 22.0 ],
-					"text" : "closebang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-84",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -28081,20 +28455,22 @@
 					"patching_rect" : [ 2449.0, 933.26806640625, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
+						"appicon_mac" : "Macintosh HD:/Users/VJ/Desktop/sonify-master/Max_source/Sonify/other/sonify_icon.icns",
+						"appicon_win" : "Macintosh HD:/Users/VJ/Desktop/sonify-master/Max_source/Sonify/other/sonify_icon.ico",
 						"audiosupport" : 1,
-						"bundleidentifier" : "com.mycompany.myprogram",
-						"cantclosetoplevelpatchers" : 1,
-						"cefsupport" : 1,
+						"bundleidentifier" : "com.clearbluemedia.sonify",
+						"cantclosetoplevelpatchers" : 0,
+						"cefsupport" : 0,
 						"copysupport" : 1,
 						"database" : 1,
 						"extensions" : 1,
-						"gensupport" : 1,
+						"gensupport" : 0,
 						"midisupport" : 1,
 						"noloadbangdefeating" : 0,
 						"overdrive" : 1,
-						"preffilename" : "Max 7 Preferences",
-						"searchformissingfiles" : 1,
-						"statusvisible" : 1,
+						"preffilename" : "Sonify Preferences",
+						"searchformissingfiles" : 0,
+						"statusvisible" : 0,
 						"usesearchpath" : 0
 					}
 ,
@@ -28226,7 +28602,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1036.083251953125, 330.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.991420745849609, 25.89312744140625, 1030.4166259765625, 325.771453857421875 ],
+					"presentation_rect" : [ 7.991420745849609, 23.89312744140625, 1030.4166259765625, 325.771453857421875 ],
 					"setminmax" : [ 0.0, 1011.0 ],
 					"slidercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "pictslider"
@@ -28438,8 +28814,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -28557,8 +28933,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -30634,8 +31010,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -30737,8 +31113,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -31241,8 +31617,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -31332,8 +31708,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -33461,26 +33837,6 @@
  ],
 						"styles" : [ 							{
 								"name" : "EAMIR",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -33496,11 +33852,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33508,24 +33884,6 @@
 							}
 , 							{
 								"name" : "EAMIR-1",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -33541,11 +33899,29 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33553,26 +33929,6 @@
 							}
 , 							{
 								"name" : "EAMIR-1-1",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -33588,11 +33944,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33600,26 +33976,6 @@
 							}
 , 							{
 								"name" : "EAMIR-1-2",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -33635,11 +33991,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33647,26 +34023,6 @@
 							}
 , 							{
 								"name" : "EAMIR-2",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -33682,11 +34038,31 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33694,24 +34070,6 @@
 							}
 , 							{
 								"name" : "EAMIR-3",
-								"default" : 								{
-									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-									"bgfillcolor" : 									{
-										"type" : "color",
-										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-									"fontface" : [ 0 ],
-									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-								}
-,
 								"umenu" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -33727,11 +34085,29 @@
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 								}
 ,
-								"newobj" : 								{
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
 									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+								}
+,
+								"newobj" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33740,9 +34116,9 @@
 , 							{
 								"name" : "foamy",
 								"default" : 								{
+									"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
 									"accentcolor" : [ 0.0, 1.0, 0.501961, 1.0 ],
 									"elementcolor" : [ 0.298039, 0.298039, 0.298039, 1.0 ],
-									"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
 									"clearcolor" : [ 0.4, 1.0, 0.8, 1.0 ]
 								}
 ,
@@ -33788,8 +34164,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -33821,8 +34197,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -35279,8 +35655,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -38017,8 +38393,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -38086,8 +38462,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -38365,8 +38741,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -38644,8 +39020,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -38923,8 +39299,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -39202,8 +39578,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -39481,8 +39857,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -39760,8 +40136,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -40039,8 +40415,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -40318,8 +40694,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -40597,8 +40973,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -40876,8 +41252,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -41155,8 +41531,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -41434,8 +41810,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -41713,8 +42089,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -41992,8 +42368,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -42271,8 +42647,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -42550,8 +42926,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 1,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -46763,7 +47139,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 299.83343505859375, 936.64996337890625, 1034.4166259765625, 330.833343505859375 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.991416931152344, 24.83123779296875, 1034.4166259765625, 326.833343505859375 ],
+					"presentation_rect" : [ 3.991416931152344, 22.83123779296875, 1034.4166259765625, 326.833343505859375 ],
 					"rangelabel" : "Absorption",
 					"subplots" : [ 						{
 							"color" : [ 0.699999988079071, 0.400000005960464, 0.400000005960464, 1.0 ],
@@ -46802,7 +47178,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 3.833343505859375, 866.2332763671875, 80.000007629394531, 64.16668701171875 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.991420745849609, 25.89312744140625, 1197.869384765625, 320.81414794921875 ]
+					"presentation_rect" : [ 7.991420745849609, 23.89312744140625, 1197.869384765625, 320.81414794921875 ]
 				}
 
 			}
@@ -46818,8 +47194,190 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 776.0, 846.66668701171875, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.008583188056946, -0.452890515327454, 1214.399658203125, 745.8197021484375 ],
+					"presentation_rect" : [ -0.008583188056946, -2.452890515327454, 1287.399658203125, 763.8197021484375 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"hidden" : 1,
+					"id" : "obj-628",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 50.0, 94.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.917647, 0.85098, 1.0, 1.0 ],
+									"bgcolor2" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgfillcolor_angle" : 270.0,
+									"bgfillcolor_autogradient" : 0.0,
+									"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgfillcolor_color1" : [ 0.917647, 0.85098, 1.0, 1.0 ],
+									"bgfillcolor_color2" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgfillcolor_proportion" : 0.39,
+									"bgfillcolor_type" : "gradient",
+									"fontname" : "Arial",
+									"fontsize" : 10.0,
+									"gradient" : 1,
+									"hidden" : 1,
+									"id" : "obj-132",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 100.0, 96.0, 20.0 ],
+									"text" : "http://sonify.wpi.edu",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 9.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 50.0, 122.000061000000002, 27.0, 19.0 ],
+									"text" : "t b s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 9.0,
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 67.0, 180.000060999999988, 344.0, 29.0 ],
+									"text" : ";\rmax launch_browser http://sonify.wpi.edu"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 9.0,
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 67.0, 151.000060999999988, 164.0, 19.0 ],
+									"text" : "sprintf set \\; max launch_browser %s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-4",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"midpoints" : [ 59.5, 174.000060999999988, 76.5, 174.000060999999988 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-132", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-132", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 362.0, 337.533386000000007, 27.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p cc"
 				}
 
 			}
@@ -47106,6 +47664,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-223", 0 ],
 					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-596", 0 ],
+					"source" : [ "obj-123", 0 ]
 				}
 
 			}
@@ -48032,13 +48597,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-199", 0 ],
-					"source" : [ "obj-197", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-192", 0 ],
 					"midpoints" : [ 214.583419799804688, 1873.866455078125, 256.083419799804688, 1873.866455078125 ],
 					"source" : [ "obj-198", 2 ]
@@ -48121,6 +48679,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-229", 0 ],
 					"source" : [ "obj-203", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-497", 0 ],
+					"source" : [ "obj-205", 0 ]
 				}
 
 			}
@@ -48993,6 +49558,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-313", 0 ],
 					"source" : [ "obj-307", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-449", 0 ],
+					"source" : [ "obj-308", 0 ]
 				}
 
 			}
@@ -50724,6 +51296,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-546", 0 ],
+					"source" : [ "obj-497", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-498", 0 ]
 				}
@@ -51198,6 +51777,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-571", 0 ],
+					"midpoints" : [ 334.5, 201.5, 359.5, 201.5 ],
+					"source" : [ "obj-546", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-576", 0 ],
+					"source" : [ "obj-546", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-573", 0 ],
 					"midpoints" : [ 2177.0, 604.9000244140625, 1811.083251953125, 604.9000244140625 ],
 					"source" : [ "obj-547", 0 ]
@@ -51328,6 +51922,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-581", 0 ],
+					"midpoints" : [ 359.5, 229.0, 359.5, 229.0 ],
+					"source" : [ "obj-571", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-200", 0 ],
 					"source" : [ "obj-572", 0 ]
 				}
@@ -51346,6 +51948,14 @@
 					"destination" : [ "obj-163", 0 ],
 					"midpoints" : [ 1523.5, 2.75, 1523.5, 2.75 ],
 					"source" : [ "obj-575", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-589", 0 ],
+					"midpoints" : [ 294.5, 237.0, 294.5, 237.0 ],
+					"source" : [ "obj-576", 0 ]
 				}
 
 			}
@@ -51390,6 +52000,44 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-299", 0 ],
+					"source" : [ "obj-581", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-308", 0 ],
+					"midpoints" : [ 359.5, 301.916687000000024, 457.5, 301.916687000000024 ],
+					"source" : [ "obj-581", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-628", 0 ],
+					"source" : [ "obj-581", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-636", 0 ],
+					"midpoints" : [ 407.5, 261.45159912109375, 294.5, 261.45159912109375 ],
+					"source" : [ "obj-581", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"midpoints" : [ 395.5, 262.0, 453.625003814697266, 262.0, 453.625003814697266, 151.166656494140625, 186.75, 151.166656494140625 ],
+					"source" : [ "obj-581", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-354", 0 ],
 					"source" : [ "obj-582", 0 ]
 				}
@@ -51429,6 +52077,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-357", 0 ],
 					"source" : [ "obj-588", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"midpoints" : [ 294.5, 262.0, 255.166652679443359, 262.0, 255.166652679443359, 199.333343505859375, 27.833305358886719, 199.333343505859375 ],
+					"source" : [ "obj-589", 0 ]
 				}
 
 			}
@@ -51480,6 +52136,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-358", 0 ],
 					"source" : [ "obj-595", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-618", 0 ],
+					"source" : [ "obj-596", 0 ]
 				}
 
 			}
@@ -51816,6 +52479,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-596", 1 ],
+					"source" : [ "obj-625", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-611", 0 ],
 					"order" : 1,
 					"source" : [ "obj-626", 0 ]
@@ -51827,6 +52497,20 @@
 					"destination" : [ "obj-631", 0 ],
 					"order" : 0,
 					"source" : [ "obj-626", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-633", 0 ],
+					"source" : [ "obj-627", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-640", 0 ],
+					"source" : [ "obj-629", 0 ]
 				}
 
 			}
@@ -51862,6 +52546,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-633", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-633", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-644", 0 ],
 					"source" : [ "obj-634", 0 ]
 				}
@@ -51869,8 +52567,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-638", 0 ],
+					"source" : [ "obj-636", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-646", 0 ],
 					"source" : [ "obj-637", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-158", 0 ],
+					"source" : [ "obj-638", 0 ]
 				}
 
 			}
@@ -52166,6 +52878,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-199", 0 ],
+					"source" : [ "obj-670", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-199", 0 ],
+					"midpoints" : [ 677.5, 197.5, 573.5, 197.5 ],
+					"source" : [ "obj-671", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-678", 0 ],
 					"source" : [ "obj-672", 2 ]
 				}
@@ -52201,8 +52928,32 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-670", 0 ],
+					"order" : 1,
+					"source" : [ "obj-677", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-671", 0 ],
+					"midpoints" : [ 573.5, 157.5, 677.5, 157.5 ],
+					"order" : 0,
+					"source" : [ "obj-677", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-680", 0 ],
 					"source" : [ "obj-678", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-677", 0 ],
+					"source" : [ "obj-679", 0 ]
 				}
 
 			}
@@ -52623,6 +53374,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-596", 0 ],
+					"midpoints" : [ 2436.5, 1116.0, 2380.5, 1116.0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-231", 0 ],
 					"order" : 1,
 					"source" : [ "obj-80", 0 ]
@@ -52762,771 +53521,3554 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-14::obj-2.1::obj-1::obj-11" : [ "PWM", "PWM", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-107" : [ "Linear[70]", "Linear", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-106" : [ "CV3[18]", "CV3", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-4" : [ "Waveform[21]", "Waveform", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-11" : [ "PWM[26]", "PWM", 0 ],
-			"obj-14::obj-2.8::obj-2::obj-20" : [ "Mute[58]", "Mute", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-51" : [ "Freq[114]", "Freq", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-106" : [ "CV3[77]", "CV3", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-46" : [ "Offset[91]", "Offset", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-107" : [ "Linear[81]", "Linear", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-45" : [ "FreqMode[51]", "FreqMode", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-4" : [ "Waveform[12]", "Waveform", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-45" : [ "FreqMode[88]", "FreqMode", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-107" : [ "Linear[72]", "Linear", 0 ],
-			"obj-313" : [ "live.gain~[5]", "Master", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-51" : [ "Freq[20]", "Freq", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-107" : [ "Linear[55]", "Linear", 0 ],
-			"obj-51::obj-2.2::obj-2::obj-15" : [ "Legato[38]", "Legato", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-51" : [ "Freq[32]", "Freq", 0 ],
-			"obj-51::obj-2.8::obj-4::obj-55" : [ "Bypass[42]", "Bypass", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-106" : [ "CV3[90]", "CV3", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-53" : [ "Mute[173]", "Mute", 0 ],
-			"obj-458" : [ "live.gain~[3]", "Bass", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-4" : [ "Waveform[70]", "Waveform", 0 ],
-			"obj-14::obj-2.4::obj-2::obj-32" : [ "Sustain[15]", "Sustain", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-129" : [ "CV2[24]", "CV2", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-45" : [ "FreqMode[27]", "FreqMode", 0 ],
-			"obj-14::obj-2.8::obj-2::obj-1" : [ "Attack[12]", "Attack", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-46" : [ "Offset[59]", "Offset", 0 ],
-			"obj-51::obj-2.6::obj-2::obj-20" : [ "Mute[145]", "Mute", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-11" : [ "PWM[36]", "PWM", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-36" : [ "PW[39]", "PW", 0 ],
-			"obj-118::obj-2.4::obj-2::obj-32" : [ "Sustain[35]", "Sustain", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-4" : [ "Waveform[108]", "Waveform", 0 ],
-			"obj-372" : [ "incdec[1]", "incdec[1]", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-4" : [ "Waveform[71]", "Waveform", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-129" : [ "CV2[19]", "CV2", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-46" : [ "Offset[20]", "Offset", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-45" : [ "FreqMode[28]", "FreqMode", 0 ],
-			"obj-51::obj-2.2::obj-4::obj-80" : [ "Response[38]", "Response", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-106" : [ "CV3[78]", "CV3", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-36" : [ "PW[32]", "PW", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-46" : [ "Offset[33]", "Offset", 0 ],
-			"obj-118::obj-2.1::obj-2::obj-20" : [ "Mute[154]", "Mute", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-129" : [ "CV2[34]", "CV2", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-51" : [ "Freq[41]", "Freq", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-53" : [ "Mute[165]", "Mute", 0 ],
-			"obj-118::obj-2.6::obj-2::obj-32" : [ "Sustain[36]", "Sustain", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-11" : [ "PWM[48]", "PWM", 0 ],
-			"obj-14::obj-2.1::obj-2::obj-32" : [ "Sustain", "Sustain", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-106" : [ "CV3[71]", "CV3", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-36" : [ "PW[21]", "PW", 0 ],
-			"obj-14::obj-2.4::obj-4::obj-33" : [ "Quadrants[15]", "Quadrants", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-106" : [ "CV3[25]", "CV3", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-11" : [ "PWM[27]", "PWM", 0 ],
-			"obj-14::obj-2.8::obj-4::obj-33" : [ "Quadrants[12]", "Quadrants", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-36" : [ "PW[115]", "PW", 0 ],
-			"obj-51::obj-2.3::obj-2::obj-32" : [ "Sustain[29]", "Sustain", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-11" : [ "PWM[120]", "PWM", 0 ],
-			"obj-51::obj-2.6::obj-2::obj-15" : [ "Legato[41]", "Legato", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-11" : [ "PWM[37]", "PWM", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-46" : [ "Offset[60]", "Offset", 0 ],
-			"obj-118::obj-2.4::obj-2::obj-20" : [ "Mute[163]", "Mute", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-4" : [ "Waveform[111]", "Waveform", 0 ],
-			"obj-371" : [ "incdec", "incdec", 0 ],
-			"obj-511" : [ "live.text[5]", "live.text[5]", 0 ],
-			"obj-14::obj-2.2::obj-2::obj-29" : [ "Decay[1]", "Decay", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-51" : [ "Freq[19]", "Freq", 0 ],
-			"obj-14::obj-2.5::obj-2::obj-32" : [ "Sustain[16]", "Sustain", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-11" : [ "PWM[28]", "PWM", 0 ],
-			"obj-51::obj-2.1::obj-2::obj-31" : [ "Release[21]", "Release", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-53" : [ "Mute[134]", "Mute", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-53" : [ "Mute[138]", "Mute", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-107" : [ "Linear[78]", "Linear", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-107" : [ "Linear[83]", "Linear", 0 ],
-			"obj-118::obj-2.1::obj-4::obj-55" : [ "Bypass[33]", "Bypass", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-46" : [ "Offset[35]", "Offset", 0 ],
-			"obj-118::obj-2.5::obj-2::obj-29" : [ "Decay[45]", "Decay", 0 ],
-			"obj-118::obj-2.6::obj-4::obj-55" : [ "Bypass[36]", "Bypass", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-53" : [ "Mute[174]", "Mute", 0 ],
-			"obj-14::obj-2.1::obj-4::obj-80" : [ "Response", "Response", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-51" : [ "Freq[21]", "Freq", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-53" : [ "Mute[41]", "Mute", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-4" : [ "Waveform[24]", "Waveform", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-51" : [ "Freq[30]", "Freq", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-106" : [ "CV3[56]", "CV3", 0 ],
-			"obj-51::obj-2.3::obj-4::obj-33" : [ "Quadrants[29]", "Quadrants", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-53" : [ "Mute[141]", "Mute", 0 ],
-			"obj-51::obj-2.6::obj-4::obj-80" : [ "Response[41]", "Response", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-107" : [ "Linear[82]", "Linear", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-51" : [ "Freq[40]", "Freq", 0 ],
-			"obj-118::obj-2.4::obj-4::obj-33" : [ "Quadrants[35]", "Quadrants", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-53" : [ "Mute[167]", "Mute", 0 ],
-			"obj-118::obj-2.7::obj-2::obj-15" : [ "Legato[46]", "Legato", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-53" : [ "Mute[176]", "Mute", 0 ],
-			"obj-14::obj-2.6::obj-4::obj-55" : [ "Bypass[11]", "Bypass", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-51" : [ "Freq[29]", "Freq", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-46" : [ "Offset[57]", "Offset", 0 ],
-			"obj-51::obj-2.4::obj-2::obj-1" : [ "Attack[38]", "Attack", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-36" : [ "PW[122]", "PW", 0 ],
-			"obj-51::obj-2.7::obj-2::obj-31" : [ "Release[41]", "Release", 0 ],
-			"obj-51::obj-1" : [ "live.tab[8]", "live.tab", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-129" : [ "CV2[52]", "CV2", 0 ],
-			"obj-118::obj-2.2::obj-2::obj-20" : [ "Mute[157]", "Mute", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-51" : [ "Freq[42]", "Freq", 0 ],
-			"obj-118::obj-2.5::obj-2::obj-32" : [ "Sustain[45]", "Sustain", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-107" : [ "Linear[90]", "Linear", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-106" : [ "CV3[94]", "CV3", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-51" : [ "Freq[23]", "Freq", 0 ],
-			"obj-14::obj-2.7::obj-2::obj-32" : [ "Sustain[14]", "Sustain", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-107" : [ "Linear[30]", "Linear", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-129" : [ "CV2[120]", "CV2", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-11" : [ "PWM[47]", "PWM", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-36" : [ "PW[36]", "PW", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-106" : [ "CV3[52]", "CV3", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-11" : [ "PWM[107]", "PWM", 0 ],
-			"obj-118::obj-2.7::obj-4::obj-33" : [ "Quadrants[46]", "Quadrants", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-106" : [ "CV3", "CV3", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-36" : [ "PW[22]", "PW", 0 ],
-			"obj-14::obj-2.5::obj-4::obj-55" : [ "Bypass[16]", "Bypass", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-53" : [ "Mute[42]", "Mute", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-107" : [ "Linear[29]", "Linear", 0 ],
-			"obj-14::obj-21" : [ "live.dial[4]", "release", 0 ],
-			"obj-14::obj-27" : [ "Wave", "Wave", 0 ],
-			"obj-51::obj-2.4::obj-2::obj-15" : [ "Legato[39]", "Legato", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-36" : [ "PW[123]", "PW", 0 ],
-			"obj-51::obj-2.7::obj-4::obj-80" : [ "Response[42]", "Response", 0 ],
-			"obj-51::obj-27" : [ "Wave[5]", "Wave", 0 ],
-			"obj-118::obj-2.2::obj-4::obj-80" : [ "Response[34]", "Response", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-53" : [ "Mute[162]", "Mute", 0 ],
-			"obj-118::obj-2.5::obj-4::obj-33" : [ "Quadrants[45]", "Quadrants", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-36" : [ "PW[107]", "PW", 0 ],
-			"obj-14::obj-2.3::obj-2::obj-15" : [ "Legato[10]", "Legato", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-4" : [ "Waveform[19]", "Waveform", 0 ],
-			"obj-14::obj-2.7::obj-2::obj-20" : [ "Mute[55]", "Mute", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-129" : [ "CV2[114]", "CV2", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-106" : [ "CV3[58]", "CV3", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-45" : [ "FreqMode[81]", "FreqMode", 0 ],
-			"obj-51::obj-2.8::obj-2::obj-15" : [ "Legato[43]", "Legato", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-4" : [ "Waveform[6]", "Waveform", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-107" : [ "Linear[84]", "Linear", 0 ],
-			"obj-118::obj-2.3::obj-2::obj-15" : [ "Legato[44]", "Legato", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-11" : [ "PWM[43]", "PWM", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-106" : [ "CV3[92]", "CV3", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-36" : [ "PW[45]", "PW", 0 ],
-			"obj-118::obj-27" : [ "Wave[9]", "Wave", 0 ],
-			"obj-459" : [ "live.gain~[4]", "Chords", 0 ],
-			"obj-49" : [ "number[3]", "number[3]", 0 ],
-			"obj-505" : [ "umenu[3]", "umenu[3]", 0 ],
-			"obj-414" : [ "number[7]", "number[7]", 0 ],
 			"obj-14::obj-2.1::obj-3::obj-45" : [ "FreqMode[70]", "FreqMode", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-53" : [ "Mute[45]", "Mute", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-45" : [ "FreqMode[22]", "FreqMode", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-51" : [ "Freq[24]", "Freq", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-106" : [ "CV3[26]", "CV3", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-11" : [ "PWM[114]", "PWM", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-107" : [ "Linear[76]", "Linear", 0 ],
-			"obj-51::obj-2.4::obj-4::obj-80" : [ "Response[39]", "Response", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-45" : [ "FreqMode[80]", "FreqMode", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-45" : [ "FreqMode[83]", "FreqMode", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-51" : [ "Freq[39]", "Freq", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-11" : [ "PWM[42]", "PWM", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-36" : [ "PW[106]", "PW", 0 ],
-			"obj-118::obj-2.8::obj-2::obj-31" : [ "Release[37]", "Release", 0 ],
-			"obj-14::obj-2.3::obj-4::obj-33" : [ "Quadrants[10]", "Quadrants", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-11" : [ "PWM[20]", "PWM", 0 ],
-			"obj-14::obj-2.7::obj-4::obj-33" : [ "Quadrants[14]", "Quadrants", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-4" : [ "Waveform[113]", "Waveform", 0 ],
-			"obj-51::obj-2.2::obj-2::obj-1" : [ "Attack[25]", "Attack", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-53" : [ "Mute[137]", "Mute", 0 ],
-			"obj-51::obj-2.5::obj-2::obj-29" : [ "Decay[40]", "Decay", 0 ],
-			"obj-51::obj-2.8::obj-4::obj-80" : [ "Response[43]", "Response", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-4" : [ "Waveform[8]", "Waveform", 0 ],
-			"obj-118::obj-2.3::obj-4::obj-80" : [ "Response[44]", "Response", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-107" : [ "Linear[87]", "Linear", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-45" : [ "FreqMode[89]", "FreqMode", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-46" : [ "Offset[73]", "Offset", 0 ],
-			"obj-105" : [ "live.dial[16]", "Reverb Signal", 0 ],
-			"obj-376" : [ "number", "number", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-129" : [ "CV2[70]", "CV2", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-51" : [ "Freq[18]", "Freq", 0 ],
-			"obj-14::obj-2.4::obj-2::obj-15" : [ "Legato[15]", "Legato", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-46" : [ "Offset[24]", "Offset", 0 ],
-			"obj-14::obj-2.8::obj-2::obj-15" : [ "Legato[12]", "Legato", 0 ],
-			"obj-14::obj-19" : [ "live.dial[2]", "decay", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-45" : [ "FreqMode[62]", "FreqMode", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-36" : [ "PW[117]", "PW", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-4" : [ "Waveform[120]", "Waveform", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-129" : [ "CV2[49]", "CV2", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-46" : [ "Offset[51]", "Offset", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-4" : [ "Waveform[106]", "Waveform", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-46" : [ "Offset[54]", "Offset", 0 ],
-			"obj-118::obj-2.8::obj-4::obj-33" : [ "Quadrants[37]", "Quadrants", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-36" : [ "PW[71]", "PW", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-46" : [ "Offset[19]", "Offset", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-45" : [ "FreqMode[24]", "FreqMode", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-53" : [ "Mute[56]", "Mute", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-129" : [ "CV2[112]", "CV2", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-107" : [ "Linear[77]", "Linear", 0 ],
-			"obj-51::obj-2.5::obj-4::obj-55" : [ "Bypass[39]", "Bypass", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-53" : [ "Mute[147]", "Mute", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-45" : [ "FreqMode[85]", "FreqMode", 0 ],
-			"obj-118::obj-2.1::obj-2::obj-32" : [ "Sustain[33]", "Sustain", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-45" : [ "FreqMode[34]", "FreqMode", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-4" : [ "Waveform[11]", "Waveform", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-36" : [ "PW[105]", "PW", 0 ],
-			"obj-118::obj-2.6::obj-2::obj-15" : [ "Legato[36]", "Legato", 0 ],
-			"obj-102" : [ "Reverb Wet/Dry", "Reverb Wet/Dry", 0 ],
-			"obj-502" : [ "live.text[2]", "live.text", 0 ],
-			"obj-80" : [ "eamir_filtering[2]", "eamir_filtering[2]", 0 ],
-			"obj-14::obj-2.1::obj-2::obj-15" : [ "Legato", "Legato", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-107" : [ "Linear[71]", "Linear", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-129" : [ "CV2[21]", "CV2", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-107" : [ "Linear[25]", "Linear", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-106" : [ "CV3[27]", "CV3", 0 ],
-			"obj-14::obj-2.8::obj-4::obj-80" : [ "Response[12]", "Response", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-51" : [ "Freq[115]", "Freq", 0 ],
-			"obj-51::obj-2.3::obj-2::obj-1" : [ "Attack[22]", "Attack", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-36" : [ "PW[120]", "PW", 0 ],
-			"obj-118::obj-2.4::obj-2::obj-31" : [ "Release[35]", "Release", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-45" : [ "FreqMode[72]", "FreqMode", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-11" : [ "PWM[19]", "PWM", 0 ],
-			"obj-14::obj-2.6::obj-2::obj-31" : [ "Release[11]", "Release", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-106" : [ "CV3[28]", "CV3", 0 ],
-			"obj-51::obj-2.1::obj-2::obj-1" : [ "Attack[21]", "Attack", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-36" : [ "PW[119]", "PW", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-4" : [ "Waveform[122]", "Waveform", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-4" : [ "Waveform[2]", "Waveform", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-11" : [ "PWM[33]", "PWM", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-36" : [ "PW[38]", "PW", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-53" : [ "Mute[161]", "Mute", 0 ],
-			"obj-374" : [ "number[2]", "number[2]", 0 ],
-			"obj-14::obj-2.1::obj-4::obj-55" : [ "Bypass", "Bypass", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-11" : [ "PWM[71]", "PWM", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-4" : [ "Waveform[73]", "Waveform", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-36" : [ "PW[25]", "PW", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-53" : [ "Mute[43]", "Mute", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-11" : [ "PWM[30]", "PWM", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-4" : [ "Waveform[115]", "Waveform", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-45" : [ "FreqMode[78]", "FreqMode", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-4" : [ "Waveform[4]", "Waveform", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-4" : [ "Waveform[10]", "Waveform", 0 ],
-			"obj-118::obj-2.4::obj-4::obj-80" : [ "Response[35]", "Response", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-11" : [ "PWM[106]", "PWM", 0 ],
-			"obj-118::obj-2.7::obj-2::obj-29" : [ "Decay[46]", "Decay", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-106" : [ "CV3[74]", "CV3", 0 ],
-			"obj-281" : [ "attri[17]", "attri[17]", 0 ],
-			"obj-14::obj-2.2::obj-2::obj-1" : [ "Attack[1]", "Attack", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-45" : [ "FreqMode[19]", "FreqMode", 0 ],
-			"obj-14::obj-2.5::obj-2::obj-31" : [ "Release[16]", "Release", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-11" : [ "PWM[29]", "PWM", 0 ],
-			"obj-51::obj-2.1::obj-2::obj-29" : [ "Decay[28]", "Decay", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-129" : [ "CV2[31]", "CV2", 0 ],
-			"obj-51::obj-2.7::obj-2::obj-29" : [ "Decay[42]", "Decay", 0 ],
-			"obj-118::obj-2.2::obj-2::obj-29" : [ "Decay[34]", "Decay", 0 ],
-			"obj-118::obj-2.5::obj-2::obj-1" : [ "Attack[44]", "Attack", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-107" : [ "Linear[91]", "Linear", 0 ],
-			"obj-128" : [ "live.gain~[1]", "Premaster", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-106" : [ "CV3[23]", "CV3", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-106" : [ "CV3[79]", "CV3", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-129" : [ "CV2[50]", "CV2", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-53" : [ "Mute[159]", "Mute", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-107" : [ "Linear[61]", "Linear", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-11" : [ "PWM[49]", "PWM", 0 ],
-			"obj-50" : [ "number[6]", "number[6]", 0 ],
-			"obj-14::obj-2.2::obj-4::obj-55" : [ "Bypass[9]", "Bypass", 0 ],
 			"obj-14::obj-2.4::obj-1::obj-106" : [ "CV3[22]", "CV3", 0 ],
-			"obj-14::obj-2.5::obj-4::obj-33" : [ "Quadrants[16]", "Quadrants", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-4" : [ "Waveform[26]", "Waveform", 0 ],
-			"obj-51::obj-2.1::obj-4::obj-33" : [ "Quadrants[28]", "Quadrants", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-36" : [ "PW[116]", "PW", 0 ],
-			"obj-51::obj-2.4::obj-2::obj-31" : [ "Release[38]", "Release", 0 ],
-			"obj-51::obj-28" : [ "live.slider[3]", "gain", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-11" : [ "PWM[39]", "PWM", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-106" : [ "CV3[35]", "CV3", 0 ],
-			"obj-118::obj-2.5::obj-4::obj-80" : [ "Response[45]", "Response", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-129" : [ "CV2[36]", "CV2", 0 ],
-			"obj-307::obj-3" : [ "live.gain~[6]", "live.gain~[6]", 0 ],
-			"obj-14::obj-2.3::obj-2::obj-20" : [ "Mute[37]", "Mute", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-36" : [ "PW[23]", "PW", 0 ],
-			"obj-14::obj-2.7::obj-2::obj-31" : [ "Release[14]", "Release", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-129" : [ "CV2[30]", "CV2", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-107" : [ "Linear[58]", "Linear", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-53" : [ "Mute[146]", "Mute", 0 ],
-			"obj-51::obj-2.8::obj-2::obj-20" : [ "Mute[151]", "Mute", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-51" : [ "Freq[36]", "Freq", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-36" : [ "PW[37]", "PW", 0 ],
-			"obj-118::obj-2.3::obj-2::obj-1" : [ "Attack[43]", "Attack", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-129" : [ "CV2[56]", "CV2", 0 ],
-			"obj-118::obj-1" : [ "live.tab[9]", "live.tab", 0 ],
-			"obj-504" : [ "live.text[4]", "live.text[4]", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-107" : [ "Linear", "Linear", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-51" : [ "Freq[70]", "Freq", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-46" : [ "Offset[18]", "Offset", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-53" : [ "Mute[51]", "Mute", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-11" : [ "PWM[24]", "PWM", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-107" : [ "Linear[26]", "Linear", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-129" : [ "CV2[29]", "CV2", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-106" : [ "CV3[67]", "CV3", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-4" : [ "Waveform[117]", "Waveform", 0 ],
-			"obj-51::obj-2.4::obj-4::obj-55" : [ "Bypass[38]", "Bypass", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-53" : [ "Mute[144]", "Mute", 0 ],
-			"obj-51::obj-20" : [ "live.dial[23]", "sustain", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-107" : [ "Linear[88]", "Linear", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-4" : [ "Waveform[107]", "Waveform", 0 ],
-			"obj-118::obj-2.8::obj-2::obj-20" : [ "Mute[175]", "Mute", 0 ],
-			"obj-307::obj-7" : [ "live.dial", "wet/dry", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-106" : [ "CV3[20]", "CV3", 0 ],
-			"obj-14::obj-2.7::obj-4::obj-80" : [ "Response[14]", "Response", 0 ],
-			"obj-14::obj-60" : [ "live.tab", "live.tab", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-51" : [ "Freq[113]", "Freq", 0 ],
-			"obj-51::obj-2.2::obj-2::obj-32" : [ "Sustain[38]", "Sustain", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-36" : [ "PW[118]", "PW", 0 ],
-			"obj-51::obj-2.5::obj-2::obj-31" : [ "Release[39]", "Release", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-106" : [ "CV3[82]", "CV3", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-129" : [ "CV2[51]", "CV2", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-51" : [ "Freq[106]", "Freq", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-106" : [ "CV3[73]", "CV3", 0 ],
-			"obj-118::obj-18" : [ "live.dial[25]", "attack", 0 ],
-			"obj-500" : [ "umenu[1]", "umenu[1]", 0 ],
-			"obj-493" : [ "live.text[7]", "live.text[7]", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-4" : [ "Waveform", "Waveform", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-46" : [ "Offset[70]", "Offset", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-4" : [ "Waveform[72]", "Waveform", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-45" : [ "FreqMode[20]", "FreqMode", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-36" : [ "PW[26]", "PW", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-106" : [ "CV3[26]", "CV3", 0 ],
 			"obj-14::obj-2.8::obj-2::obj-32" : [ "Sustain[12]", "Sustain", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-53" : [ "Mute[131]", "Mute", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-129" : [ "CV2[116]", "CV2", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-45" : [ "FreqMode[59]", "FreqMode", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-106" : [ "CV3[81]", "CV3", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-46" : [ "Offset[32]", "Offset", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-53" : [ "Mute[158]", "Mute", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-106" : [ "CV3[72]", "CV3", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-53" : [ "Mute[39]", "Mute", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-45" : [ "FreqMode[25]", "FreqMode", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-36" : [ "PW[28]", "PW", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-46" : [ "Offset[55]", "Offset", 0 ],
-			"obj-51::obj-2.2::obj-2::obj-29" : [ "Decay[38]", "Decay", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-11" : [ "PWM[32]", "PWM", 0 ],
-			"obj-118::obj-2.1::obj-2::obj-29" : [ "Decay[33]", "Decay", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-51" : [ "Freq[38]", "Freq", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-129" : [ "CV2[105]", "CV2", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-11" : [ "PWM[46]", "PWM", 0 ],
-			"obj-14::obj-2.1::obj-2::obj-1" : [ "Attack", "Attack", 0 ],
-			"obj-14::obj-2.4::obj-2::obj-31" : [ "Release[15]", "Release", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-107" : [ "Linear[27]", "Linear", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-106" : [ "CV3[59]", "CV3", 0 ],
-			"obj-51::obj-2.6::obj-2::obj-32" : [ "Sustain[41]", "Sustain", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-51" : [ "Freq[34]", "Freq", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-4" : [ "Waveform[9]", "Waveform", 0 ],
-			"obj-118::obj-2.4::obj-2::obj-29" : [ "Decay[35]", "Decay", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-51" : [ "Freq[44]", "Freq", 0 ],
-			"obj-14::obj-2.6::obj-2::obj-29" : [ "Decay[11]", "Decay", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-107" : [ "Linear[28]", "Linear", 0 ],
-			"obj-51::obj-2.2::obj-4::obj-55" : [ "Bypass[25]", "Bypass", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-129" : [ "CV2[118]", "CV2", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-107" : [ "Linear[80]", "Linear", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-53" : [ "Mute[152]", "Mute", 0 ],
-			"obj-118::obj-2.1::obj-2::obj-31" : [ "Release[33]", "Release", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-46" : [ "Offset[34]", "Offset", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-106" : [ "CV3[51]", "CV3", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-4" : [ "Waveform[105]", "Waveform", 0 ],
-			"obj-118::obj-2.6::obj-2::obj-31" : [ "Release[36]", "Release", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-36" : [ "PW[46]", "PW", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-46" : [ "Offset[71]", "Offset", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-107" : [ "Linear[21]", "Linear", 0 ],
-			"obj-14::obj-2.4::obj-4::obj-55" : [ "Bypass[15]", "Bypass", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-129" : [ "CV2[25]", "CV2", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-36" : [ "PW[27]", "PW", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-45" : [ "FreqMode[56]", "FreqMode", 0 ],
-			"obj-51::obj-2.3::obj-2::obj-29" : [ "Decay[29]", "Decay", 0 ],
-			"obj-51::obj-2.6::obj-2::obj-1" : [ "Attack[40]", "Attack", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-36" : [ "PW[35]", "PW", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-11" : [ "PWM[41]", "PWM", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-107" : [ "Linear[74]", "Linear", 0 ],
-			"obj-14::obj-2.2::obj-2::obj-31" : [ "Release[1]", "Release", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-53" : [ "Mute[46]", "Mute", 0 ],
-			"obj-14::obj-2.5::obj-2::obj-29" : [ "Decay[15]", "Decay", 0 ],
-			"obj-14::obj-2.6::obj-2::obj-20" : [ "Mute[54]", "Mute", 0 ],
-			"obj-51::obj-2.1::obj-2::obj-32" : [ "Sustain[28]", "Sustain", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-4" : [ "Waveform[116]", "Waveform", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-4" : [ "Waveform[119]", "Waveform", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-46" : [ "Offset[61]", "Offset", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-106" : [ "CV3[86]", "CV3", 0 ],
-			"obj-118::obj-2.1::obj-4::obj-33" : [ "Quadrants[33]", "Quadrants", 0 ],
-			"obj-118::obj-2.2::obj-2::obj-32" : [ "Sustain[34]", "Sustain", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-11" : [ "PWM[35]", "PWM", 0 ],
-			"obj-118::obj-2.5::obj-2::obj-15" : [ "Legato[45]", "Legato", 0 ],
-			"obj-118::obj-2.6::obj-4::obj-80" : [ "Response[36]", "Response", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-4" : [ "Waveform[110]", "Waveform", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-45" : [ "FreqMode[21]", "FreqMode", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-46" : [ "Offset[23]", "Offset", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-4" : [ "Waveform[22]", "Waveform", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-53" : [ "Mute[59]", "Mute", 0 ],
-			"obj-51::obj-2.3::obj-4::obj-80" : [ "Response[29]", "Response", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-4" : [ "Waveform[121]", "Waveform", 0 ],
-			"obj-51::obj-2.6::obj-4::obj-55" : [ "Bypass[40]", "Bypass", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-46" : [ "Offset[48]", "Offset", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-106" : [ "CV3[34]", "CV3", 0 ],
-			"obj-118::obj-2.7::obj-2::obj-20" : [ "Mute[172]", "Mute", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-129" : [ "CV2[59]", "CV2", 0 ],
-			"obj-456" : [ "live.gain~", "Drums", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-107" : [ "Linear[22]", "Linear", 0 ],
-			"obj-14::obj-2.6::obj-4::obj-33" : [ "Quadrants[11]", "Quadrants", 0 ],
-			"obj-51::obj-2.1::obj-4::obj-80" : [ "Response[28]", "Response", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-106" : [ "CV3[57]", "CV3", 0 ],
-			"obj-51::obj-2.4::obj-2::obj-20" : [ "Mute[139]", "Mute", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-51" : [ "Freq[122]", "Freq", 0 ],
-			"obj-51::obj-2.7::obj-2::obj-1" : [ "Attack[41]", "Attack", 0 ],
-			"obj-51::obj-19" : [ "live.dial[20]", "decay", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-53" : [ "Mute[155]", "Mute", 0 ],
-			"obj-118::obj-2.2::obj-2::obj-15" : [ "Legato[34]", "Legato", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-46" : [ "Offset[36]", "Offset", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-129" : [ "CV2[58]", "CV2", 0 ],
-			"obj-412" : [ "incdec[2]", "incdec[2]", 0 ],
-			"obj-14::obj-2.3::obj-2::obj-29" : [ "Decay[2]", "Decay", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-53" : [ "Mute[38]", "Mute", 0 ],
-			"obj-14::obj-2.7::obj-2::obj-29" : [ "Decay[14]", "Decay", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-46" : [ "Offset[30]", "Offset", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-11" : [ "PWM[121]", "PWM", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-36" : [ "PW[31]", "PW", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-11" : [ "PWM[38]", "PWM", 0 ],
-			"obj-118::obj-2.3::obj-2::obj-31" : [ "Release[43]", "Release", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-45" : [ "FreqMode[52]", "FreqMode", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-107" : [ "Linear[89]", "Linear", 0 ],
-			"obj-118::obj-2.7::obj-4::obj-55" : [ "Bypass[45]", "Bypass", 0 ],
-			"obj-118::obj-20" : [ "live.dial[26]", "sustain", 0 ],
-			"obj-416" : [ "incdec[3]", "incdec[3]", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-51" : [ "Freq", "Freq", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-51" : [ "Freq[22]", "Freq", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-4" : [ "Waveform[23]", "Waveform", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-46" : [ "Offset[29]", "Offset", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-107" : [ "Linear[56]", "Linear", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-4" : [ "Waveform[114]", "Waveform", 0 ],
+			"obj-51::obj-2.4::obj-4::obj-80" : [ "Response[39]", "Response", 0 ],
 			"obj-51::obj-2.6::obj-1::obj-51" : [ "Freq[123]", "Freq", 0 ],
-			"obj-51::obj-2.7::obj-4::obj-55" : [ "Bypass[41]", "Bypass", 0 ],
-			"obj-51::obj-60" : [ "live.tab[5]", "live.tab", 0 ],
-			"obj-118::obj-2.2::obj-4::obj-55" : [ "Bypass[34]", "Bypass", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-129" : [ "CV2[55]", "CV2", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-51" : [ "Freq[107]", "Freq", 0 ],
-			"obj-118::obj-2.8::obj-2::obj-1" : [ "Attack[37]", "Attack", 0 ],
-			"obj-14::obj-2.3::obj-2::obj-31" : [ "Release[10]", "Release", 0 ],
-			"obj-14::obj-28" : [ "live.slider", "gain", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-129" : [ "CV2[117]", "CV2", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-11" : [ "PWM[47]", "PWM", 0 ],
+			"obj-51::obj-2.8::obj-2::obj-31" : [ "Release[42]", "Release", 0 ],
+			"obj-118::obj-2.5::obj-4::obj-33" : [ "Quadrants[45]", "Quadrants", 0 ],
+			"obj-14::obj-2.1::obj-4::obj-80" : [ "Response", "Response", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-129" : [ "CV2[23]", "CV2", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-106" : [ "CV3[55]", "CV3", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-11" : [ "PWM[118]", "PWM", 0 ],
 			"obj-51::obj-2.5::obj-2::obj-20" : [ "Mute[142]", "Mute", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-107" : [ "Linear[62]", "Linear", 0 ],
-			"obj-51::obj-2.8::obj-2::obj-29" : [ "Decay[43]", "Decay", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-106" : [ "CV3[66]", "CV3", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-46" : [ "Offset[62]", "Offset", 0 ],
-			"obj-118::obj-2.3::obj-2::obj-32" : [ "Sustain[44]", "Sustain", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-36" : [ "PW[43]", "PW", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-36" : [ "PW[124]", "PW", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-107" : [ "Linear[73]", "Linear", 0 ],
-			"obj-118::obj-60" : [ "live.tab[10]", "live.tab", 0 ],
-			"obj-307::obj-21" : [ "live.gain~[8]", "live.gain~[8]", 0 ],
-			"obj-498" : [ "live.text[1]", "live.text", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-36" : [ "PW", "PW", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-36" : [ "PW[70]", "PW", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-107" : [ "Linear[18]", "Linear", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-53" : [ "Mute[53]", "Mute", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-129" : [ "CV2[26]", "CV2", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-36" : [ "PW[114]", "PW", 0 ],
+			"obj-51::obj-52" : [ "Wave[8]", "Wave", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-45" : [ "FreqMode[60]", "FreqMode", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-129" : [ "CV2[56]", "CV2", 0 ],
+			"obj-118::obj-2.6::obj-2::obj-32" : [ "Sustain[36]", "Sustain", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-36" : [ "PW[45]", "PW", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-45" : [ "FreqMode[71]", "FreqMode", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-53" : [ "Mute[51]", "Mute", 0 ],
+			"obj-14::obj-2.8::obj-2::obj-15" : [ "Legato[12]", "Legato", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-53" : [ "Mute[132]", "Mute", 0 ],
 			"obj-51::obj-2.3::obj-1::obj-46" : [ "Offset[88]", "Offset", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-107" : [ "Linear[79]", "Linear", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-36" : [ "PW[34]", "PW", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-106" : [ "CV3[89]", "CV3", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-36" : [ "PW[42]", "PW", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-106" : [ "CV3[91]", "CV3", 0 ],
-			"obj-118::obj-2.8::obj-2::obj-29" : [ "Decay[37]", "Decay", 0 ],
-			"obj-14::obj-2.1::obj-2::obj-20" : [ "Mute[35]", "Mute", 0 ],
-			"obj-14::obj-2.3::obj-4::obj-80" : [ "Response[10]", "Response", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-36" : [ "PW[20]", "PW", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-45" : [ "FreqMode[55]", "FreqMode", 0 ],
-			"obj-51::obj-2.2::obj-2::obj-31" : [ "Release[25]", "Release", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-4" : [ "Waveform[118]", "Waveform", 0 ],
-			"obj-51::obj-2.5::obj-2::obj-1" : [ "Attack[39]", "Attack", 0 ],
-			"obj-51::obj-2.8::obj-4::obj-33" : [ "Quadrants[43]", "Quadrants", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-107" : [ "Linear[67]", "Linear", 0 ],
-			"obj-118::obj-2.3::obj-4::obj-55" : [ "Bypass[43]", "Bypass", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-46" : [ "Offset[94]", "Offset", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-46" : [ "Offset[96]", "Offset", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-51" : [ "Freq[45]", "Freq", 0 ],
-			"obj-507" : [ "umenu[4]", "umenu[4]", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-53" : [ "Mute[44]", "Mute", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-45" : [ "FreqMode[18]", "FreqMode", 0 ],
-			"obj-14::obj-2.4::obj-2::obj-20" : [ "Mute[47]", "Mute", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-106" : [ "CV3[24]", "CV3", 0 ],
-			"obj-14::obj-2.8::obj-2::obj-31" : [ "Release[12]", "Release", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-51" : [ "Freq[117]", "Freq", 0 ],
 			"obj-51::obj-2.4::obj-3::obj-107" : [ "Linear[59]", "Linear", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-4" : [ "Waveform[3]", "Waveform", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-11" : [ "PWM[40]", "PWM", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-129" : [ "CV2[106]", "CV2", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-53" : [ "Mute[171]", "Mute", 0 ],
-			"obj-118::obj-2.8::obj-4::obj-80" : [ "Response[46]", "Response", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-53" : [ "Mute[49]", "Mute", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-106" : [ "CV3[19]", "CV3", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-107" : [ "Linear[20]", "Linear", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-4" : [ "Waveform[25]", "Waveform", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-11" : [ "PWM[113]", "PWM", 0 ],
-			"obj-51::obj-2.2::obj-4::obj-33" : [ "Quadrants[38]", "Quadrants", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-46" : [ "Offset[89]", "Offset", 0 ],
-			"obj-51::obj-2.5::obj-4::obj-33" : [ "Quadrants[40]", "Quadrants", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-46" : [ "Offset[93]", "Offset", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-4" : [ "Waveform[5]", "Waveform", 0 ],
-			"obj-118::obj-2.1::obj-2::obj-15" : [ "Legato[33]", "Legato", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-53" : [ "Mute[156]", "Mute", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-107" : [ "Linear[35]", "Linear", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-51" : [ "Freq[105]", "Freq", 0 ],
-			"obj-118::obj-2.6::obj-2::obj-20" : [ "Mute[169]", "Mute", 0 ],
-			"obj-509" : [ "umenu[2]", "umenu[2]", 0 ],
-			"obj-14::obj-2.1::obj-2::obj-31" : [ "Release", "Release", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-51" : [ "Freq[71]", "Freq", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-11" : [ "PWM[21]", "PWM", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-46" : [ "Offset[25]", "Offset", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-129" : [ "CV2[27]", "CV2", 0 ],
-			"obj-14::obj-2.8::obj-4::obj-55" : [ "Bypass[12]", "Bypass", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-11" : [ "PWM[115]", "PWM", 0 ],
-			"obj-51::obj-2.3::obj-2::obj-20" : [ "Mute[136]", "Mute", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-51" : [ "Freq[120]", "Freq", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-4" : [ "Waveform[1]", "Waveform", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-53" : [ "Mute[155]", "Mute", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-53" : [ "Mute[162]", "Mute", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-36" : [ "PW[106]", "PW", 0 ],
+			"obj-503" : [ "live.text[3]", "live.text", 0 ],
+			"obj-14::obj-2.3::obj-2::obj-31" : [ "Release[10]", "Release", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-106" : [ "CV3[28]", "CV3", 0 ],
+			"obj-51::obj-2.5::obj-4::obj-55" : [ "Bypass[39]", "Bypass", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-45" : [ "FreqMode[83]", "FreqMode", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-129" : [ "CV2[51]", "CV2", 0 ],
+			"obj-118::obj-2.3::obj-2::obj-20" : [ "Mute[160]", "Mute", 0 ],
+			"obj-118::obj-2.6::obj-4::obj-80" : [ "Response[36]", "Response", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-51" : [ "Freq[45]", "Freq", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-45" : [ "FreqMode", "FreqMode", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-46" : [ "Offset[18]", "Offset", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-129" : [ "CV2[24]", "CV2", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-53" : [ "Mute[43]", "Mute", 0 ],
+			"obj-14::obj-2.8::obj-4::obj-33" : [ "Quadrants[12]", "Quadrants", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-106" : [ "CV3[56]", "CV3", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-107" : [ "Linear[76]", "Linear", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-46" : [ "Offset[59]", "Offset", 0 ],
 			"obj-51::obj-2.6::obj-2::obj-29" : [ "Decay[41]", "Decay", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-129" : [ "CV2[54]", "CV2", 0 ],
-			"obj-118::obj-2.4::obj-2::obj-1" : [ "Attack[35]", "Attack", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-53" : [ "Mute[147]", "Mute", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-106" : [ "CV3[87]", "CV3", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-106" : [ "CV3[35]", "CV3", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-11" : [ "PWM[106]", "PWM", 0 ],
 			"obj-118::obj-2.7::obj-1::obj-11" : [ "PWM[45]", "PWM", 0 ],
-			"obj-246" : [ "number[5]", "number[5]", 0 ],
-			"obj-14::obj-2.2::obj-2::obj-32" : [ "Sustain[1]", "Sustain", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-36" : [ "PW[19]", "PW", 0 ],
-			"obj-14::obj-2.5::obj-2::obj-20" : [ "Mute[52]", "Mute", 0 ],
-			"obj-14::obj-2.6::obj-2::obj-1" : [ "Attack[11]", "Attack", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-129" : [ "CV2[28]", "CV2", 0 ],
-			"obj-51::obj-2.1::obj-2::obj-20" : [ "Mute[130]", "Mute", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-129" : [ "CV2[115]", "CV2", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-51" : [ "Freq[119]", "Freq", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-45" : [ "FreqMode[79]", "FreqMode", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-129" : [ "CV2[32]", "CV2", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-46" : [ "Offset[74]", "Offset", 0 ],
+			"obj-493" : [ "live.text[7]", "live.text[7]", 0 ],
+			"obj-414" : [ "number[7]", "number[7]", 0 ],
+			"obj-14::obj-2.3::obj-4::obj-80" : [ "Response[10]", "Response", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-45" : [ "FreqMode[24]", "FreqMode", 0 ],
+			"obj-14::obj-2.6::obj-2::obj-15" : [ "Legato[11]", "Legato", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-53" : [ "Mute[56]", "Mute", 0 ],
+			"obj-51::obj-2.1::obj-2::obj-1" : [ "Attack[21]", "Attack", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-53" : [ "Mute[138]", "Mute", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-106" : [ "CV3[80]", "CV3", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-129" : [ "CV2[49]", "CV2", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-106" : [ "CV3[66]", "CV3", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-107" : [ "Linear[87]", "Linear", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-4" : [ "Waveform[107]", "Waveform", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-107" : [ "Linear[91]", "Linear", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-11" : [ "PWM", "PWM", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-107" : [ "Linear[18]", "Linear", 0 ],
+			"obj-14::obj-2.4::obj-2::obj-32" : [ "Sustain[15]", "Sustain", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-45" : [ "FreqMode[20]", "FreqMode", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-106" : [ "CV3[27]", "CV3", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-4" : [ "Waveform[27]", "Waveform", 0 ],
+			"obj-51::obj-2.3::obj-2::obj-31" : [ "Release[22]", "Release", 0 ],
+			"obj-51::obj-2.6::obj-4::obj-80" : [ "Response[41]", "Response", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-106" : [ "CV3[83]", "CV3", 0 ],
 			"obj-51::obj-2.8::obj-3::obj-51" : [ "Freq[33]", "Freq", 0 ],
-			"obj-118::obj-2.1::obj-4::obj-80" : [ "Response[33]", "Response", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-129" : [ "CV2[35]", "CV2", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-51" : [ "Freq[46]", "Freq", 0 ],
-			"obj-415" : [ "number[8]", "number[8]", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-46" : [ "Offset", "Offset", 0 ],
-			"obj-14::obj-2.1::obj-4::obj-33" : [ "Quadrants", "Quadrants", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-106" : [ "CV3[21]", "CV3", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-53" : [ "Mute[156]", "Mute", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-53" : [ "Mute[158]", "Mute", 0 ],
+			"obj-118::obj-2.4::obj-2::obj-29" : [ "Decay[35]", "Decay", 0 ],
+			"obj-118::obj-2.7::obj-2::obj-15" : [ "Legato[46]", "Legato", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-36" : [ "PW[47]", "PW", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-11" : [ "PWM[71]", "PWM", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-45" : [ "FreqMode[19]", "FreqMode", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-129" : [ "CV2[20]", "CV2", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-51" : [ "Freq[29]", "Freq", 0 ],
+			"obj-51::obj-2.1::obj-4::obj-33" : [ "Quadrants[28]", "Quadrants", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-106" : [ "CV3[78]", "CV3", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-53" : [ "Mute[143]", "Mute", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-46" : [ "Offset[48]", "Offset", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-4" : [ "Waveform[105]", "Waveform", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-11" : [ "PWM[44]", "PWM", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-46" : [ "Offset[97]", "Offset", 0 ],
+			"obj-507" : [ "umenu[4]", "umenu[4]", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-4" : [ "Waveform[73]", "Waveform", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-45" : [ "FreqMode[25]", "FreqMode", 0 ],
+			"obj-14::obj-2.7::obj-2::obj-31" : [ "Release[14]", "Release", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-11" : [ "PWM[30]", "PWM", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-51" : [ "Freq[121]", "Freq", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-107" : [ "Linear[62]", "Linear", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-36" : [ "PW[33]", "PW", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-106" : [ "CV3[88]", "CV3", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-106" : [ "CV3[89]", "CV3", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-45" : [ "FreqMode[89]", "FreqMode", 0 ],
+			"obj-118::obj-2.7::obj-2::obj-31" : [ "Release[45]", "Release", 0 ],
+			"obj-118::obj-27" : [ "Wave[9]", "Wave", 0 ],
+			"obj-80" : [ "eamir_filtering[2]", "eamir_filtering[2]", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-107" : [ "Linear[70]", "Linear", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-129" : [ "CV2[19]", "CV2", 0 ],
+			"obj-14::obj-2.5::obj-2::obj-20" : [ "Mute[52]", "Mute", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-11" : [ "PWM[29]", "PWM", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-51" : [ "Freq[114]", "Freq", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-53" : [ "Mute[134]", "Mute", 0 ],
+			"obj-51::obj-2.4::obj-2::obj-15" : [ "Legato[39]", "Legato", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-107" : [ "Linear[82]", "Linear", 0 ],
+			"obj-118::obj-2.1::obj-2::obj-31" : [ "Release[33]", "Release", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-51" : [ "Freq[41]", "Freq", 0 ],
+			"obj-118::obj-2.5::obj-2::obj-1" : [ "Attack[44]", "Attack", 0 ],
+			"obj-118::obj-2.8::obj-2::obj-32" : [ "Sustain[37]", "Sustain", 0 ],
+			"obj-492" : [ "live.text", "live.text", 0 ],
+			"obj-509" : [ "umenu[2]", "umenu[2]", 0 ],
+			"obj-281" : [ "attri[17]", "attri[17]", 0 ],
+			"obj-14::obj-2.1::obj-2::obj-1" : [ "Attack", "Attack", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-11" : [ "PWM[21]", "PWM", 0 ],
 			"obj-14::obj-2.6::obj-1::obj-51" : [ "Freq[25]", "Freq", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-36" : [ "PW[30]", "PW", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-107" : [ "Linear[75]", "Linear", 0 ],
+			"obj-14::obj-2.7::obj-2::obj-20" : [ "Mute[55]", "Mute", 0 ],
 			"obj-51::obj-2.5::obj-1::obj-36" : [ "PW[121]", "PW", 0 ],
-			"obj-51::obj-2.6::obj-4::obj-33" : [ "Quadrants[41]", "Quadrants", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-45" : [ "FreqMode[84]", "FreqMode", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-107" : [ "Linear[86]", "Linear", 0 ],
-			"obj-118::obj-2.4::obj-4::obj-55" : [ "Bypass[35]", "Bypass", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-46" : [ "Offset[95]", "Offset", 0 ],
-			"obj-118::obj-2.7::obj-2::obj-1" : [ "Attack[45]", "Attack", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-45" : [ "FreqMode[74]", "FreqMode", 0 ],
+			"obj-51::obj-2.7::obj-2::obj-31" : [ "Release[41]", "Release", 0 ],
+			"obj-51::obj-18" : [ "live.dial[21]", "attack", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-53" : [ "Mute[159]", "Mute", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-129" : [ "CV2[107]", "CV2", 0 ],
+			"obj-118::obj-2.7::obj-4::obj-55" : [ "Bypass[45]", "Bypass", 0 ],
+			"obj-118::obj-21" : [ "live.dial[24]", "release", 0 ],
+			"obj-33" : [ "number[4]", "number[4]", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-46" : [ "Offset[70]", "Offset", 0 ],
 			"obj-14::obj-2.2::obj-2::obj-20" : [ "Mute[36]", "Mute", 0 ],
 			"obj-14::obj-2.5::obj-2::obj-1" : [ "Attack[16]", "Attack", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-36" : [ "PW[29]", "PW", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-107" : [ "Linear[57]", "Linear", 0 ],
-			"obj-51::obj-2.4::obj-2::obj-29" : [ "Decay[39]", "Decay", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-11" : [ "PWM[122]", "PWM", 0 ],
-			"obj-51::obj-2.7::obj-2::obj-15" : [ "Legato[42]", "Legato", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-4" : [ "Waveform[7]", "Waveform", 0 ],
-			"obj-118::obj-2.2::obj-2::obj-1" : [ "Attack[34]", "Attack", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-107" : [ "Linear[52]", "Linear", 0 ],
-			"obj-118::obj-2.5::obj-2::obj-20" : [ "Mute[166]", "Mute", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-46" : [ "Offset[97]", "Offset", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-129" : [ "CV2[23]", "CV2", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-45" : [ "FreqMode[30]", "FreqMode", 0 ],
-			"obj-51::obj-2.3::obj-4::obj-55" : [ "Bypass[22]", "Bypass", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-51" : [ "Freq[121]", "Freq", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-53" : [ "Mute[150]", "Mute", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-51" : [ "Freq[43]", "Freq", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-129" : [ "CV2", "CV2", 0 ],
-			"obj-14::obj-2.2::obj-4::obj-33" : [ "Quadrants[9]", "Quadrants", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-11" : [ "PWM[22]", "PWM", 0 ],
-			"obj-14::obj-2.5::obj-4::obj-80" : [ "Response[16]", "Response", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-45" : [ "FreqMode[29]", "FreqMode", 0 ],
-			"obj-14::obj-52" : [ "Wave[1]", "Wave", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-51" : [ "Freq[116]", "Freq", 0 ],
-			"obj-51::obj-52" : [ "Wave[8]", "Wave", 0 ],
-			"obj-118::obj-2.2::obj-4::obj-33" : [ "Quadrants[34]", "Quadrants", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-45" : [ "FreqMode[35]", "FreqMode", 0 ],
-			"obj-118::obj-2.5::obj-4::obj-55" : [ "Bypass[44]", "Bypass", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-11" : [ "PWM[44]", "PWM", 0 ],
-			"obj-14::obj-2.3::obj-2::obj-32" : [ "Sustain[10]", "Sustain", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-45" : [ "FreqMode[23]", "FreqMode", 0 ],
-			"obj-14::obj-2.7::obj-2::obj-1" : [ "Attack[14]", "Attack", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-46" : [ "Offset[58]", "Offset", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-4" : [ "Waveform[1]", "Waveform", 0 ],
-			"obj-51::obj-2.8::obj-2::obj-32" : [ "Sustain[43]", "Sustain", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-53" : [ "Mute[153]", "Mute", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-45" : [ "FreqMode[86]", "FreqMode", 0 ],
-			"obj-118::obj-2.3::obj-2::obj-20" : [ "Mute[160]", "Mute", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-46" : [ "Offset[63]", "Offset", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-53" : [ "Mute[168]", "Mute", 0 ],
-			"obj-118::obj-19" : [ "live.dial[19]", "decay", 0 ],
-			"obj-306" : [ "live.text[6]", "live.text", 0 ],
-			"obj-523" : [ "live.text[8]", "live.text[7]", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-53" : [ "Mute", "Mute", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-11" : [ "PWM[70]", "PWM", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-129" : [ "CV2[18]", "CV2", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-4" : [ "Waveform[75]", "Waveform", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-36" : [ "PW[24]", "PW", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-46" : [ "Offset[26]", "Offset", 0 ],
-			"obj-14::obj-20" : [ "live.dial[3]", "sustain", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-129" : [ "CV2[113]", "CV2", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-45" : [ "FreqMode[76]", "FreqMode", 0 ],
-			"obj-51::obj-2.4::obj-4::obj-33" : [ "Quadrants[39]", "Quadrants", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-4" : [ "Waveform[123]", "Waveform", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-107" : [ "Linear[85]", "Linear", 0 ],
-			"obj-118::obj-2.4::obj-1::obj-46" : [ "Offset[52]", "Offset", 0 ],
-			"obj-118::obj-2.5::obj-3::obj-51" : [ "Freq[124]", "Freq", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-45" : [ "FreqMode[90]", "FreqMode", 0 ],
-			"obj-118::obj-2.8::obj-2::obj-32" : [ "Sustain[37]", "Sustain", 0 ],
-			"obj-14::obj-2.3::obj-4::obj-55" : [ "Bypass[10]", "Bypass", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-129" : [ "CV2[20]", "CV2", 0 ],
-			"obj-14::obj-2.7::obj-4::obj-55" : [ "Bypass[14]", "Bypass", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-53" : [ "Mute[129]", "Mute", 0 ],
-			"obj-51::obj-2.2::obj-2::obj-20" : [ "Mute[133]", "Mute", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-51" : [ "Freq[118]", "Freq", 0 ],
-			"obj-51::obj-2.5::obj-2::obj-15" : [ "Legato[40]", "Legato", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-129" : [ "CV2[48]", "CV2", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-46" : [ "Offset[50]", "Offset", 0 ],
-			"obj-118::obj-2.3::obj-4::obj-33" : [ "Quadrants[44]", "Quadrants", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-129" : [ "CV2[107]", "CV2", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-129" : [ "CV2[37]", "CV2", 0 ],
-			"obj-118::obj-21" : [ "live.dial[24]", "release", 0 ],
-			"obj-503" : [ "live.text[3]", "live.text", 0 ],
-			"obj-492" : [ "live.text", "live.text", 0 ],
-			"obj-33" : [ "number[4]", "number[4]", 0 ],
-			"obj-76" : [ "eamir_filtering[3]", "eamir_filtering[3]", 0 ],
-			"obj-14::obj-2.1::obj-3::obj-106" : [ "CV3[70]", "CV3", 0 ],
-			"obj-14::obj-2.2::obj-3::obj-36" : [ "PW[18]", "PW", 0 ],
-			"obj-14::obj-2.4::obj-2::obj-1" : [ "Attack[15]", "Attack", 0 ],
-			"obj-14::obj-2.5::obj-3::obj-107" : [ "Linear[24]", "Linear", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-51" : [ "Freq[26]", "Freq", 0 ],
-			"obj-14::obj-2.8::obj-2::obj-29" : [ "Decay[12]", "Decay", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-4" : [ "Waveform[114]", "Waveform", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-11" : [ "PWM[117]", "PWM", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-53" : [ "Mute[140]", "Mute", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-11" : [ "PWM[31]", "PWM", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-106" : [ "CV3[84]", "CV3", 0 ],
-			"obj-118::obj-2.2::obj-3::obj-129" : [ "CV2[53]", "CV2", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-36" : [ "PW[44]", "PW", 0 ],
-			"obj-118::obj-2.8::obj-4::obj-55" : [ "Bypass[37]", "Bypass", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-129" : [ "CV2[71]", "CV2", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-107" : [ "Linear[19]", "Linear", 0 ],
-			"obj-14::obj-2.5::obj-1::obj-4" : [ "Waveform[20]", "Waveform", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-51" : [ "Freq[28]", "Freq", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-106" : [ "CV3[55]", "CV3", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-45" : [ "FreqMode[77]", "FreqMode", 0 ],
-			"obj-51::obj-2.5::obj-4::obj-80" : [ "Response[40]", "Response", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-45" : [ "FreqMode[82]", "FreqMode", 0 ],
-			"obj-118::obj-2.1::obj-2::obj-1" : [ "Attack[33]", "Attack", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-106" : [ "CV3[88]", "CV3", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-129" : [ "CV2[26]", "CV2", 0 ],
+			"obj-14::obj-1" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-36" : [ "PW[114]", "PW", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-106" : [ "CV3[57]", "CV3", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-53" : [ "Mute[144]", "Mute", 0 ],
+			"obj-118::obj-2.1::obj-4::obj-55" : [ "Bypass[33]", "Bypass", 0 ],
 			"obj-118::obj-2.3::obj-3::obj-36" : [ "PW[41]", "PW", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-11" : [ "PWM[105]", "PWM", 0 ],
-			"obj-118::obj-2.6::obj-2::obj-1" : [ "Attack[36]", "Attack", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-45" : [ "FreqMode[73]", "FreqMode", 0 ],
-			"obj-175" : [ "datascroll", "datascroll", 0 ],
-			"obj-14::obj-2.1::obj-2::obj-29" : [ "Decay", "Decay", 0 ],
-			"obj-14::obj-2.4::obj-2::obj-29" : [ "Decay[10]", "Decay", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-46" : [ "Offset[27]", "Offset", 0 ],
-			"obj-14::obj-18" : [ "live.dial[1]", "attack", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-53" : [ "Mute[132]", "Mute", 0 ],
-			"obj-51::obj-2.3::obj-2::obj-15" : [ "Legato[29]", "Legato", 0 ],
-			"obj-51::obj-2.4::obj-3::obj-129" : [ "CV2[119]", "CV2", 0 ],
-			"obj-51::obj-2.6::obj-2::obj-31" : [ "Release[40]", "Release", 0 ],
-			"obj-51::obj-2.7::obj-3::obj-53" : [ "Mute[149]", "Mute", 0 ],
-			"obj-118::obj-2.4::obj-2::obj-15" : [ "Legato[35]", "Legato", 0 ],
-			"obj-118::obj-2.7::obj-1::obj-129" : [ "CV2[57]", "CV2", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-36" : [ "PW[47]", "PW", 0 ],
-			"obj-14::obj-2.6::obj-2::obj-15" : [ "Legato[11]", "Legato", 0 ],
-			"obj-14::obj-2.7::obj-3::obj-46" : [ "Offset[28]", "Offset", 0 ],
-			"obj-51::obj-2.4::obj-1::obj-11" : [ "PWM[119]", "PWM", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-53" : [ "Mute[143]", "Mute", 0 ],
-			"obj-51::obj-2.7::obj-1::obj-106" : [ "CV3[83]", "CV3", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-36" : [ "PW[33]", "PW", 0 ],
-			"obj-118::obj-2.2::obj-1::obj-11" : [ "PWM[34]", "PWM", 0 ],
-			"obj-118::obj-2.3::obj-3::obj-45" : [ "FreqMode[64]", "FreqMode", 0 ],
-			"obj-118::obj-2.5::obj-1::obj-45" : [ "FreqMode[87]", "FreqMode", 0 ],
-			"obj-118::obj-2.6::obj-2::obj-29" : [ "Decay[36]", "Decay", 0 ],
-			"obj-14::obj-2.2::obj-1::obj-45" : [ "FreqMode[71]", "FreqMode", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-53" : [ "Mute[50]", "Mute", 0 ],
-			"obj-14::obj-2.4::obj-4::obj-80" : [ "Response[15]", "Response", 0 ],
-			"obj-14::obj-2.6::obj-1::obj-11" : [ "PWM[25]", "PWM", 0 ],
-			"obj-14::obj-2.7::obj-1::obj-51" : [ "Freq[27]", "Freq", 0 ],
-			"obj-51::obj-2.2::obj-1::obj-46" : [ "Offset[87]", "Offset", 0 ],
-			"obj-51::obj-2.3::obj-2::obj-31" : [ "Release[22]", "Release", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-51" : [ "Freq[35]", "Freq", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-36" : [ "PW[40]", "PW", 0 ],
-			"obj-118::obj-2.7::obj-2::obj-31" : [ "Release[45]", "Release", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-51" : [ "Freq[47]", "Freq", 0 ],
-			"obj-14::obj-2.2::obj-2::obj-15" : [ "Legato[1]", "Legato", 0 ],
-			"obj-14::obj-2.3::obj-3::obj-4" : [ "Waveform[74]", "Waveform", 0 ],
-			"obj-14::obj-2.5::obj-2::obj-15" : [ "Legato[16]", "Legato", 0 ],
-			"obj-14::obj-2.6::obj-2::obj-32" : [ "Sustain[11]", "Sustain", 0 ],
-			"obj-51::obj-2.1::obj-2::obj-15" : [ "Legato[28]", "Legato", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-45" : [ "FreqMode[57]", "FreqMode", 0 ],
-			"obj-51::obj-2.5::obj-3::obj-106" : [ "CV3[80]", "CV3", 0 ],
-			"obj-51::obj-2.7::obj-2::obj-32" : [ "Sustain[42]", "Sustain", 0 ],
-			"obj-51::obj-2.8::obj-3::obj-129" : [ "CV2[33]", "CV2", 0 ],
-			"obj-118::obj-2.2::obj-2::obj-31" : [ "Release[34]", "Release", 0 ],
-			"obj-118::obj-2.5::obj-2::obj-31" : [ "Release[44]", "Release", 0 ],
-			"obj-118::obj-2.6::obj-4::obj-33" : [ "Quadrants[36]", "Quadrants", 0 ],
-			"obj-118::obj-2.8::obj-1::obj-45" : [ "FreqMode[91]", "FreqMode", 0 ],
-			"obj-14::obj-2.3::obj-1::obj-46" : [ "Offset[21]", "Offset", 0 ],
+			"obj-118::obj-2.8::obj-2::obj-31" : [ "Release[37]", "Release", 0 ],
+			"obj-307::obj-3" : [ "live.gain~[6]", "live.gain~[6]", 0 ],
+			"obj-14::obj-2.1::obj-4::obj-55" : [ "Bypass", "Bypass", 0 ],
 			"obj-14::obj-2.4::obj-3::obj-107" : [ "Linear[23]", "Linear", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-4" : [ "Waveform[27]", "Waveform", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-107" : [ "Linear[60]", "Linear", 0 ],
-			"obj-51::obj-2.8::obj-1::obj-106" : [ "CV3[85]", "CV3", 0 ],
-			"obj-118::obj-2.3::obj-1::obj-45" : [ "FreqMode[60]", "FreqMode", 0 ],
-			"obj-118::obj-2.7::obj-2::obj-32" : [ "Sustain[46]", "Sustain", 0 ],
-			"obj-118::obj-2.8::obj-3::obj-46" : [ "Offset[74]", "Offset", 0 ],
-			"obj-14::obj-2.2::obj-4::obj-80" : [ "Response[1]", "Response", 0 ],
-			"obj-14::obj-2.4::obj-1::obj-46" : [ "Offset[22]", "Offset", 0 ],
-			"obj-14::obj-2.6::obj-4::obj-80" : [ "Response[11]", "Response", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-53" : [ "Mute[57]", "Mute", 0 ],
-			"obj-51::obj-2.1::obj-4::obj-55" : [ "Bypass[21]", "Bypass", 0 ],
-			"obj-51::obj-2.2::obj-3::obj-11" : [ "PWM[116]", "PWM", 0 ],
-			"obj-51::obj-2.4::obj-2::obj-32" : [ "Sustain[39]", "Sustain", 0 ],
-			"obj-51::obj-2.7::obj-2::obj-20" : [ "Mute[148]", "Mute", 0 ],
-			"obj-51::obj-18" : [ "live.dial[21]", "attack", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-106" : [ "CV3[87]", "CV3", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-106" : [ "CV3[93]", "CV3", 0 ],
-			"obj-307::obj-4" : [ "live.gain~[7]", "live.gain~[6]", 0 ],
+			"obj-14::obj-2.7::obj-4::obj-55" : [ "Bypass[14]", "Bypass", 0 ],
+			"obj-14::obj-20" : [ "live.dial[3]", "sustain", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-129" : [ "CV2[112]", "CV2", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-51" : [ "Freq[118]", "Freq", 0 ],
+			"obj-51::obj-2.5::obj-2::obj-29" : [ "Decay[40]", "Decay", 0 ],
+			"obj-51::obj-2.7::obj-4::obj-80" : [ "Response[42]", "Response", 0 ],
+			"obj-51::obj-1" : [ "live.tab[8]", "live.tab", 0 ],
+			"obj-118::obj-2.2::obj-2::obj-31" : [ "Release[34]", "Release", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-46" : [ "Offset[60]", "Offset", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-11" : [ "PWM[43]", "PWM", 0 ],
+			"obj-118::obj-2.6::obj-2::obj-31" : [ "Release[36]", "Release", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-106" : [ "CV3[73]", "CV3", 0 ],
+			"obj-14::obj-2.2::obj-4::obj-33" : [ "Quadrants[9]", "Quadrants", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-45" : [ "FreqMode[22]", "FreqMode", 0 ],
+			"obj-14::obj-2.5::obj-4::obj-55" : [ "Bypass[16]", "Bypass", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-45" : [ "FreqMode[26]", "FreqMode", 0 ],
+			"obj-14::obj-2.8::obj-2::obj-20" : [ "Mute[58]", "Mute", 0 ],
+			"obj-14::obj-28" : [ "live.slider", "gain", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-11" : [ "PWM[117]", "PWM", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-106" : [ "CV3[81]", "CV3", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-36" : [ "PW[31]", "PW", 0 ],
+			"obj-51::obj-2.8::obj-2::obj-32" : [ "Sustain[43]", "Sustain", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-11" : [ "PWM[39]", "PWM", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-45" : [ "FreqMode[35]", "FreqMode", 0 ],
+			"obj-118::obj-2.8::obj-4::obj-80" : [ "Response[46]", "Response", 0 ],
+			"obj-376" : [ "number", "number", 0 ],
 			"obj-14::obj-2.3::obj-2::obj-1" : [ "Attack[10]", "Attack", 0 ],
-			"obj-14::obj-2.4::obj-3::obj-11" : [ "PWM[23]", "PWM", 0 ],
-			"obj-14::obj-2.7::obj-2::obj-15" : [ "Legato[14]", "Legato", 0 ],
-			"obj-14::obj-2.8::obj-3::obj-106" : [ "CV3[30]", "CV3", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-45" : [ "FreqMode[58]", "FreqMode", 0 ],
-			"obj-51::obj-2.5::obj-1::obj-46" : [ "Offset[90]", "Offset", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-51" : [ "Freq[31]", "Freq", 0 ],
-			"obj-51::obj-2.8::obj-2::obj-1" : [ "Attack[42]", "Attack", 0 ],
-			"obj-118::obj-2.1::obj-1::obj-107" : [ "Linear[66]", "Linear", 0 ],
-			"obj-118::obj-2.1::obj-3::obj-51" : [ "Freq[37]", "Freq", 0 ],
-			"obj-118::obj-2.3::obj-2::obj-29" : [ "Decay[44]", "Decay", 0 ],
-			"obj-118::obj-2.4::obj-3::obj-53" : [ "Mute[164]", "Mute", 0 ],
-			"obj-118::obj-2.7::obj-4::obj-80" : [ "Response[37]", "Response", 0 ],
-			"obj-118::obj-52" : [ "Wave[10]", "Wave", 0 ],
-			"obj-457" : [ "live.gain~[2]", "Melody", 0 ],
-			"obj-14::obj-2.1::obj-1::obj-45" : [ "FreqMode", "FreqMode", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-46" : [ "Offset[23]", "Offset", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-129" : [ "CV2[28]", "CV2", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-45" : [ "FreqMode[55]", "FreqMode", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-36" : [ "PW[118]", "PW", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-46" : [ "Offset[32]", "Offset", 0 ],
+			"obj-118::obj-2.2::obj-4::obj-80" : [ "Response[34]", "Response", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-45" : [ "FreqMode[52]", "FreqMode", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-53" : [ "Mute[173]", "Mute", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-106" : [ "CV3", "CV3", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-107" : [ "Linear[71]", "Linear", 0 ],
 			"obj-14::obj-2.2::obj-3::obj-11" : [ "PWM[18]", "PWM", 0 ],
 			"obj-14::obj-2.4::obj-1::obj-129" : [ "CV2[22]", "CV2", 0 ],
-			"obj-14::obj-2.6::obj-3::obj-45" : [ "FreqMode[26]", "FreqMode", 0 ],
-			"obj-14::obj-2.8::obj-1::obj-106" : [ "CV3[29]", "CV3", 0 ],
-			"obj-14::obj-1" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-51::obj-2.1::obj-3::obj-46" : [ "Offset[56]", "Offset", 0 ],
-			"obj-51::obj-2.3::obj-1::obj-53" : [ "Mute[135]", "Mute", 0 ],
-			"obj-51::obj-2.6::obj-1::obj-129" : [ "CV2[47]", "CV2", 0 ],
-			"obj-51::obj-2.7::obj-4::obj-33" : [ "Quadrants[42]", "Quadrants", 0 ],
-			"obj-51::obj-21" : [ "live.dial[22]", "release", 0 ],
-			"obj-118::obj-2.6::obj-3::obj-53" : [ "Mute[170]", "Mute", 0 ],
-			"obj-118::obj-2.8::obj-2::obj-15" : [ "Legato[37]", "Legato", 0 ],
-			"obj-51::obj-2.1::obj-1::obj-36" : [ "PW[113]", "PW", 0 ],
-			"obj-51::obj-2.3::obj-3::obj-11" : [ "PWM[118]", "PWM", 0 ],
-			"obj-51::obj-2.5::obj-2::obj-32" : [ "Sustain[40]", "Sustain", 0 ],
-			"obj-51::obj-2.6::obj-3::obj-46" : [ "Offset[92]", "Offset", 0 ],
-			"obj-51::obj-2.8::obj-2::obj-31" : [ "Release[42]", "Release", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-107" : [ "Linear[24]", "Linear", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-45" : [ "FreqMode[27]", "FreqMode", 0 ],
+			"obj-14::obj-2.8::obj-4::obj-55" : [ "Bypass[12]", "Bypass", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-129" : [ "CV2[114]", "CV2", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-4" : [ "Waveform[117]", "Waveform", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-11" : [ "PWM[120]", "PWM", 0 ],
+			"obj-51::obj-2.6::obj-2::obj-15" : [ "Legato[41]", "Legato", 0 ],
+			"obj-51::obj-2.8::obj-4::obj-33" : [ "Quadrants[43]", "Quadrants", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-46" : [ "Offset[62]", "Offset", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-129" : [ "CV2[55]", "CV2", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-51" : [ "Freq[124]", "Freq", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-51" : [ "Freq[44]", "Freq", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-106" : [ "CV3[74]", "CV3", 0 ],
+			"obj-458" : [ "live.gain~[3]", "Bass", 0 ],
+			"obj-456" : [ "live.gain~", "Drums", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-46" : [ "Offset[20]", "Offset", 0 ],
+			"obj-14::obj-2.6::obj-2::obj-20" : [ "Mute[54]", "Mute", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-45" : [ "FreqMode[28]", "FreqMode", 0 ],
+			"obj-51::obj-2.1::obj-2::obj-32" : [ "Sustain[28]", "Sustain", 0 ],
+			"obj-51::obj-2.2::obj-2::obj-31" : [ "Release[25]", "Release", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-45" : [ "FreqMode[77]", "FreqMode", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-107" : [ "Linear[81]", "Linear", 0 ],
 			"obj-118::obj-2.1::obj-1::obj-45" : [ "FreqMode[66]", "FreqMode", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-45" : [ "FreqMode[51]", "FreqMode", 0 ],
+			"obj-118::obj-2.3::obj-2::obj-15" : [ "Legato[44]", "Legato", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-51" : [ "Freq[105]", "Freq", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-4" : [ "Waveform[110]", "Waveform", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-4" : [ "Waveform[72]", "Waveform", 0 ],
+			"obj-14::obj-2.4::obj-2::obj-31" : [ "Release[15]", "Release", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-46" : [ "Offset[24]", "Offset", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-129" : [ "CV2[27]", "CV2", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-36" : [ "PW[30]", "PW", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-45" : [ "FreqMode[56]", "FreqMode", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-4" : [ "Waveform[120]", "Waveform", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-129" : [ "CV2[32]", "CV2", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-53" : [ "Mute[152]", "Mute", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-46" : [ "Offset[95]", "Offset", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-129" : [ "CV2[59]", "CV2", 0 ],
+			"obj-50" : [ "number[6]", "number[6]", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-107" : [ "Linear[20]", "Linear", 0 ],
+			"obj-14::obj-2.6::obj-2::obj-1" : [ "Attack[11]", "Attack", 0 ],
+			"obj-51::obj-2.2::obj-4::obj-80" : [ "Response[38]", "Response", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-129" : [ "CV2[118]", "CV2", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-45" : [ "FreqMode[79]", "FreqMode", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-11" : [ "PWM[38]", "PWM", 0 ],
+			"obj-118::obj-2.3::obj-4::obj-33" : [ "Quadrants[44]", "Quadrants", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-53" : [ "Mute[165]", "Mute", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-51" : [ "Freq[107]", "Freq", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-11" : [ "PWM[48]", "PWM", 0 ],
+			"obj-14::obj-2.4::obj-2::obj-20" : [ "Mute[47]", "Mute", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-51" : [ "Freq[30]", "Freq", 0 ],
+			"obj-51::obj-2.2::obj-2::obj-1" : [ "Attack[25]", "Attack", 0 ],
+			"obj-51::obj-2.3::obj-2::obj-29" : [ "Decay[29]", "Decay", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-53" : [ "Mute[141]", "Mute", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-45" : [ "FreqMode[82]", "FreqMode", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-106" : [ "CV3[86]", "CV3", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-129" : [ "CV2[34]", "CV2", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-129" : [ "CV2[53]", "CV2", 0 ],
+			"obj-118::obj-2.4::obj-2::obj-15" : [ "Legato[35]", "Legato", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-106" : [ "CV3[92]", "CV3", 0 ],
+			"obj-118::obj-2.7::obj-2::obj-1" : [ "Attack[45]", "Attack", 0 ],
+			"obj-118::obj-1" : [ "live.tab[9]", "live.tab", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-4" : [ "Waveform[70]", "Waveform", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-107" : [ "Linear[19]", "Linear", 0 ],
+			"obj-14::obj-2.6::obj-4::obj-55" : [ "Bypass[11]", "Bypass", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-106" : [ "CV3[29]", "CV3", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-45" : [ "FreqMode[57]", "FreqMode", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-129" : [ "CV2[31]", "CV2", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-4" : [ "Waveform[4]", "Waveform", 0 ],
+			"obj-118::obj-2.1::obj-2::obj-20" : [ "Mute[154]", "Mute", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-53" : [ "Mute[161]", "Mute", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-36" : [ "PW[107]", "PW", 0 ],
+			"obj-175" : [ "datascroll", "datascroll", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-51" : [ "Freq[21]", "Freq", 0 ],
+			"obj-14::obj-2.4::obj-4::obj-55" : [ "Bypass[15]", "Bypass", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-53" : [ "Mute[41]", "Mute", 0 ],
+			"obj-14::obj-2.7::obj-2::obj-29" : [ "Decay[14]", "Decay", 0 ],
+			"obj-51::obj-2.3::obj-4::obj-33" : [ "Quadrants[29]", "Quadrants", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-106" : [ "CV3[79]", "CV3", 0 ],
+			"obj-51::obj-2.7::obj-2::obj-1" : [ "Attack[41]", "Attack", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-45" : [ "FreqMode[34]", "FreqMode", 0 ],
+			"obj-118::obj-2.4::obj-4::obj-33" : [ "Quadrants[35]", "Quadrants", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-107" : [ "Linear[89]", "Linear", 0 ],
+			"obj-118::obj-2.7::obj-4::obj-80" : [ "Response[37]", "Response", 0 ],
+			"obj-118::obj-60" : [ "live.tab[10]", "live.tab", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-11" : [ "PWM[70]", "PWM", 0 ],
+			"obj-14::obj-2.2::obj-2::obj-29" : [ "Decay[1]", "Decay", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-46" : [ "Offset[19]", "Offset", 0 ],
+			"obj-14::obj-2.5::obj-2::obj-32" : [ "Sustain[16]", "Sustain", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-107" : [ "Linear[26]", "Linear", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-45" : [ "FreqMode[29]", "FreqMode", 0 ],
+			"obj-14::obj-27" : [ "Wave", "Wave", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-106" : [ "CV3[67]", "CV3", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-129" : [ "CV2[115]", "CV2", 0 ],
+			"obj-51::obj-2.4::obj-2::obj-1" : [ "Attack[38]", "Attack", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-45" : [ "FreqMode[80]", "FreqMode", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-11" : [ "PWM[37]", "PWM", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-106" : [ "CV3[51]", "CV3", 0 ],
+			"obj-118::obj-2.5::obj-2::obj-20" : [ "Mute[166]", "Mute", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-45" : [ "FreqMode[72]", "FreqMode", 0 ],
+			"obj-118::obj-2.8::obj-2::obj-29" : [ "Decay[37]", "Decay", 0 ],
+			"obj-313" : [ "live.gain~[5]", "Master", 0 ],
+			"obj-14::obj-2.1::obj-2::obj-31" : [ "Release", "Release", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-36" : [ "PW[21]", "PW", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-4" : [ "Waveform[19]", "Waveform", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-46" : [ "Offset[25]", "Offset", 0 ],
+			"obj-14::obj-2.7::obj-4::obj-80" : [ "Response[14]", "Response", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-107" : [ "Linear[55]", "Linear", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-53" : [ "Mute[137]", "Mute", 0 ],
+			"obj-51::obj-60" : [ "live.tab[5]", "live.tab", 0 ],
+			"obj-118::obj-2.2::obj-2::obj-1" : [ "Attack[34]", "Attack", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-11" : [ "PWM[41]", "PWM", 0 ],
 			"obj-118::obj-2.4::obj-3::obj-4" : [ "Waveform[13]", "Waveform", 0 ],
-			"obj-118::obj-2.6::obj-1::obj-4" : [ "Waveform[124]", "Waveform", 0 ],
-			"obj-118::obj-2.7::obj-3::obj-4" : [ "Waveform[109]", "Waveform", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-129" : [ "CV2[37]", "CV2", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-46" : [ "Offset[22]", "Offset", 0 ],
+			"obj-14::obj-2.5::obj-4::obj-80" : [ "Response[16]", "Response", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-46" : [ "Offset[26]", "Offset", 0 ],
+			"obj-14::obj-2.8::obj-2::obj-29" : [ "Decay[12]", "Decay", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-53" : [ "Mute[131]", "Mute", 0 ],
+			"obj-51::obj-2.4::obj-4::obj-33" : [ "Quadrants[39]", "Quadrants", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-129" : [ "CV2[47]", "CV2", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-106" : [ "CV3[82]", "CV3", 0 ],
+			"obj-51::obj-2.8::obj-2::obj-15" : [ "Legato[43]", "Legato", 0 ],
+			"obj-118::obj-2.5::obj-4::obj-55" : [ "Bypass[44]", "Bypass", 0 ],
+			"obj-118::obj-2.8::obj-4::obj-33" : [ "Quadrants[37]", "Quadrants", 0 ],
+			"obj-459" : [ "live.gain~[4]", "Chords", 0 ],
+			"obj-14::obj-2.3::obj-2::obj-32" : [ "Sustain[10]", "Sustain", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-11" : [ "PWM[23]", "PWM", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-107" : [ "Linear[28]", "Linear", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-46" : [ "Offset[55]", "Offset", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-106" : [ "CV3[58]", "CV3", 0 ],
+			"obj-51::obj-2.5::obj-2::obj-31" : [ "Release[39]", "Release", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-129" : [ "CV2[54]", "CV2", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-107" : [ "Linear[61]", "Linear", 0 ],
+			"obj-118::obj-2.6::obj-2::obj-29" : [ "Decay[36]", "Decay", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-45" : [ "FreqMode[73]", "FreqMode", 0 ],
+			"obj-412" : [ "incdec[2]", "incdec[2]", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-4" : [ "Waveform[71]", "Waveform", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-107" : [ "Linear[22]", "Linear", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-4" : [ "Waveform[21]", "Waveform", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-107" : [ "Linear[75]", "Linear", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-36" : [ "PW[117]", "PW", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-51" : [ "Freq[120]", "Freq", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-53" : [ "Mute[146]", "Mute", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-4" : [ "Waveform[7]", "Waveform", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-107" : [ "Linear[52]", "Linear", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-53" : [ "Mute[167]", "Mute", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-53" : [ "Mute[171]", "Mute", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-45" : [ "FreqMode[74]", "FreqMode", 0 ],
+			"obj-523" : [ "live.text[8]", "live.text[7]", 0 ],
+			"obj-416" : [ "incdec[3]", "incdec[3]", 0 ],
+			"obj-14::obj-2.3::obj-2::obj-15" : [ "Legato[10]", "Legato", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-46" : [ "Offset[28]", "Offset", 0 ],
+			"obj-14::obj-18" : [ "live.dial[1]", "attack", 0 ],
+			"obj-51::obj-2.1::obj-2::obj-31" : [ "Release[21]", "Release", 0 ],
+			"obj-51::obj-2.5::obj-4::obj-80" : [ "Response[40]", "Response", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-4" : [ "Waveform[3]", "Waveform", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-107" : [ "Linear[66]", "Linear", 0 ],
+			"obj-118::obj-2.3::obj-2::obj-29" : [ "Decay[44]", "Decay", 0 ],
+			"obj-118::obj-2.6::obj-4::obj-33" : [ "Quadrants[36]", "Quadrants", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-107" : [ "Linear", "Linear", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-36" : [ "PW[18]", "PW", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-11" : [ "PWM[24]", "PWM", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-107" : [ "Linear[27]", "Linear", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-46" : [ "Offset[87]", "Offset", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-51" : [ "Freq[117]", "Freq", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-36" : [ "PW[120]", "PW", 0 ],
+			"obj-51::obj-2.6::obj-2::obj-1" : [ "Attack[40]", "Attack", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-107" : [ "Linear[80]", "Linear", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-45" : [ "FreqMode[86]", "FreqMode", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-46" : [ "Offset[52]", "Offset", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-4" : [ "Waveform[106]", "Waveform", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-106" : [ "CV3[72]", "CV3", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-11" : [ "PWM[49]", "PWM", 0 ],
+			"obj-502" : [ "live.text[2]", "live.text", 0 ],
+			"obj-14::obj-2.3::obj-4::obj-33" : [ "Quadrants[10]", "Quadrants", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-4" : [ "Waveform[20]", "Waveform", 0 ],
+			"obj-14::obj-2.6::obj-2::obj-32" : [ "Sustain[11]", "Sustain", 0 ],
+			"obj-51::obj-2.1::obj-2::obj-20" : [ "Mute[130]", "Mute", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-107" : [ "Linear[77]", "Linear", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-46" : [ "Offset[61]", "Offset", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-11" : [ "PWM[36]", "PWM", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-4" : [ "Waveform[6]", "Waveform", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-36" : [ "PW[105]", "PW", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-53" : [ "Mute[170]", "Mute", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-51" : [ "Freq[46]", "Freq", 0 ],
+			"obj-307::obj-7" : [ "live.dial", "wet/dry", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-4" : [ "Waveform", "Waveform", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-51" : [ "Freq[18]", "Freq", 0 ],
+			"obj-14::obj-2.4::obj-2::obj-29" : [ "Decay[10]", "Decay", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-46" : [ "Offset[27]", "Offset", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-53" : [ "Mute[59]", "Mute", 0 ],
+			"obj-51::obj-2.2::obj-2::obj-32" : [ "Sustain[38]", "Sustain", 0 ],
+			"obj-51::obj-2.3::obj-2::obj-15" : [ "Legato[29]", "Legato", 0 ],
+			"obj-51::obj-2.6::obj-4::obj-33" : [ "Quadrants[41]", "Quadrants", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-46" : [ "Offset[93]", "Offset", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-129" : [ "CV2[33]", "CV2", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-107" : [ "Linear[67]", "Linear", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-107" : [ "Linear[85]", "Linear", 0 ],
+			"obj-118::obj-2.4::obj-2::obj-32" : [ "Sustain[35]", "Sustain", 0 ],
+			"obj-118::obj-2.7::obj-2::obj-32" : [ "Sustain[46]", "Sustain", 0 ],
+			"obj-307::obj-21" : [ "live.gain~[8]", "live.gain~[8]", 0 ],
+			"obj-498" : [ "live.text[1]", "live.text", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-106" : [ "CV3[71]", "CV3", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-4" : [ "Waveform[74]", "Waveform", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-11" : [ "PWM[20]", "PWM", 0 ],
+			"obj-14::obj-2.6::obj-4::obj-80" : [ "Response[11]", "Response", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-36" : [ "PW[29]", "PW", 0 ],
+			"obj-14::obj-60" : [ "live.tab", "live.tab", 0 ],
+			"obj-51::obj-2.1::obj-4::obj-55" : [ "Bypass[21]", "Bypass", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-46" : [ "Offset[89]", "Offset", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-107" : [ "Linear[78]", "Linear", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-36" : [ "PW[35]", "PW", 0 ],
+			"obj-118::obj-2.1::obj-2::obj-32" : [ "Sustain[33]", "Sustain", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-46" : [ "Offset[94]", "Offset", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-106" : [ "CV3[93]", "CV3", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-36" : [ "PW[46]", "PW", 0 ],
+			"obj-14::obj-2.1::obj-2::obj-20" : [ "Mute[35]", "Mute", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-53" : [ "Mute[50]", "Mute", 0 ],
+			"obj-14::obj-2.4::obj-4::obj-80" : [ "Response[15]", "Response", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-129" : [ "CV2[25]", "CV2", 0 ],
+			"obj-14::obj-2.7::obj-2::obj-15" : [ "Legato[14]", "Legato", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-106" : [ "CV3[30]", "CV3", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-129" : [ "CV2[120]", "CV2", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-51" : [ "Freq[31]", "Freq", 0 ],
+			"obj-51::obj-2.7::obj-2::obj-32" : [ "Sustain[42]", "Sustain", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-45" : [ "FreqMode[85]", "FreqMode", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-46" : [ "Offset[34]", "Offset", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-46" : [ "Offset[51]", "Offset", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-46" : [ "Offset[96]", "Offset", 0 ],
+			"obj-118::obj-20" : [ "live.dial[26]", "sustain", 0 ],
+			"obj-49" : [ "number[3]", "number[3]", 0 ],
+			"obj-371" : [ "incdec", "incdec", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-51" : [ "Freq[70]", "Freq", 0 ],
+			"obj-14::obj-2.2::obj-2::obj-15" : [ "Legato[1]", "Legato", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-11" : [ "PWM[19]", "PWM", 0 ],
+			"obj-14::obj-2.5::obj-2::obj-31" : [ "Release[16]", "Release", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-4" : [ "Waveform[23]", "Waveform", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-4" : [ "Waveform[26]", "Waveform", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-129" : [ "CV2[113]", "CV2", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-107" : [ "Linear[57]", "Linear", 0 ],
+			"obj-51::obj-2.4::obj-2::obj-32" : [ "Sustain[39]", "Sustain", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-51" : [ "Freq[35]", "Freq", 0 ],
+			"obj-118::obj-2.1::obj-2::obj-1" : [ "Attack[33]", "Attack", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-129" : [ "CV2[35]", "CV2", 0 ],
+			"obj-118::obj-2.5::obj-2::obj-15" : [ "Legato[45]", "Legato", 0 ],
+			"obj-118::obj-2.8::obj-2::obj-1" : [ "Attack[37]", "Attack", 0 ],
+			"obj-128" : [ "live.gain~[1]", "Premaster", 0 ],
+			"obj-14::obj-2.1::obj-2::obj-29" : [ "Decay", "Decay", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-106" : [ "CV3[21]", "CV3", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-36" : [ "PW[23]", "PW", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-11" : [ "PWM[25]", "PWM", 0 ],
+			"obj-14::obj-21" : [ "live.dial[4]", "release", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-4" : [ "Waveform[113]", "Waveform", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-45" : [ "FreqMode[78]", "FreqMode", 0 ],
+			"obj-51::obj-2.7::obj-2::obj-15" : [ "Legato[42]", "Legato", 0 ],
+			"obj-51::obj-28" : [ "live.slider[3]", "gain", 0 ],
+			"obj-118::obj-2.2::obj-2::obj-32" : [ "Sustain[34]", "Sustain", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-107" : [ "Linear[86]", "Linear", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-53" : [ "Mute[168]", "Mute", 0 ],
+			"obj-118::obj-19" : [ "live.dial[19]", "decay", 0 ],
+			"obj-374" : [ "number[2]", "number[2]", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-36" : [ "PW[70]", "PW", 0 ],
+			"obj-14::obj-2.2::obj-2::obj-31" : [ "Release[1]", "Release", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-11" : [ "PWM[26]", "PWM", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-45" : [ "FreqMode[62]", "FreqMode", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-46" : [ "Offset[57]", "Offset", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-107" : [ "Linear[79]", "Linear", 0 ],
+			"obj-51::obj-2.8::obj-2::obj-20" : [ "Mute[151]", "Mute", 0 ],
+			"obj-118::obj-2.1::obj-4::obj-33" : [ "Quadrants[33]", "Quadrants", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-45" : [ "FreqMode[64]", "FreqMode", 0 ],
+			"obj-504" : [ "live.text[4]", "live.text[4]", 0 ],
+			"obj-14::obj-2.1::obj-4::obj-33" : [ "Quadrants", "Quadrants", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-51" : [ "Freq[23]", "Freq", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-11" : [ "PWM[113]", "PWM", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-129" : [ "CV2[117]", "CV2", 0 ],
+			"obj-51::obj-2.5::obj-2::obj-1" : [ "Attack[39]", "Attack", 0 ],
+			"obj-51::obj-2.7::obj-4::obj-33" : [ "Quadrants[42]", "Quadrants", 0 ],
+			"obj-51::obj-19" : [ "live.dial[20]", "decay", 0 ],
+			"obj-118::obj-2.2::obj-2::obj-15" : [ "Legato[34]", "Legato", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-36" : [ "PW[40]", "PW", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-51" : [ "Freq[43]", "Freq", 0 ],
+			"obj-118::obj-2.6::obj-2::obj-15" : [ "Legato[36]", "Legato", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-46" : [ "Offset[73]", "Offset", 0 ],
+			"obj-415" : [ "number[8]", "number[8]", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-36" : [ "PW[71]", "PW", 0 ],
+			"obj-14::obj-2.2::obj-4::obj-55" : [ "Bypass[9]", "Bypass", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-4" : [ "Waveform[75]", "Waveform", 0 ],
+			"obj-14::obj-2.8::obj-2::obj-31" : [ "Release[12]", "Release", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-4" : [ "Waveform[115]", "Waveform", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-106" : [ "CV3[77]", "CV3", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-46" : [ "Offset[91]", "Offset", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-45" : [ "FreqMode[81]", "FreqMode", 0 ],
+			"obj-51::obj-2.8::obj-2::obj-1" : [ "Attack[42]", "Attack", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-107" : [ "Linear[84]", "Linear", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-4" : [ "Waveform[12]", "Waveform", 0 ],
+			"obj-500" : [ "umenu[1]", "umenu[1]", 0 ],
+			"obj-14::obj-2.3::obj-2::obj-20" : [ "Mute[37]", "Mute", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-11" : [ "PWM[28]", "PWM", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-45" : [ "FreqMode[58]", "FreqMode", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-36" : [ "PW[34]", "PW", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-51" : [ "Freq[36]", "Freq", 0 ],
+			"obj-118::obj-2.2::obj-4::obj-33" : [ "Quadrants[34]", "Quadrants", 0 ],
+			"obj-118::obj-2.3::obj-2::obj-31" : [ "Release[43]", "Release", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-53" : [ "Mute[164]", "Mute", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-107" : [ "Linear[73]", "Linear", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-51" : [ "Freq", "Freq", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-51" : [ "Freq[71]", "Freq", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-106" : [ "CV3[18]", "CV3", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-11" : [ "PWM[22]", "PWM", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-51" : [ "Freq[24]", "Freq", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-4" : [ "Waveform[24]", "Waveform", 0 ],
+			"obj-14::obj-2.8::obj-4::obj-80" : [ "Response[12]", "Response", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-11" : [ "PWM[115]", "PWM", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-53" : [ "Mute[135]", "Mute", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-106" : [ "CV3[59]", "CV3", 0 ],
+			"obj-51::obj-2.6::obj-2::obj-32" : [ "Sustain[41]", "Sustain", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-4" : [ "Waveform[2]", "Waveform", 0 ],
+			"obj-51::obj-2.8::obj-4::obj-55" : [ "Bypass[42]", "Bypass", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-36" : [ "PW[37]", "PW", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-11" : [ "PWM[42]", "PWM", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-129" : [ "CV2[106]", "CV2", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-129" : [ "CV2[57]", "CV2", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-4" : [ "Waveform[111]", "Waveform", 0 ],
+			"obj-14::obj-2.3::obj-4::obj-55" : [ "Bypass[10]", "Bypass", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-36" : [ "PW[20]", "PW", 0 ],
+			"obj-14::obj-2.6::obj-2::obj-31" : [ "Release[11]", "Release", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-4" : [ "Waveform[25]", "Waveform", 0 ],
+			"obj-51::obj-2.1::obj-2::obj-29" : [ "Decay[28]", "Decay", 0 ],
+			"obj-51::obj-2.2::obj-2::obj-15" : [ "Legato[38]", "Legato", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-4" : [ "Waveform[119]", "Waveform", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-51" : [ "Freq[34]", "Freq", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-53" : [ "Mute[153]", "Mute", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-4" : [ "Waveform[9]", "Waveform", 0 ],
+			"obj-118::obj-2.3::obj-2::obj-1" : [ "Attack[43]", "Attack", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-129" : [ "CV2[105]", "CV2", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-53" : [ "Mute[174]", "Mute", 0 ],
+			"obj-505" : [ "umenu[3]", "umenu[3]", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-36" : [ "PW", "PW", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-53" : [ "Mute[45]", "Mute", 0 ],
+			"obj-14::obj-2.4::obj-2::obj-15" : [ "Legato[15]", "Legato", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-36" : [ "PW[24]", "PW", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-11" : [ "PWM[27]", "PWM", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-45" : [ "FreqMode[30]", "FreqMode", 0 ],
+			"obj-51::obj-2.3::obj-2::obj-20" : [ "Mute[136]", "Mute", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-53" : [ "Mute[140]", "Mute", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-11" : [ "PWM[32]", "PWM", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-107" : [ "Linear[83]", "Linear", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-4" : [ "Waveform[8]", "Waveform", 0 ],
+			"obj-118::obj-2.4::obj-2::obj-20" : [ "Mute[163]", "Mute", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-45" : [ "FreqMode[88]", "FreqMode", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-107" : [ "Linear[74]", "Linear", 0 ],
+			"obj-76" : [ "eamir_filtering[3]", "eamir_filtering[3]", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-129" : [ "CV2[71]", "CV2", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-36" : [ "PW[19]", "PW", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-51" : [ "Freq[20]", "Freq", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-107" : [ "Linear[29]", "Linear", 0 ],
+			"obj-51::obj-2.1::obj-4::obj-80" : [ "Response[28]", "Response", 0 ],
+			"obj-51::obj-2.2::obj-4::obj-33" : [ "Quadrants[38]", "Quadrants", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-11" : [ "PWM[119]", "PWM", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-4" : [ "Waveform[122]", "Waveform", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-106" : [ "CV3[85]", "CV3", 0 ],
+			"obj-118::obj-2.3::obj-4::obj-55" : [ "Bypass[43]", "Bypass", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-106" : [ "CV3[90]", "CV3", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-129" : [ "CV2[36]", "CV2", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-106" : [ "CV3[94]", "CV3", 0 ],
+			"obj-372" : [ "incdec[1]", "incdec[1]", 0 ],
+			"obj-246" : [ "number[5]", "number[5]", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-46" : [ "Offset", "Offset", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-36" : [ "PW[25]", "PW", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-129" : [ "CV2[30]", "CV2", 0 ],
+			"obj-51::obj-2.2::obj-2::obj-20" : [ "Mute[133]", "Mute", 0 ],
+			"obj-51::obj-2.3::obj-2::obj-1" : [ "Attack[22]", "Attack", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-107" : [ "Linear[60]", "Linear", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-46" : [ "Offset[33]", "Offset", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-11" : [ "PWM[34]", "PWM", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-11" : [ "PWM[40]", "PWM", 0 ],
+			"obj-118::obj-2.4::obj-2::obj-31" : [ "Release[35]", "Release", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-11" : [ "PWM[107]", "PWM", 0 ],
+			"obj-118::obj-2.7::obj-2::obj-20" : [ "Mute[172]", "Mute", 0 ],
 			"obj-118::obj-28" : [ "live.slider[4]", "gain", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-53" : [ "Mute[44]", "Mute", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-51" : [ "Freq[19]", "Freq", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-46" : [ "Offset[29]", "Offset", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-107" : [ "Linear[56]", "Linear", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-4" : [ "Waveform[116]", "Waveform", 0 ],
+			"obj-51::obj-2.4::obj-2::obj-31" : [ "Release[38]", "Release", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-11" : [ "PWM[122]", "PWM", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-53" : [ "Mute[150]", "Mute", 0 ],
+			"obj-118::obj-2.1::obj-2::obj-15" : [ "Legato[33]", "Legato", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-107" : [ "Linear[35]", "Linear", 0 ],
+			"obj-118::obj-2.5::obj-2::obj-32" : [ "Sustain[45]", "Sustain", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-45" : [ "FreqMode[90]", "FreqMode", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-129" : [ "CV2[21]", "CV2", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-107" : [ "Linear[25]", "Linear", 0 ],
+			"obj-14::obj-2.7::obj-2::obj-1" : [ "Attack[14]", "Attack", 0 ],
+			"obj-51::obj-2.3::obj-4::obj-55" : [ "Bypass[22]", "Bypass", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-46" : [ "Offset[90]", "Offset", 0 ],
+			"obj-51::obj-2.7::obj-2::obj-20" : [ "Mute[148]", "Mute", 0 ],
+			"obj-51::obj-21" : [ "live.dial[22]", "release", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-4" : [ "Waveform[10]", "Waveform", 0 ],
+			"obj-118::obj-2.4::obj-4::obj-55" : [ "Bypass[35]", "Bypass", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-51" : [ "Freq[106]", "Freq", 0 ],
+			"obj-118::obj-2.7::obj-4::obj-33" : [ "Quadrants[46]", "Quadrants", 0 ],
+			"obj-118::obj-52" : [ "Wave[10]", "Wave", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-106" : [ "CV3[70]", "CV3", 0 ],
+			"obj-14::obj-2.2::obj-2::obj-1" : [ "Attack[1]", "Attack", 0 ],
+			"obj-14::obj-2.5::obj-2::obj-29" : [ "Decay[15]", "Decay", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-51" : [ "Freq[26]", "Freq", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-46" : [ "Offset[56]", "Offset", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-11" : [ "PWM[116]", "PWM", 0 ],
+			"obj-51::obj-2.4::obj-2::obj-20" : [ "Mute[139]", "Mute", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-4" : [ "Waveform[123]", "Waveform", 0 ],
+			"obj-118::obj-2.1::obj-4::obj-80" : [ "Response[33]", "Response", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-46" : [ "Offset[35]", "Offset", 0 ],
+			"obj-118::obj-2.5::obj-2::obj-29" : [ "Decay[45]", "Decay", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-4" : [ "Waveform[108]", "Waveform", 0 ],
+			"obj-118::obj-2.8::obj-2::obj-20" : [ "Mute[175]", "Mute", 0 ],
+			"obj-307::obj-4" : [ "live.gain~[7]", "live.gain~[6]", 0 ],
+			"obj-14::obj-2.1::obj-2::obj-32" : [ "Sustain", "Sustain", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-45" : [ "FreqMode[21]", "FreqMode", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-53" : [ "Mute[38]", "Mute", 0 ],
+			"obj-14::obj-2.7::obj-4::obj-33" : [ "Quadrants[14]", "Quadrants", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-51" : [ "Freq[113]", "Freq", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-107" : [ "Linear[58]", "Linear", 0 ],
+			"obj-51::obj-2.5::obj-2::obj-32" : [ "Sustain[40]", "Sustain", 0 ],
+			"obj-51::obj-2.7::obj-4::obj-55" : [ "Bypass[41]", "Bypass", 0 ],
+			"obj-51::obj-27" : [ "Wave[5]", "Wave", 0 ],
+			"obj-118::obj-2.2::obj-2::obj-20" : [ "Mute[157]", "Mute", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-106" : [ "CV3[34]", "CV3", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-46" : [ "Offset[63]", "Offset", 0 ],
+			"obj-118::obj-2.6::obj-2::obj-20" : [ "Mute[169]", "Mute", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-11" : [ "PWM[46]", "PWM", 0 ],
+			"obj-14::obj-2.2::obj-4::obj-80" : [ "Response[1]", "Response", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-36" : [ "PW[22]", "PW", 0 ],
+			"obj-14::obj-2.5::obj-4::obj-33" : [ "Quadrants[16]", "Quadrants", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-36" : [ "PW[26]", "PW", 0 ],
+			"obj-14::obj-2.8::obj-2::obj-1" : [ "Attack[12]", "Attack", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-129" : [ "CV2[116]", "CV2", 0 ],
+			"obj-51::obj-2.4::obj-4::obj-55" : [ "Bypass[38]", "Bypass", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-11" : [ "PWM[31]", "PWM", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-46" : [ "Offset[92]", "Offset", 0 ],
+			"obj-51::obj-2.8::obj-2::obj-29" : [ "Decay[43]", "Decay", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-51" : [ "Freq[37]", "Freq", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-36" : [ "PW[42]", "PW", 0 ],
+			"obj-118::obj-2.5::obj-4::obj-80" : [ "Response[45]", "Response", 0 ],
+			"obj-118::obj-2.8::obj-4::obj-55" : [ "Bypass[37]", "Bypass", 0 ],
+			"obj-14::obj-2.3::obj-2::obj-29" : [ "Decay[2]", "Decay", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-106" : [ "CV3[23]", "CV3", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-51" : [ "Freq[28]", "Freq", 0 ],
+			"obj-14::obj-19" : [ "live.dial[2]", "decay", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-36" : [ "PW[113]", "PW", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-46" : [ "Offset[58]", "Offset", 0 ],
+			"obj-51::obj-2.5::obj-2::obj-15" : [ "Legato[40]", "Legato", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-106" : [ "CV3[84]", "CV3", 0 ],
+			"obj-118::obj-2.2::obj-4::obj-55" : [ "Bypass[34]", "Bypass", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-36" : [ "PW[43]", "PW", 0 ],
+			"obj-118::obj-2.6::obj-2::obj-1" : [ "Attack[36]", "Attack", 0 ],
+			"obj-118::obj-2.7::obj-3::obj-4" : [ "Waveform[109]", "Waveform", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-129" : [ "CV2", "CV2", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-53" : [ "Mute[49]", "Mute", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-129" : [ "CV2[18]", "CV2", 0 ],
+			"obj-14::obj-2.4::obj-1::obj-51" : [ "Freq[22]", "Freq", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-53" : [ "Mute[53]", "Mute", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-36" : [ "PW[27]", "PW", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-51" : [ "Freq[115]", "Freq", 0 ],
+			"obj-51::obj-2.3::obj-1::obj-45" : [ "FreqMode[76]", "FreqMode", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-129" : [ "CV2[119]", "CV2", 0 ],
+			"obj-51::obj-2.6::obj-2::obj-31" : [ "Release[40]", "Release", 0 ],
+			"obj-51::obj-2.8::obj-4::obj-80" : [ "Response[43]", "Response", 0 ],
+			"obj-118::obj-2.1::obj-3::obj-129" : [ "CV2[52]", "CV2", 0 ],
+			"obj-118::obj-2.4::obj-1::obj-51" : [ "Freq[42]", "Freq", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-107" : [ "Linear[88]", "Linear", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-107" : [ "Linear[72]", "Linear", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-53" : [ "Mute[176]", "Mute", 0 ],
+			"obj-105" : [ "live.dial[16]", "Reverb Signal", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-106" : [ "CV3[20]", "CV3", 0 ],
+			"obj-14::obj-2.7::obj-3::obj-36" : [ "PW[28]", "PW", 0 ],
+			"obj-51::obj-2.1::obj-2::obj-15" : [ "Legato[28]", "Legato", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-36" : [ "PW[119]", "PW", 0 ],
+			"obj-51::obj-2.5::obj-4::obj-33" : [ "Quadrants[40]", "Quadrants", 0 ],
+			"obj-51::obj-2.7::obj-3::obj-53" : [ "Mute[149]", "Mute", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-36" : [ "PW[36]", "PW", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-36" : [ "PW[39]", "PW", 0 ],
+			"obj-118::obj-2.3::obj-2::obj-32" : [ "Sustain[44]", "Sustain", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-11" : [ "PWM[105]", "PWM", 0 ],
+			"obj-118::obj-2.6::obj-4::obj-55" : [ "Bypass[36]", "Bypass", 0 ],
+			"obj-14::obj-2.1::obj-1::obj-53" : [ "Mute", "Mute", 0 ],
+			"obj-14::obj-2.2::obj-3::obj-45" : [ "FreqMode[18]", "FreqMode", 0 ],
+			"obj-14::obj-2.5::obj-3::obj-106" : [ "CV3[24]", "CV3", 0 ],
+			"obj-14::obj-2.7::obj-1::obj-51" : [ "Freq[27]", "Freq", 0 ],
+			"obj-51::obj-2.2::obj-1::obj-36" : [ "PW[115]", "PW", 0 ],
+			"obj-51::obj-2.4::obj-3::obj-45" : [ "FreqMode[59]", "FreqMode", 0 ],
+			"obj-51::obj-2.6::obj-2::obj-20" : [ "Mute[145]", "Mute", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-51" : [ "Freq[32]", "Freq", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-4" : [ "Waveform[5]", "Waveform", 0 ],
+			"obj-118::obj-2.5::obj-3::obj-106" : [ "CV3[91]", "CV3", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-46" : [ "Offset[54]", "Offset", 0 ],
+			"obj-118::obj-2.8::obj-3::obj-51" : [ "Freq[47]", "Freq", 0 ],
+			"obj-457" : [ "live.gain~[2]", "Melody", 0 ],
+			"obj-102" : [ "Reverb Wet/Dry", "Reverb Wet/Dry", 0 ],
+			"obj-306" : [ "live.text[6]", "live.text", 0 ],
+			"obj-14::obj-2.5::obj-1::obj-53" : [ "Mute[39]", "Mute", 0 ],
+			"obj-14::obj-2.6::obj-2::obj-29" : [ "Decay[11]", "Decay", 0 ],
+			"obj-51::obj-2.2::obj-4::obj-55" : [ "Bypass[25]", "Bypass", 0 ],
+			"obj-51::obj-2.4::obj-1::obj-51" : [ "Freq[119]", "Freq", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-36" : [ "PW[122]", "PW", 0 ],
+			"obj-118::obj-2.1::obj-1::obj-46" : [ "Offset[50]", "Offset", 0 ],
+			"obj-118::obj-2.3::obj-4::obj-80" : [ "Response[44]", "Response", 0 ],
+			"obj-118::obj-2.5::obj-1::obj-45" : [ "FreqMode[87]", "FreqMode", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-107" : [ "Linear[90]", "Linear", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-129" : [ "CV2[58]", "CV2", 0 ],
+			"obj-511" : [ "live.text[5]", "live.text[5]", 0 ],
+			"obj-14::obj-2.4::obj-2::obj-1" : [ "Attack[15]", "Attack", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-107" : [ "Linear[30]", "Linear", 0 ],
+			"obj-51::obj-2.2::obj-2::obj-29" : [ "Decay[38]", "Decay", 0 ],
+			"obj-51::obj-2.3::obj-2::obj-32" : [ "Sustain[29]", "Sustain", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-4" : [ "Waveform[121]", "Waveform", 0 ],
+			"obj-51::obj-2.6::obj-4::obj-55" : [ "Bypass[40]", "Bypass", 0 ],
+			"obj-51::obj-2.7::obj-1::obj-36" : [ "PW[32]", "PW", 0 ],
+			"obj-51::obj-2.8::obj-3::obj-11" : [ "PWM[33]", "PWM", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-51" : [ "Freq[38]", "Freq", 0 ],
+			"obj-118::obj-2.2::obj-3::obj-51" : [ "Freq[39]", "Freq", 0 ],
+			"obj-118::obj-2.4::obj-2::obj-1" : [ "Attack[35]", "Attack", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-4" : [ "Waveform[124]", "Waveform", 0 ],
+			"obj-118::obj-2.7::obj-2::obj-29" : [ "Decay[46]", "Decay", 0 ],
+			"obj-14::obj-2.2::obj-1::obj-46" : [ "Offset[71]", "Offset", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-53" : [ "Mute[46]", "Mute", 0 ],
+			"obj-14::obj-2.6::obj-4::obj-33" : [ "Quadrants[11]", "Quadrants", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-129" : [ "CV2[29]", "CV2", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-36" : [ "PW[116]", "PW", 0 ],
+			"obj-51::obj-2.5::obj-3::obj-51" : [ "Freq[122]", "Freq", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-45" : [ "FreqMode[84]", "FreqMode", 0 ],
+			"obj-118::obj-2.1::obj-2::obj-29" : [ "Decay[33]", "Decay", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-4" : [ "Waveform[11]", "Waveform", 0 ],
+			"obj-118::obj-2.6::obj-3::obj-46" : [ "Offset[36]", "Offset", 0 ],
+			"obj-118::obj-2.8::obj-1::obj-45" : [ "FreqMode[91]", "FreqMode", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-107" : [ "Linear[21]", "Linear", 0 ],
+			"obj-14::obj-2.4::obj-4::obj-33" : [ "Quadrants[15]", "Quadrants", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-4" : [ "Waveform[22]", "Waveform", 0 ],
+			"obj-14::obj-2.7::obj-2::obj-32" : [ "Sustain[14]", "Sustain", 0 ],
+			"obj-14::obj-2.8::obj-3::obj-46" : [ "Offset[30]", "Offset", 0 ],
+			"obj-51::obj-2.3::obj-4::obj-80" : [ "Response[29]", "Response", 0 ],
+			"obj-51::obj-2.5::obj-1::obj-11" : [ "PWM[121]", "PWM", 0 ],
+			"obj-51::obj-2.6::obj-3::obj-129" : [ "CV2[48]", "CV2", 0 ],
+			"obj-51::obj-2.7::obj-2::obj-29" : [ "Decay[42]", "Decay", 0 ],
+			"obj-118::obj-2.2::obj-1::obj-36" : [ "PW[38]", "PW", 0 ],
+			"obj-118::obj-2.4::obj-4::obj-80" : [ "Response[35]", "Response", 0 ],
+			"obj-118::obj-2.6::obj-1::obj-36" : [ "PW[124]", "PW", 0 ],
+			"obj-118::obj-18" : [ "live.dial[25]", "attack", 0 ],
+			"obj-14::obj-2.1::obj-3::obj-129" : [ "CV2[70]", "CV2", 0 ],
+			"obj-14::obj-2.2::obj-2::obj-32" : [ "Sustain[1]", "Sustain", 0 ],
+			"obj-14::obj-2.3::obj-3::obj-106" : [ "CV3[19]", "CV3", 0 ],
+			"obj-14::obj-2.5::obj-2::obj-15" : [ "Legato[16]", "Legato", 0 ],
+			"obj-14::obj-2.6::obj-3::obj-53" : [ "Mute[42]", "Mute", 0 ],
+			"obj-14::obj-2.8::obj-1::obj-53" : [ "Mute[57]", "Mute", 0 ],
+			"obj-14::obj-52" : [ "Wave[1]", "Wave", 0 ],
+			"obj-51::obj-2.1::obj-3::obj-11" : [ "PWM[114]", "PWM", 0 ],
+			"obj-51::obj-2.2::obj-3::obj-51" : [ "Freq[116]", "Freq", 0 ],
+			"obj-51::obj-2.4::obj-2::obj-29" : [ "Decay[39]", "Decay", 0 ],
+			"obj-51::obj-2.6::obj-1::obj-36" : [ "PW[123]", "PW", 0 ],
+			"obj-51::obj-2.8::obj-1::obj-129" : [ "CV2[50]", "CV2", 0 ],
+			"obj-118::obj-2.3::obj-3::obj-11" : [ "PWM[35]", "PWM", 0 ],
+			"obj-118::obj-2.5::obj-2::obj-31" : [ "Release[44]", "Release", 0 ],
+			"obj-118::obj-2.7::obj-1::obj-36" : [ "PW[44]", "PW", 0 ],
+			"obj-118::obj-2.8::obj-2::obj-15" : [ "Legato[37]", "Legato", 0 ],
+			"obj-14::obj-2.1::obj-2::obj-15" : [ "Legato", "Legato", 0 ],
+			"obj-14::obj-2.3::obj-1::obj-46" : [ "Offset[21]", "Offset", 0 ],
+			"obj-14::obj-2.4::obj-3::obj-45" : [ "FreqMode[23]", "FreqMode", 0 ],
+			"obj-14::obj-2.6::obj-1::obj-106" : [ "CV3[25]", "CV3", 0 ],
+			"obj-51::obj-2.1::obj-1::obj-53" : [ "Mute[129]", "Mute", 0 ],
+			"obj-51::obj-2.3::obj-3::obj-4" : [ "Waveform[118]", "Waveform", 0 ],
+			"obj-51::obj-20" : [ "live.dial[23]", "sustain", 0 ],
+			"obj-118::obj-2.2::obj-2::obj-29" : [ "Decay[34]", "Decay", 0 ],
+			"obj-118::obj-2.3::obj-1::obj-51" : [ "Freq[40]", "Freq", 0 ],
+			"obj-118::obj-2.4::obj-3::obj-106" : [ "CV3[52]", "CV3", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-14::obj-2.1::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[70]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[22]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[26]"
+				}
+,
+				"obj-14::obj-2.8::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[12]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[114]"
+				}
+,
+				"obj-51::obj-2.4::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[39]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[123]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[47]"
+				}
+,
+				"obj-51::obj-2.8::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[42]"
+				}
+,
+				"obj-118::obj-2.5::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[45]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[23]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[55]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[118]"
+				}
+,
+				"obj-51::obj-2.5::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[142]"
+				}
+,
+				"obj-51::obj-52" : 				{
+					"parameter_longname" : "Wave[8]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[60]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[56]"
+				}
+,
+				"obj-118::obj-2.6::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[36]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[45]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[71]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[51]"
+				}
+,
+				"obj-14::obj-2.8::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[12]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[132]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[88]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[59]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[1]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[155]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[162]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[106]"
+				}
+,
+				"obj-14::obj-2.3::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[10]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[28]"
+				}
+,
+				"obj-51::obj-2.5::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[39]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[83]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[51]"
+				}
+,
+				"obj-118::obj-2.3::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[160]"
+				}
+,
+				"obj-118::obj-2.6::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[36]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[45]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[18]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[43]"
+				}
+,
+				"obj-14::obj-2.8::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[12]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[56]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[76]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[59]"
+				}
+,
+				"obj-51::obj-2.6::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[41]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[147]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[87]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[35]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[106]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[45]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[74]"
+				}
+,
+				"obj-14::obj-2.3::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[10]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[24]"
+				}
+,
+				"obj-14::obj-2.6::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[11]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[56]"
+				}
+,
+				"obj-51::obj-2.1::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[21]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[138]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[80]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[49]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[66]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[87]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[107]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[91]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[18]"
+				}
+,
+				"obj-14::obj-2.4::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[15]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[20]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[27]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[27]"
+				}
+,
+				"obj-51::obj-2.3::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[22]"
+				}
+,
+				"obj-51::obj-2.6::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[41]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[83]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[33]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[156]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[158]"
+				}
+,
+				"obj-118::obj-2.4::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[35]"
+				}
+,
+				"obj-118::obj-2.7::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[46]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[47]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[71]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[19]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[20]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[29]"
+				}
+,
+				"obj-51::obj-2.1::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[28]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[78]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[143]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[48]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[105]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[44]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[97]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[73]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[25]"
+				}
+,
+				"obj-14::obj-2.7::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[14]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[30]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[121]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[62]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[33]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[88]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[89]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[89]"
+				}
+,
+				"obj-118::obj-2.7::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[45]"
+				}
+,
+				"obj-118::obj-27" : 				{
+					"parameter_longname" : "Wave[9]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[70]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[19]"
+				}
+,
+				"obj-14::obj-2.5::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[52]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[29]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[114]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[134]"
+				}
+,
+				"obj-51::obj-2.4::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[39]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[82]"
+				}
+,
+				"obj-118::obj-2.1::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[41]"
+				}
+,
+				"obj-118::obj-2.5::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[44]"
+				}
+,
+				"obj-118::obj-2.8::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[37]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[21]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[25]"
+				}
+,
+				"obj-14::obj-2.7::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[55]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[121]"
+				}
+,
+				"obj-51::obj-2.7::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[41]"
+				}
+,
+				"obj-51::obj-18" : 				{
+					"parameter_longname" : "live.dial[21]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[159]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[107]"
+				}
+,
+				"obj-118::obj-2.7::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[45]"
+				}
+,
+				"obj-118::obj-21" : 				{
+					"parameter_longname" : "live.dial[24]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[70]"
+				}
+,
+				"obj-14::obj-2.2::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[36]"
+				}
+,
+				"obj-14::obj-2.5::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[26]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[114]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[57]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[144]"
+				}
+,
+				"obj-118::obj-2.1::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[41]"
+				}
+,
+				"obj-118::obj-2.8::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[37]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[23]"
+				}
+,
+				"obj-14::obj-2.7::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[14]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[112]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[118]"
+				}
+,
+				"obj-51::obj-2.5::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[42]"
+				}
+,
+				"obj-51::obj-1" : 				{
+					"parameter_longname" : "live.tab[8]"
+				}
+,
+				"obj-118::obj-2.2::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[34]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[60]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[43]"
+				}
+,
+				"obj-118::obj-2.6::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[36]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[73]"
+				}
+,
+				"obj-14::obj-2.2::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[9]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[26]"
+				}
+,
+				"obj-14::obj-2.8::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[58]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[117]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[81]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[31]"
+				}
+,
+				"obj-51::obj-2.8::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[43]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[39]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[35]"
+				}
+,
+				"obj-118::obj-2.8::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[46]"
+				}
+,
+				"obj-14::obj-2.3::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[10]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[23]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[28]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[55]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[118]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[32]"
+				}
+,
+				"obj-118::obj-2.2::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[34]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[52]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[173]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[71]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[18]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[27]"
+				}
+,
+				"obj-14::obj-2.8::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[12]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[114]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[117]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[120]"
+				}
+,
+				"obj-51::obj-2.6::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[41]"
+				}
+,
+				"obj-51::obj-2.8::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[43]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[62]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[55]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[124]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[44]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[74]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[20]"
+				}
+,
+				"obj-14::obj-2.6::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[54]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[28]"
+				}
+,
+				"obj-51::obj-2.1::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[28]"
+				}
+,
+				"obj-51::obj-2.2::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[25]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[77]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[81]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[66]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[51]"
+				}
+,
+				"obj-118::obj-2.3::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[44]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[105]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[110]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[72]"
+				}
+,
+				"obj-14::obj-2.4::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[15]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[27]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[30]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[56]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[120]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[32]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[152]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[95]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[59]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[20]"
+				}
+,
+				"obj-14::obj-2.6::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[11]"
+				}
+,
+				"obj-51::obj-2.2::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[38]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[118]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[79]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[38]"
+				}
+,
+				"obj-118::obj-2.3::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[44]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[165]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[107]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[48]"
+				}
+,
+				"obj-14::obj-2.4::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[47]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[30]"
+				}
+,
+				"obj-51::obj-2.2::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[25]"
+				}
+,
+				"obj-51::obj-2.3::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[29]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[141]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[82]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[86]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[34]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[53]"
+				}
+,
+				"obj-118::obj-2.4::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[35]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[92]"
+				}
+,
+				"obj-118::obj-2.7::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[45]"
+				}
+,
+				"obj-118::obj-1" : 				{
+					"parameter_longname" : "live.tab[9]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[70]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[19]"
+				}
+,
+				"obj-14::obj-2.6::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[11]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[29]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[57]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[31]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[4]"
+				}
+,
+				"obj-118::obj-2.1::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[154]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[161]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[107]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[21]"
+				}
+,
+				"obj-14::obj-2.4::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[15]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[41]"
+				}
+,
+				"obj-14::obj-2.7::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[14]"
+				}
+,
+				"obj-51::obj-2.3::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[29]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[79]"
+				}
+,
+				"obj-51::obj-2.7::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[41]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[34]"
+				}
+,
+				"obj-118::obj-2.4::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[35]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[89]"
+				}
+,
+				"obj-118::obj-2.7::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[37]"
+				}
+,
+				"obj-118::obj-60" : 				{
+					"parameter_longname" : "live.tab[10]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[70]"
+				}
+,
+				"obj-14::obj-2.2::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[1]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[19]"
+				}
+,
+				"obj-14::obj-2.5::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[26]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[29]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[67]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[115]"
+				}
+,
+				"obj-51::obj-2.4::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[38]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[80]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[37]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[51]"
+				}
+,
+				"obj-118::obj-2.5::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[166]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[72]"
+				}
+,
+				"obj-118::obj-2.8::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[37]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[21]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[19]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[25]"
+				}
+,
+				"obj-14::obj-2.7::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[14]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[55]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[137]"
+				}
+,
+				"obj-51::obj-60" : 				{
+					"parameter_longname" : "live.tab[5]"
+				}
+,
+				"obj-118::obj-2.2::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[34]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[41]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[13]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[37]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[26]"
+				}
+,
+				"obj-14::obj-2.8::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[12]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[131]"
+				}
+,
+				"obj-51::obj-2.4::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[39]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[47]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[82]"
+				}
+,
+				"obj-51::obj-2.8::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[43]"
+				}
+,
+				"obj-118::obj-2.5::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[44]"
+				}
+,
+				"obj-118::obj-2.8::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[37]"
+				}
+,
+				"obj-14::obj-2.3::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[10]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[23]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[28]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[55]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[58]"
+				}
+,
+				"obj-51::obj-2.5::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[39]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[54]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[61]"
+				}
+,
+				"obj-118::obj-2.6::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[36]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[73]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[71]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[21]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[75]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[117]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[120]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[146]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[7]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[52]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[167]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[171]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[74]"
+				}
+,
+				"obj-14::obj-2.3::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[10]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[28]"
+				}
+,
+				"obj-51::obj-2.1::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[21]"
+				}
+,
+				"obj-51::obj-2.5::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[3]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[66]"
+				}
+,
+				"obj-118::obj-2.3::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[44]"
+				}
+,
+				"obj-118::obj-2.6::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[36]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[18]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[27]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[87]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[117]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[120]"
+				}
+,
+				"obj-51::obj-2.6::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[80]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[86]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[52]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[106]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[72]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[49]"
+				}
+,
+				"obj-14::obj-2.3::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[10]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[20]"
+				}
+,
+				"obj-14::obj-2.6::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[11]"
+				}
+,
+				"obj-51::obj-2.1::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[130]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[77]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[61]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[36]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[6]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[105]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[170]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[46]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[18]"
+				}
+,
+				"obj-14::obj-2.4::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[10]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[27]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[59]"
+				}
+,
+				"obj-51::obj-2.2::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[38]"
+				}
+,
+				"obj-51::obj-2.3::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[29]"
+				}
+,
+				"obj-51::obj-2.6::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[41]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[93]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[33]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[67]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[85]"
+				}
+,
+				"obj-118::obj-2.4::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[35]"
+				}
+,
+				"obj-118::obj-2.7::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[46]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[71]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[74]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[20]"
+				}
+,
+				"obj-14::obj-2.6::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[11]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[29]"
+				}
+,
+				"obj-51::obj-2.1::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[21]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[89]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[78]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[35]"
+				}
+,
+				"obj-118::obj-2.1::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[33]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[94]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[93]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[46]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[50]"
+				}
+,
+				"obj-14::obj-2.4::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[15]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[25]"
+				}
+,
+				"obj-14::obj-2.7::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[14]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[30]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[120]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[31]"
+				}
+,
+				"obj-51::obj-2.7::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[42]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[85]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[34]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[51]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[96]"
+				}
+,
+				"obj-118::obj-20" : 				{
+					"parameter_longname" : "live.dial[26]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[70]"
+				}
+,
+				"obj-14::obj-2.2::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[1]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[19]"
+				}
+,
+				"obj-14::obj-2.5::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[23]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[26]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[113]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[57]"
+				}
+,
+				"obj-51::obj-2.4::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[39]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[35]"
+				}
+,
+				"obj-118::obj-2.1::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[35]"
+				}
+,
+				"obj-118::obj-2.5::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[45]"
+				}
+,
+				"obj-118::obj-2.8::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[37]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[21]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[23]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[25]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[113]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[78]"
+				}
+,
+				"obj-51::obj-2.7::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[42]"
+				}
+,
+				"obj-51::obj-28" : 				{
+					"parameter_longname" : "live.slider[3]"
+				}
+,
+				"obj-118::obj-2.2::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[34]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[86]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[168]"
+				}
+,
+				"obj-118::obj-19" : 				{
+					"parameter_longname" : "live.dial[19]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[70]"
+				}
+,
+				"obj-14::obj-2.2::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[1]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[26]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[62]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[57]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[79]"
+				}
+,
+				"obj-51::obj-2.8::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[151]"
+				}
+,
+				"obj-118::obj-2.1::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[64]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[23]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[113]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[117]"
+				}
+,
+				"obj-51::obj-2.5::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[39]"
+				}
+,
+				"obj-51::obj-2.7::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[42]"
+				}
+,
+				"obj-51::obj-19" : 				{
+					"parameter_longname" : "live.dial[20]"
+				}
+,
+				"obj-118::obj-2.2::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[34]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[40]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[43]"
+				}
+,
+				"obj-118::obj-2.6::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[36]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[73]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[71]"
+				}
+,
+				"obj-14::obj-2.2::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[9]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[75]"
+				}
+,
+				"obj-14::obj-2.8::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[12]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[115]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[77]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[91]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[81]"
+				}
+,
+				"obj-51::obj-2.8::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[42]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[84]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[12]"
+				}
+,
+				"obj-14::obj-2.3::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[37]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[28]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[58]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[34]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[36]"
+				}
+,
+				"obj-118::obj-2.2::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[34]"
+				}
+,
+				"obj-118::obj-2.3::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[43]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[164]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[73]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[71]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[18]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[24]"
+				}
+,
+				"obj-14::obj-2.8::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[12]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[115]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[135]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[59]"
+				}
+,
+				"obj-51::obj-2.6::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[41]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[2]"
+				}
+,
+				"obj-51::obj-2.8::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[42]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[37]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[42]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[106]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[57]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[111]"
+				}
+,
+				"obj-14::obj-2.3::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[10]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[20]"
+				}
+,
+				"obj-14::obj-2.6::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[11]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[25]"
+				}
+,
+				"obj-51::obj-2.1::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[28]"
+				}
+,
+				"obj-51::obj-2.2::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[38]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[119]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[34]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[153]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[9]"
+				}
+,
+				"obj-118::obj-2.3::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[43]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[105]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[174]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[45]"
+				}
+,
+				"obj-14::obj-2.4::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[15]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[27]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[30]"
+				}
+,
+				"obj-51::obj-2.3::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[136]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[140]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[32]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[83]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[8]"
+				}
+,
+				"obj-118::obj-2.4::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[163]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[88]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[74]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[71]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[19]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[20]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[29]"
+				}
+,
+				"obj-51::obj-2.1::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[28]"
+				}
+,
+				"obj-51::obj-2.2::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[38]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[119]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[122]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[85]"
+				}
+,
+				"obj-118::obj-2.3::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[43]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[90]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[36]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[94]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[25]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[30]"
+				}
+,
+				"obj-51::obj-2.2::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[133]"
+				}
+,
+				"obj-51::obj-2.3::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[22]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[60]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[33]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[34]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[40]"
+				}
+,
+				"obj-118::obj-2.4::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[35]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[107]"
+				}
+,
+				"obj-118::obj-2.7::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[172]"
+				}
+,
+				"obj-118::obj-28" : 				{
+					"parameter_longname" : "live.slider[4]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[44]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[19]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[29]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[56]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[116]"
+				}
+,
+				"obj-51::obj-2.4::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[38]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[122]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[150]"
+				}
+,
+				"obj-118::obj-2.1::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[35]"
+				}
+,
+				"obj-118::obj-2.5::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[45]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[90]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[21]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[25]"
+				}
+,
+				"obj-14::obj-2.7::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[14]"
+				}
+,
+				"obj-51::obj-2.3::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[22]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[90]"
+				}
+,
+				"obj-51::obj-2.7::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[148]"
+				}
+,
+				"obj-51::obj-21" : 				{
+					"parameter_longname" : "live.dial[22]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[10]"
+				}
+,
+				"obj-118::obj-2.4::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[35]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[106]"
+				}
+,
+				"obj-118::obj-2.7::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[46]"
+				}
+,
+				"obj-118::obj-52" : 				{
+					"parameter_longname" : "Wave[10]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[70]"
+				}
+,
+				"obj-14::obj-2.2::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[1]"
+				}
+,
+				"obj-14::obj-2.5::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[15]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[26]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[56]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[116]"
+				}
+,
+				"obj-51::obj-2.4::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[139]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[123]"
+				}
+,
+				"obj-118::obj-2.1::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[35]"
+				}
+,
+				"obj-118::obj-2.5::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[45]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[108]"
+				}
+,
+				"obj-118::obj-2.8::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[175]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[21]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[38]"
+				}
+,
+				"obj-14::obj-2.7::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[14]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[113]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[58]"
+				}
+,
+				"obj-51::obj-2.5::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[41]"
+				}
+,
+				"obj-51::obj-27" : 				{
+					"parameter_longname" : "Wave[5]"
+				}
+,
+				"obj-118::obj-2.2::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[157]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[34]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[63]"
+				}
+,
+				"obj-118::obj-2.6::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[169]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[46]"
+				}
+,
+				"obj-14::obj-2.2::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[1]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[26]"
+				}
+,
+				"obj-14::obj-2.8::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[12]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[116]"
+				}
+,
+				"obj-51::obj-2.4::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[38]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[31]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[92]"
+				}
+,
+				"obj-51::obj-2.8::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[43]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[37]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[42]"
+				}
+,
+				"obj-118::obj-2.5::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[45]"
+				}
+,
+				"obj-118::obj-2.8::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[37]"
+				}
+,
+				"obj-14::obj-2.3::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[2]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[23]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[28]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[113]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[58]"
+				}
+,
+				"obj-51::obj-2.5::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[84]"
+				}
+,
+				"obj-118::obj-2.2::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[34]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[43]"
+				}
+,
+				"obj-118::obj-2.6::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[36]"
+				}
+,
+				"obj-118::obj-2.7::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[109]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[49]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[18]"
+				}
+,
+				"obj-14::obj-2.4::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[22]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[53]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[27]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[115]"
+				}
+,
+				"obj-51::obj-2.3::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[76]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[119]"
+				}
+,
+				"obj-51::obj-2.6::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[40]"
+				}
+,
+				"obj-51::obj-2.8::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[43]"
+				}
+,
+				"obj-118::obj-2.1::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[52]"
+				}
+,
+				"obj-118::obj-2.4::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[42]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[88]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[72]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[176]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[20]"
+				}
+,
+				"obj-14::obj-2.7::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[28]"
+				}
+,
+				"obj-51::obj-2.1::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[28]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[119]"
+				}
+,
+				"obj-51::obj-2.5::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[149]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[36]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[39]"
+				}
+,
+				"obj-118::obj-2.3::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[44]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[105]"
+				}
+,
+				"obj-118::obj-2.6::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[36]"
+				}
+,
+				"obj-14::obj-2.2::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[18]"
+				}
+,
+				"obj-14::obj-2.5::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[24]"
+				}
+,
+				"obj-14::obj-2.7::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[27]"
+				}
+,
+				"obj-51::obj-2.2::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[115]"
+				}
+,
+				"obj-51::obj-2.4::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[59]"
+				}
+,
+				"obj-51::obj-2.6::obj-2::obj-20" : 				{
+					"parameter_longname" : "Mute[145]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[32]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[5]"
+				}
+,
+				"obj-118::obj-2.5::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[91]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[54]"
+				}
+,
+				"obj-118::obj-2.8::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[47]"
+				}
+,
+				"obj-14::obj-2.5::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[39]"
+				}
+,
+				"obj-14::obj-2.6::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[11]"
+				}
+,
+				"obj-51::obj-2.2::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[25]"
+				}
+,
+				"obj-51::obj-2.4::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[119]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[122]"
+				}
+,
+				"obj-118::obj-2.1::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[50]"
+				}
+,
+				"obj-118::obj-2.3::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[44]"
+				}
+,
+				"obj-118::obj-2.5::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[87]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[90]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[58]"
+				}
+,
+				"obj-14::obj-2.4::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[15]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-107" : 				{
+					"parameter_longname" : "Linear[30]"
+				}
+,
+				"obj-51::obj-2.2::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[38]"
+				}
+,
+				"obj-51::obj-2.3::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[29]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[121]"
+				}
+,
+				"obj-51::obj-2.6::obj-4::obj-55" : 				{
+					"parameter_longname" : "Bypass[40]"
+				}
+,
+				"obj-51::obj-2.7::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[32]"
+				}
+,
+				"obj-51::obj-2.8::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[33]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[38]"
+				}
+,
+				"obj-118::obj-2.2::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[39]"
+				}
+,
+				"obj-118::obj-2.4::obj-2::obj-1" : 				{
+					"parameter_longname" : "Attack[35]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[124]"
+				}
+,
+				"obj-118::obj-2.7::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[46]"
+				}
+,
+				"obj-14::obj-2.2::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[71]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[46]"
+				}
+,
+				"obj-14::obj-2.6::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[11]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[29]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-36" : 				{
+					"parameter_longname" : "PW[116]"
+				}
+,
+				"obj-51::obj-2.5::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[122]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[84]"
+				}
+,
+				"obj-118::obj-2.1::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[33]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[11]"
+				}
+,
+				"obj-118::obj-2.6::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[36]"
+				}
+,
+				"obj-118::obj-2.8::obj-1::obj-45" : 				{
+					"parameter_longname" : "FreqMode[91]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-107" : 				{
+					"parameter_longname" : "Linear[21]"
+				}
+,
+				"obj-14::obj-2.4::obj-4::obj-33" : 				{
+					"parameter_longname" : "Quadrants[15]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-4" : 				{
+					"parameter_longname" : "Waveform[22]"
+				}
+,
+				"obj-14::obj-2.7::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[14]"
+				}
+,
+				"obj-14::obj-2.8::obj-3::obj-46" : 				{
+					"parameter_longname" : "Offset[30]"
+				}
+,
+				"obj-51::obj-2.3::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[29]"
+				}
+,
+				"obj-51::obj-2.5::obj-1::obj-11" : 				{
+					"parameter_longname" : "PWM[121]"
+				}
+,
+				"obj-51::obj-2.6::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[48]"
+				}
+,
+				"obj-51::obj-2.7::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[42]"
+				}
+,
+				"obj-118::obj-2.2::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[38]"
+				}
+,
+				"obj-118::obj-2.4::obj-4::obj-80" : 				{
+					"parameter_longname" : "Response[35]"
+				}
+,
+				"obj-118::obj-2.6::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[124]"
+				}
+,
+				"obj-118::obj-18" : 				{
+					"parameter_longname" : "live.dial[25]"
+				}
+,
+				"obj-14::obj-2.1::obj-3::obj-129" : 				{
+					"parameter_longname" : "CV2[70]"
+				}
+,
+				"obj-14::obj-2.2::obj-2::obj-32" : 				{
+					"parameter_longname" : "Sustain[1]"
+				}
+,
+				"obj-14::obj-2.3::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[19]"
+				}
+,
+				"obj-14::obj-2.5::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[16]"
+				}
+,
+				"obj-14::obj-2.6::obj-3::obj-53" : 				{
+					"parameter_longname" : "Mute[42]"
+				}
+,
+				"obj-14::obj-2.8::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[57]"
+				}
+,
+				"obj-51::obj-2.1::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[114]"
+				}
+,
+				"obj-51::obj-2.2::obj-3::obj-51" : 				{
+					"parameter_longname" : "Freq[116]"
+				}
+,
+				"obj-51::obj-2.4::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[39]"
+				}
+,
+				"obj-51::obj-2.6::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[123]"
+				}
+,
+				"obj-51::obj-2.8::obj-1::obj-129" : 				{
+					"parameter_longname" : "CV2[50]"
+				}
+,
+				"obj-118::obj-2.3::obj-3::obj-11" : 				{
+					"parameter_longname" : "PWM[35]"
+				}
+,
+				"obj-118::obj-2.5::obj-2::obj-31" : 				{
+					"parameter_longname" : "Release[44]"
+				}
+,
+				"obj-118::obj-2.7::obj-1::obj-36" : 				{
+					"parameter_longname" : "PW[44]"
+				}
+,
+				"obj-118::obj-2.8::obj-2::obj-15" : 				{
+					"parameter_longname" : "Legato[37]"
+				}
+,
+				"obj-14::obj-2.3::obj-1::obj-46" : 				{
+					"parameter_longname" : "Offset[21]"
+				}
+,
+				"obj-14::obj-2.4::obj-3::obj-45" : 				{
+					"parameter_longname" : "FreqMode[23]"
+				}
+,
+				"obj-14::obj-2.6::obj-1::obj-106" : 				{
+					"parameter_longname" : "CV3[25]"
+				}
+,
+				"obj-51::obj-2.1::obj-1::obj-53" : 				{
+					"parameter_longname" : "Mute[129]"
+				}
+,
+				"obj-51::obj-2.3::obj-3::obj-4" : 				{
+					"parameter_longname" : "Waveform[118]"
+				}
+,
+				"obj-51::obj-20" : 				{
+					"parameter_longname" : "live.dial[23]"
+				}
+,
+				"obj-118::obj-2.2::obj-2::obj-29" : 				{
+					"parameter_longname" : "Decay[34]"
+				}
+,
+				"obj-118::obj-2.3::obj-1::obj-51" : 				{
+					"parameter_longname" : "Freq[40]"
+				}
+,
+				"obj-118::obj-2.4::obj-3::obj-106" : 				{
+					"parameter_longname" : "CV3[52]"
+				}
 
 			}
 
@@ -53534,240 +57076,268 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "minmax_regions.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modal_coll_filter.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vj.subtrahend.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modal_offset.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc_3_major_modes.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc_3_harm_minor_modes.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc_3_mel_minor_modes.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc_3_harm_major_modes.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_chord_generation_pattr.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_logo.png",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_chord_voicing.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Comments",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../../Desktop",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "attributes.maxvig.xml",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/other",
-				"patcherrelativepath" : "../other",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "PolyBEAPer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BEAPer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.Oscillator.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sine.svg",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "updown.svg",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "up.svg",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "square.svg",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.ADSR.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "background_sm.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.VCA.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_pcmatch.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modal_pc_match.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modal_dpc_match.pat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modal_degree_getter.pat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_pc_match_messages.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/data",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "606kick.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "606snare.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "606hat.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "606cymbal.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/media",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/media",
 				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Reverbs.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "yafr2.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/SonifyBeta/patchers",
+				"bootpath" : "~/Dropbox/sonify-master/Max_source/Sonify/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vj.appmenuabout.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vj_cbmbackground.jpg",
+				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "EAMIR_info.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_modules",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VJManzo_info.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/EAMIR SDK/externals/V Objects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VJManzo_logo.png",
+				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/VJM",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/VJM",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cbmlogowhite.png",
+				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -53804,26 +57374,6 @@
 			}
 , 			{
 				"name" : "EAMIR",
-				"default" : 				{
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-					"bgfillcolor" : 					{
-						"type" : "color",
-						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -53839,11 +57389,31 @@
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 				}
 ,
 				"parentstyle" : "",
@@ -53851,24 +57421,6 @@
 			}
 , 			{
 				"name" : "EAMIR-1",
-				"default" : 				{
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-					"bgfillcolor" : 					{
-						"type" : "color",
-						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -53884,11 +57436,29 @@
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 				}
 ,
 				"parentstyle" : "",
@@ -53896,26 +57466,6 @@
 			}
 , 			{
 				"name" : "EAMIR-1-1",
-				"default" : 				{
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-					"bgfillcolor" : 					{
-						"type" : "color",
-						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -53931,11 +57481,31 @@
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 				}
 ,
 				"parentstyle" : "",
@@ -53943,26 +57513,6 @@
 			}
 , 			{
 				"name" : "EAMIR-1-2",
-				"default" : 				{
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-					"bgfillcolor" : 					{
-						"type" : "color",
-						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -53978,11 +57528,31 @@
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 				}
 ,
 				"parentstyle" : "",
@@ -53990,26 +57560,6 @@
 			}
 , 			{
 				"name" : "EAMIR-2",
-				"default" : 				{
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-					"bgfillcolor" : 					{
-						"type" : "color",
-						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -54025,11 +57575,31 @@
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
 				}
 ,
 				"parentstyle" : "",
@@ -54037,24 +57607,6 @@
 			}
 , 			{
 				"name" : "EAMIR-3",
-				"default" : 				{
-					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
-					"bgfillcolor" : 					{
-						"type" : "color",
-						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
-						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
-						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
-				}
-,
 				"umenu" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -54070,11 +57622,204 @@
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
 				}
 ,
-				"newobj" : 				{
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.850253, 0.837059, 0.878431, 1.0 ],
+						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ]
+					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ]
+				}
+,
+				"newobj" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
+					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "MMJforM",
+				"message" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"color1" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"color1" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
+					"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ]
+				}
+,
+				"kslider" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"button" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"number" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "VJ Classic",
+				"umenu" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color2" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ]
+				}
+,
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color2" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "VJ Classic-1",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"color" : [ 0.954082, 0.954082, 0.954082, 0.59 ],
+						"angle" : 0,
+						"proportion" : 0.39
+					}
+,
+					"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "VJ Classic-1-1",
+				"umenu" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color2" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ]
+				}
+,
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+						"color2" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"color" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ]
+				}
+,
+				"ezdac~" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
+				}
+,
+				"ezadc~" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -54083,9 +57828,9 @@
 , 			{
 				"name" : "foamy",
 				"default" : 				{
+					"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
 					"accentcolor" : [ 0.0, 1.0, 0.501961, 1.0 ],
 					"elementcolor" : [ 0.298039, 0.298039, 0.298039, 1.0 ],
-					"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
 					"clearcolor" : [ 0.4, 1.0, 0.8, 1.0 ]
 				}
 ,
@@ -54131,8 +57876,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

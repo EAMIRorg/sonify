@@ -1,9 +1,9 @@
 {
-	"name" : "SonifyBeta",
+	"name" : "Sonify",
 	"version" : 1,
 	"creationdate" : 3632822974,
-	"modificationdate" : 3632917135,
-	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
+	"modificationdate" : 3654416964,
+	"viewrect" : [ 25.0, 79.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -59,5 +59,6 @@
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",
-	"sortmode" : 0
+	"sortmode" : 0,
+	"viewmode" : 0
 }
