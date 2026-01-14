@@ -7,4 +7,8 @@ Sample data has been included in "_sample data" folder.
 
 For more information about this project, visit http://sonify.wpi.edu
 
-Sonify uses the following license: https://creativecommons.org/licenses/by-sa/3.0/us/
+## Contributing
+
+Navigate to the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines on how to contribute to the project.
+
+Music, audio, and other creative works produced using Sonify are not considered Contributions and remain the sole property of their creators.
